@@ -1,0 +1,2137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajebah - GOJEK Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper @8/swiper-bundle.min.css" /> -->
+    <script src="./js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/slick.css">
+    <link rel="stylesheet" href="styles/swiper.css" />
+    <link rel="stylesheet" href="./styles/taxi.css">
+    <!-- <link rel="stylesheet" href="./styles/1.css"> -->
+    <!-- <script src="./js/1.js"></script> -->
+
+</head>
+
+<body class="font-Cairo">
+    <!-- start nav -->
+    <nav class="bg-gray">
+        <div class=" container mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7 ">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <img src="./imgs/logo.png" alt="Logo" class="h-12 w-auto">
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="./index.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Home</a>
+                        <a href="./taxi.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Taxi
+                            Apps</a>
+                        <a href="./gojek.html"
+                            class="py-1 px-4 text-ajebah-blue border-b-4 border-ajebah-blue font-semibold">Gojak
+                            Clone</a>
+                        <a href="./super.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300 ">Super
+                            Services App</a>
+                        <a href="./grap.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Grap
+                            Clone</a>
+                        <a href="./delivery.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Delivery
+                            Apps</a>
+                        <a href="./u-for-x.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">U
+                            For X</a>
+                        <a href="./our-clients.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Our
+                            CLients</a>
+                        <a href="./about-us.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">About
+                            Us</a>
+                    </div>
+                </div>
+                <!-- Secondary Navbar items -->
+                <div class="hidden md:flex items-center ">
+                    <a href="" class="py-2 px-2 btn-primary ">Enquire
+                        Now</a>
+                </div>
+                <div class="hidden md:flex  md: md:w-auto md:flex-col md:justify-between md:items-center md:ml-4">
+                    <div class="pt-3">
+                        <a href="./gojek-arabic.html" class=" pr-1">العربية</a>
+                        <a href="./gojek.html" class="pl-1 text-ajebah-light-blue">English</a>
+                    </div>
+                    <div class="relative mb-4 rounded-2xl w-28 h-4 bg-white">
+                        <span class="text-ajebah-blue relative float-right bottom-1">
+                            <i style="background-color: blue ;" class="fa-solid fa-circle fa-sm"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center justify-between">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a href="./index.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Home</a></li>
+                <li><a href="./taxi.html" class="block text-sm px-2 py-4 text-ajebah-blue bg-green-500 font-semibold">Taxi
+                        Apps</a></li>
+                <li><a href="./gojek.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Gojak
+                        Clone</a></li>
+                <li><a href="./super.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Super
+                        Services App</a></li>
+                <li><a href="./grap.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Grap
+                        Clone</a></li>
+                <li><a href="./delivery.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Delivery Apps</a>
+                </li>
+                <li><a href="./u-for-x.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">U For
+                        X</a></li>
+                <li><a href="./our-clients.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Our
+                        Clients</a></li>
+                <li><a href="./about-us.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About
+                        Us</a></li>
+            </ul>
+            <div class="text-center pb-5">
+                <a href=""
+                class="py-2 px-2 btn-primary ">Enquire
+                Now</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start gojek  -->
+    <div class="container py-8">
+        <!-- head -->
+        <div class="flex md:flex-row flex-col gap-4 items-start pt-8">
+            <div class="relative w-full mr-12 flex justify-center items-center h-full pt-10">
+                <img class="absolute md:-right-10 -right-0 md:top-0 top-0 w-16" src="./imgs/gojek-sec-1-1.png" alt="">
+                <h1 class="text-4xl font-bold text-ajebah-light-blue">GOJEK CLONE APP 2022!
+                    <br>
+                    <span class="text-5xl">KINGX</span> PACKAGE
+                </h1>
+            </div>
+            <div class="md:block md:bg-new-yellow md:w-2 md:h-48"></div>
+            <div class="">
+                <h1 class="  font-bold">Want Multi Million Dollar Returns on lowest Investments? If your answer is yes!
+                    <br>f
+                    Then the Multi Services App is the right choice for you.
+                </h1>
+                <h1 class="text-new-cyan mt-4">Gojek Clone App KingX 2022 Package - It Is The Royal King Of The
+                    On-Demand Service Industry</h1>
+                <h1 class="text-opacity-black mt-4">The world’s most inclusive and holistic on demand profit generating
+                    multi service app, the KingX
+                    2022 version of the App Like Gojek is now here to help you grow your business from just an idea to a
+                    successful empire. Our team can launch your very own Gojek clone app in just under 7 to 10 days with
+                    your logo and brand name. We can also integrate the language and currency of your choice in the app
+                    along with the preferred Payment Gateways to make sure your customers can experience the ease of
+                    access for over 82 different services in the app.</h1>
+                <div class="mt-8 flex flex-auto items-center">
+                    <div>
+
+                    <a href="#" class=" md:mx-2 mx-2 py-2 px-2 btn-primary">Live Video</a>
+                    </div>
+                    <div>
+
+                        <a href="#" class="md:mx-2 mx-2 py-2 md:py-1 px-5 btn-primary">Pricing</a>
+                    </div>
+                    <div>
+                        <a href="#" class="md:mx-2 mx-2 py-2 px-3 btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- swiper -->
+
+    </div>
+    <!-- end gojek  -->
+
+    <!-- start slider mobile  -->
+    <div class="container">
+        <div class="flex md:flex-row flex-col relative">
+            <div class="w-full md:relative">
+                <img class="hidden md:block md:absolute md:w-11/12 md:top-4 md:-right-8 " src="./imgs/gojek-sec-4-4.png"
+                    alt="">
+            </div>
+            <div class="swiper-custome">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide flex flex-col gap-4 justify-center items-center">
+                            <h1 class="font-bold text-2xl text-center text-ajebah-orange">TAXI BOOKING</h1>
+                            <h1 class="text-opacity-black text-center">Uber like Taxi Feature with Rental and Car
+                                <br>
+                                Pool
+                            </h1>
+                            <img class="w-60" src="./imgs/gojek-sec-4-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide flex flex-col gap-4 justify-center items-center">
+                            <h1 class="font-bold text-2xl text-center text-new-cyan">FOOD DELIVERY</h1>
+                            <h1 class="text-opacity-black text-center">Order Food from nearby restaurants and get
+                                it delivered at your Doorsteps</h1>
+                            <img class="w-60" src="./imgs/gojek-sec-4-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide flex flex-col gap-4 justify-center items-center">
+                            <h1 class="font-bold text-2xl text-center text-new-dark-blue">GROCERY DELIVERED</h1>
+                            <h1 class="text-opacity-black text-center">Uber like Taxi Feature with Rental and Car
+                                <br> Pool
+                            </h1>
+                            <img class="w-60" src="./imgs/gojek-sec-4-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide flex flex-col gap-4 justify-center items-center">
+                            <h1 class="font-bold text-2xl text-center text-ajebah-orange">TAXI BOOKING</h1>
+                            <h1 class="text-opacity-black text-center">Uber like Taxi Feature with Rental and Car
+                                <br>
+                                Pool
+                            </h1>
+                            <img class="w-60" src="./imgs/gojek-sec-4-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide flex flex-col gap-4 justify-center items-center">
+                            <h1 class="font-bold text-2xl text-center text-new-cyan">FOOD DELIVERY</h1>
+                            <h1 class="text-opacity-black text-center">Order Food from nearby restaurants and get
+                                it delivered at your Doorsteps</h1>
+                            <img class="w-60" src="./imgs/gojek-sec-4-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide flex flex-col gap-4 justify-center items-center">
+                            <h1 class="font-bold text-2xl text-center text-new-dark-blue">GROCERY DELIVERED</h1>
+                            <h1 class="text-opacity-black text-center">Uber like Taxi Feature with Rental and Car
+                                <br> Pool
+                            </h1>
+                            <img class="w-60" src="./imgs/gojek-sec-4-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide flex flex-col gap-4 justify-center items-center">
+                            <h1 class="font-bold text-2xl text-center text-ajebah-orange">TAXI BOOKING</h1>
+                            <h1 class="text-opacity-black text-center">Uber like Taxi Feature with Rental and Car
+                                <br>
+                                Pool
+                            </h1>
+                            <img class="w-60" src="./imgs/gojek-sec-4-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide flex flex-col gap-4 justify-center items-center">
+                            <h1 class="font-bold text-2xl text-center text-new-cyan">FOOD DELIVERY</h1>
+                            <h1 class="text-opacity-black text-center">Order Food from nearby restaurants and get
+                                it delivered at your Doorsteps</h1>
+                            <img class="w-60" src="./imgs/gojek-sec-4-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide flex flex-col gap-4 justify-center items-center">
+                            <h1 class="font-bold text-2xl text-center text-new-dark-blue">GROCERY DELIVERED</h1>
+                            <h1 class="text-opacity-black text-center">Uber like Taxi Feature with Rental and Car
+                                <br> Pool
+                            </h1>
+                            <img class="w-60" src="./imgs/gojek-sec-4-3.png" alt="">
+                        </div>
+                        <!-- <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div> -->
+                        ...
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- end slider mobile -->
+
+    <div class="container py-8">
+        <section class="unlimited-services forservices mt-32">
+            <img class="tabshape" class="lazyload" data-src="images/gojek-clone-overview-2022/tabshape.png" alt="">
+            <div class="unlimited-services-inner">
+                <div class="head-div mb-4">
+                    <h1 class="head-light-blue ">
+                        GOJEK CLONE WITH MULTIPLE ON DEMAND SERVICES
+                    </h1>
+                    <h1 class="text-opacity-black leading-5">
+                        When Smart Entrepreneurs like yourself invest in an App like Gojek, you are destined to be
+                        Fabulously Rich because you earn Commission on every Service Booked or Order Placed Online
+                        through the App. Your Customers can Book Taxi Rides, get Food and Groceries Delivered right at
+                        their Doorstep, and even schedule an Appointment with a Doctor, Personal Academic Tutors, Yoga
+                        Instructors & Fitness Coaches and even Lawyers! Your Customer can also avail Services of a
+                        Car-Wash, hire Handyman Services such as that of Carpenters, Electricians, Plumbers, Painters
+                        and Home Cleaners. Give your Customers the luxury to send Parcels to Single or Multiple
+                        Destinations. Did you know you can even hire a Beautician to do your Bridal Make-Up at your Home
+                        itself? My Fellow Smart Entrepreneur, you will enjoy the Absolute Authority to grant Permission
+                        to Service Providers to offer their Services under more than One Category. For example, a Taxi
+                        Driver can also Deliver Food, Groceries and Parcels in One’s spare time.
+                    </h1>
+                </div>
+                <div class="unlimited-services-tabs ">
+                    <ul id="sticky" class="services-tabs sticky">
+                        <li class="active" rel="ride"><span class="span"><img class="lazyload"
+                                    src="./imgs/gojek-new-sec-1.png" alt="Ride booking">Taxi</span></li>
+                        <li rel="parcel"><span class="span"><img class="lazyload" src="./imgs/gojek-new-sec-2.png"
+                                    alt="Parcel Delivery">Deliver
+                                Anything, Anywhere</span></li>
+                        <li rel="deliveries"><span class="span"><img class="lazyload" src="./imgs/gojek-new-sec-3.png"
+                                    alt="Food and Store Deliveries">Food and Store Deliveries</span></li>
+                        <li rel="online-video"><span class="span"><img class="lazyload" src="./imgs/gojek-new-sec-4.png"
+                                    alt="Online Video Consultation">Online Video Consultation</span></li>
+                        <li rel="service-bid"><span class="span"><img class="lazyload" src="./imgs/gojek-new-sec-5.png"
+                                    alt="Service Bid">Bid for
+                                Services</span></li>
+                        <li rel="ondemand"><span class="span"><img class="lazyload" src="./imgs/gojek-new-sec-6.png"
+                                    alt="On-Demand Services">On-Demand Services</span></li>
+                    </ul>
+                    <div class="services-tabs_container">
+                        <strong class="d_active tab_drawer_heading" rel="ride">Taxi</strong>
+                        <div id="ride" class="services-tabs_content">
+                            <div class="components-text">
+                                <strong class="head-light-blue">Uber like Taxi, Rental and Car Pool</strong> 
+                                <p class="text-opacity-black">This Component has Uber like features. Eg. Taxi, Taxi Rental and Uber
+                                    like Car Pool. You as App Owner can define Taxi Types like Hatchback, Sedan, 2
+                                    Wheelers, Limo, etc and set their Rates too. Activate Pool and Rental as per your
+                                    Business Model.</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="single-service-inner"> <b><img
+                                                src="./imgs/gojek-new-sec--2-1.png"
+                                                alt="Taxi Booking App" title="Taxi Booking App"></b>
+                                        <strong class="text-opacity-black">Uber like Taxi</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img
+                                        src="./imgs/gojek-new-sec--2-2.png"
+                                        alt="Uber for 2 Wheelers" title="Uber for 2 Wheelers"></b>
+                                        <strong>Uber for 2 Wheelers</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img
+                                        src="./imgs/gojek-new-sec--2-3.png"
+                                        alt="Taxi Rental App" title="Taxi Rental App"></b>
+                                        <strong>Uber like Rental</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img
+                                        src="./imgs/gojek-new-sec--2-4.png"
+                                        alt="Moto Rental App" title="Moto Rental App"></b>
+                                        <strong>Uber like Pool</strong>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- #tab1 -->
+                        <strong class="tab_drawer_heading" rel="parcel">Deliver Anything, Anywhere</strong>
+                        <div id="parcel" class="services-tabs_content d_active">
+                            <div class="components-text">
+                                <strong class="head-light-blue">Deliver Anything, Anywhere - Kind of Advanced Uber Delivery </strong>
+                                <p class="text-opacity-black">This Component has Delivery Features where your Users can get anything
+                                    Delivered from X to Y within your city. Delivery Drivers can do Deliveries by Cars,
+                                    Cargo Truck, 2 Wheelers, etc as per your business model. Your Users can
+                                    hire a Delivery Person to Fetch, Deliver or Purchase anything for them from within
+                                    the City.</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="single-service-inner">
+                                        <b><img class="lazyload"
+                                            src="./imgs/gojek-new-sec--2-1.png"
+                                            alt="Single Parcel Delivery" title="Single Parcel Delivery"></b>
+                                        <strong>Parcel Delivery</strong>
+                                        <p>Get anything Delivered to anyone in your city - Flowers, Papers, Cement Bags,
+                                            etc</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner">
+                                        <b><img class="lazyload"
+                                            src="./imgs/gojek-new-sec--2-2.png"
+                                            alt="Multiple Parcel Delivery" title="Multiple Parcel Delivery"></b>
+                                        <strong>Multiple Parcel Delivery</strong>
+                                        <p>Send more than 1 Parcels to many people in same part of city using Multiple
+                                            Parcel Delivery Feature.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-3.png"
+                                        alt="Delivery Genie" title="Delivery Genie App"></b>
+                                        <strong>Delivery Genie</strong>
+                                        <p>Hire a Genie who will go out in the City and Purchase Items of your choice
+                                            from Local Market.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-4.png"
+                                        alt="Delivery Runner" title="Delivery Runner App"></b>
+                                        <strong>Delivery Runner</strong>
+                                        <p>Hire a Runner who would go out in the City and Fetch, Pickup or Drop your
+                                            small Items and also get your Errand Jobs done.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <strong class="tab_drawer_heading" rel="deliveries">Food and Store Deliveries</strong>
+                        <div id="deliveries" class="services-tabs_content">
+                            <div class="components-text">
+                                <strong class="head-light-blue">Order/Buy from Stores and get Items Delivered Instantly </strong>
+                                <p class="text-opacity-black">This component will allow your users to see Restaurants, Grocery Stores,
+                                    Pharmacies, etc Stores in their range and place an Order with them. The Store will
+                                    receive an order in the Store App and process it immediately which then
+                                    gets delivered by Delivery Driver in real time.</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="single-service-inner">
+                                        <b><img class="lazyload"
+                                            src="./imgs/gojek-new-sec--2-1.png"
+                                            alt="Food Ordering & Delivery" title="Food Ordering & Delivery"></b>
+                                        <strong>Food Ordering & Delivery</strong>
+                                        <p>Order Food from nearby restaurants and get it delivered to your Home in real
+                                            time.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-2.png"
+                                        alt="Grocery Delivery" title="Grocery Delivery"></b>
+                                        <strong>Grocery Delivery</strong>
+                                        <p>Order Grocery from nearby Stores and get it delivered immediately.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-3.png"
+                                        alt="Pharmacy Delivery" title="Pharmacy Delivery"></b>
+                                        <strong>Medicine Delivery</strong>
+                                        <p>Upload prescription and Order Medicines from nearby Pharmacy Stores and get
+                                            it delivered immediately.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-4.png"
+                                        alt="Wine Delivery" title="Wine Delivery"></b>
+                                        <strong>Wine Delivery</strong>
+                                        <p>Order Wine from nearby Stores and get it delivered immediately.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Bottled Water On Demand" title="Bottled Water On Demand App"></b>
+                                        <strong>Bottled Water Delivery</strong>
+                                        <p>Order Bottled Water from nearby Stores and get it delivered immediately.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-2.png"
+                                        alt="Flower Delivery On Demand" title="Flower Delivery On Demand"></b>
+                                        <strong>Flower Delivery</strong>
+                                        <p>Order Flowers from the nearby Florist Shop and get it delivered immediately.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-3.png"
+                                        alt="Stationery Delivery" title="Stationery Delivery"></b>
+                                        <strong>Stationery Delivery</strong>
+                                        <p>Order Stationery from a nearby Store and get it delivered immediately.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-4.png"
+                                        alt="Your Custom Delivery Here" title="Your Custom Delivery Here"></b>
+                                        <strong>Your Custom Delivery Here</strong>
+                                        <p>Let us know if you want to do more On-Demand Deliveries like Pizza, Fuel, etc
+                                            and we’ll discuss it.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- #deliveries -->
+
+
+                        <!-- On-Demand Services -->
+                        <strong class="tab_drawer_heading" rel="online-video">Online Video Consultation</strong>
+                        <div id="online-video" class="services-tabs_content">
+                            <div class="components-text">
+                                <strong class="head-light-blue">Online Video Consulting - Latest Trend in Market </strong>
+                                <p class="text-opacity-black">This component will allow your Users to Book appointments and Consult
+                                    with Doctors, Tutors, Lawyer, Astrologers, learn Yoga, etc. Booking, Consulting and
+                                    Payment : all happens via the App. Covid has taught us that some of our work
+                                    can be done Online too without Meeting in real, this Category is dedicated to all
+                                    such tasks.</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="single-service-inner">
+                                        <b><img class="lazyload"
+                                            src="./imgs/gojek-new-sec--2-1.png"
+                                            alt="Doctors On Demand" title="Doctors On Demand"></b>
+                                        <strong>Consult Doctor on Video Call</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-2.png"
+                                        alt="Doctor App" title="Doctor App"></b>
+                                        <strong>Consult Nurse on Video Call</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-3.png"
+                                        alt="Tutor On Demand" title="Tutor On Demand App"></b>
+                                        <strong>Hire and Learn from Tutor on Video Call</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-4.png"
+                                        alt="Lawyer On Demand" title="Lawyer On Demand App"></b>
+                                        <strong>Consult Lawyer on Video Call</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Astrologer On Demand" title="Astrologer On Demand App"></b>
+                                        <strong>Consult Astrologer on Video Call</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner">
+                                        <b><img class="lazyload"
+                                            src="./imgs/gojek-new-sec--2-2.png"
+                                            alt="Personal Yoga Classes" title="Personal Yoga Classes"></b>
+                                        <strong>Yoga Training on Video Call</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner">
+                                        <b><img class="lazyload"
+                                            src="./imgs/gojek-new-sec--2-3.png"
+                                            alt="Personal Fitness Consulting"
+                                                title="Personal Fitness Consulting"></b>
+                                        <strong>Get Fitness Training on Video Call</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner flex">
+                                        <strong>As App Owner, you can add more Video Consulting Services from Back End
+                                            in this
+                                            section.</strong>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <!-- Online Video Consultation -->
+                        <strong class="tab_drawer_heading" rel="service-bid">Bid for Services</strong>
+                        <div id="service-bid" class="services-tabs_content">
+                            <div class="components-text">
+                                <strong class="head-light-blue">Get Bids for your Task and select the best One </strong>
+                                <p class="text-opacity-black">This component will allow your Users to post details of their Task on
+                                    the Apps and allow Service Providers to place their Bids for it in Real Time. User
+                                    will be able to select the best BID based on offered Cost, Reviews and Ratings
+                                    of Service Provider. This component will allow your Users to Book Services straight
+                                    away or for a later time. </p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Carpenter App" title="Carpenter App"></b>
+                                        <strong>Carpenter</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-2.png"
+                                        alt="Electrician App" title="Electrician App"></b>
+                                        <strong>Electrician</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-3.png"
+                                        alt="Plumber App" title="Plumber App"></b>
+                                        <strong>Plumber</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner">
+                                        <b><img class="lazyload"
+                                            src="./imgs/gojek-new-sec--2-4.png"
+                                            alt="Painters " title="Painters "> </b>
+                                        <strong>Painters</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner">
+                                        <b><img class="lazyload"
+                                            src="./imgs/gojek-new-sec--2-1.png"
+                                            alt="Handyman" title="Handyman" /></b>
+                                        <strong>Handyman</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner">
+                                        <b><img class="lazyload"
+                                            src="./imgs/gojek-new-sec--2-2.png"
+                                            alt="Home Cleaning App" title="Home Cleaning App"></b>
+                                        <strong>Home Cleaning</strong>
+                                    </div>
+                                </li>
+                                <li class="towwidth last">
+                                    <div class="single-service-inner">
+                                        <b><img class="lazyload"
+                                            src="./imgs/gojek-new-sec--2-3.png"
+                                            alt="Use some generic" title="Home Cleaning App"></b>
+                                        <strong>As App Owner, you can add more Services from Back End in this section
+                                            where User
+                                            can post Tasks and Service Providers places Bids.</strong>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Service Bid -->
+                        <!-- Parcel Delivery  -->
+                        <strong class="tab_drawer_heading" rel="ondemand">On-Demand Services</strong>
+                        <div id="ondemand" class="services-tabs_content">
+                            <div class="components-text">
+                                <strong class="head-light-blue">On-Demand Services - Book and get Service Instantly</strong>
+                                <p class="text-opacity-black">This component will allow your users to Book Services and get it
+                                    immediately.
+                                    <br>They can book a Beautician, Massage Therapist, Dog Walker, Baby Sitter, Car
+                                    Washer, etc for next hour or for a later time. Hire the one that matches your budget
+                                    with best Rates, Ratings and Reviews.
+                                </p>
+                            </div>
+                            <ul class="havefive">
+                                <li>
+                                    <div class="single-service-inner"><b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Beauty Service App" title="Beauty Service App"></b>
+                                        <strong>
+                                            Beautician On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"><b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Massage App" title="Massage App"></b>
+                                        <strong>
+                                            Massage On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Car Wash App" title="Car Wash App"></b>
+                                        <strong>
+                                            Car Wash On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Dog Walking App" title="Dog Walking App"></b>
+                                        <strong>
+                                            Dog Walking On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Photographer" title="Photographer" /></b>
+                                        <strong>Photographer On Demand</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"><b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Tow Truck App" title="Tow Truck App"></b>
+                                        <strong>
+                                            Tow Truck On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Babysitting App" title="Babysitting App"></b>
+                                        <strong>
+                                            Baby Sitting On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Maids App" title="Maids App"></b>
+                                        <strong>
+                                            Maids On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Pest Control App" title="Pest Control App"></b>
+                                        <strong>
+                                            Pest Control On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Physiotheraphy App" title="Physiotheraphy App"></b>
+                                        <strong>
+                                            Physiotheraphy On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Dog Grooming App" title="Dog Grooming App"></b>
+                                        <strong>
+                                            Dog Grooming On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Snow Plows App" title="Snow Plows App"></b>
+                                        <strong>
+                                            Snow Plows On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Barber App" title="Barber App"></b>
+                                        <strong>
+                                            Workers On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        title="DJ App"></b>
+                                        <strong>
+                                            DJ On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Lock smith app" title="Lock smith app"></b>
+                                        <strong>
+                                            Lock Smith On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Travel Agent App" title="Travel Agent App"></b>
+                                        <strong>
+                                            Travel Agent On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Tour Guide App" title="Tour Guide App"></b>
+                                        <strong>
+                                            Tour Guide On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"><b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Insuarance On Demand App" title="Insuarance On Demand App"></b>
+                                        <strong>
+                                            Insuarance On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Security Guard App" title="Security Guard App"></b>
+                                        <strong>
+                                            Security Guard On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Lawn Moving App" title="Lawn Moving Ap"></b>
+                                        <strong>
+                                            Lawn Mowing On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"><b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Barber App" title="Barber App"></b>
+                                        <strong>Barber On Demand</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Beachbody On Demand" title="Beachbody On Demand" /></b>
+                                        <strong>Beachbody On Demand</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"><b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Car repair App" title="Car repair App"></b>
+                                        <strong>
+                                            Car repair On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Carpet Repairer App" title="Carpet Repairer App" class="lazyload"
+                                                data-src="images/gojek-clone-overview-2022/services/carpet.svg"></b>
+                                        <strong>
+                                            Carpet Repair On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"><b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Computer Repairer App" title="Computer Repairer App"></b>
+                                        <strong>
+                                            Computer Repair On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Cuddling App" title="Cuddling App"></b>
+                                        <strong>
+                                            Cuddling On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Fire Fighters App" title="Fire Fighters App"></b>
+                                        <strong>
+                                            Fire Fighters On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Helpers App" title="Helpers App"></b>
+                                        <strong>
+                                            Helpers On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Interior Design" title="Interior Design"></b>
+                                        <strong>Interior Design On Demand</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Lawn Care" title="Lawn Care"></b>
+                                        <strong>Lawn Care On Demand</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner">
+                                        <b><img class="lazyload"
+                                            src="./imgs/gojek-new-sec--2-1.png"
+                                            alt="Mobile Technician App" title="Mobile Technician App"></b>
+                                        <strong>
+                                            Mobile Technician On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="psychologist" title="psychologist"></b>
+                                        <strong>Psychologist On Demand</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Road Assistance" title="Road Assistance" /></b>
+                                        <strong>Road Assistance On Demand</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Sofa Repair" title="Sofa Repair"></b>
+                                        <strong>Sofa Repair On Demand</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        title="Spa"></b>
+                                        <strong>Spa On Demand</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Translator" title="Translator"></b>
+                                        <strong>Translator On Demand</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="TV Repair" title="TV Repair"></b>
+                                        <strong>Tv Repairer On Demand</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Real Estate Agent App" title="Real Estate Agent App"></b>
+                                        <strong>
+                                            Real Estate Agent On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Mechanic App" title="Mechanic App"></b>
+                                        <strong>
+                                            Mechanic On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="AC Repair" title="AC Repair" /></b>
+                                        <strong>AC Repair On Demand</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"><b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Gardener on Demand" title="Gardener on Demand" /></b>
+                                        <strong>Gardener on Demand </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Doctor App" title="Doctor App"></b>
+                                        <strong>
+                                            Doctor On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Nurse App" title="Nurse App"></b>
+                                        <strong>
+                                            Nurse On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner">
+                                        <b><img class="lazyload"
+                                            src="./imgs/gojek-new-sec--2-1.png"
+                                            alt="Sanitization Services" title="Sanitization Services"></b>
+                                        <strong>Sanitization On Demand</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner">
+                                        <b><img class="lazyload"
+                                            src="./imgs/gojek-new-sec--2-1.png"
+                                            alt="Disinfecting Services" title="Disinfecting Services"></b>
+                                        <strong>Disinfecting On Demand</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Vet App" title="Vet App"></b>
+                                        <strong>
+                                            Vet On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Catering App" title="Catering App" class="lazyload"
+                                                data-src="images/gojek-clone-overview-2022/services/buffet.svg"></b>
+                                        <strong>
+                                            Catering On Demand
+                                        </strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Office Cleaning App" title="Office Cleaning App"></b>
+                                        <strong>Office Cleaning</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Party Cleaning App" title="Party Cleaning App"></b>
+                                        <strong>Party Cleaning</strong>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Language Tutor" title="Language Tutor"></b>
+                                        <strong>Language Tutor On Demand</strong>
+                                    </div>
+                                </li>
+                                <li class="fourwidth last">
+                                    <div class="single-service-inner"> <b><img class="lazyload"
+                                        src="./imgs/gojek-new-sec--2-1.png"
+                                        alt="Language Tutor" title="Language Tutor"></b>
+                                        <strong>You can add more Services from Back End in this section where User is
+                                            charged
+                                            based on Hourly Rates or Fixed Costs.</strong>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- start go live -->
+    <div class="bg-new-white-blue  ">
+        <div>
+            <img class="md:block hidden -z-10" src="./imgs/gojek-sec-5-1.png" alt="">
+        </div>
+        <div class="container md:relative  ">
+            <div
+                class="bg-ajebah-orange md:absolute z-10 right-0 md:text-left text-center -bottom-6 md:w-1/3 rounded-3xl py-10 px-10 max-h-fit">
+                <h1 class="text-white text-xl leading-8 ">Go Live in 1-2 Weeks</h1>
+                <h1 class="text-white text-xl leading-8 need-another-margin mt-4">We have assisted more than
+                    Thousands of our Global Clientele in the Last
+                    Few Years itself in
+                    successfully launching their Apps. We have an Impeccable Track Record of Launching Mature,
+                    Market-Tested and Fully-Functional Apps for many years now! We understand the Dynamics and the
+                    Detail of this On-Demand Service Industry like no other. We are Best at what we Do - Quick
+                    Delivery
+                    of Quality Apps!</h1>
+                <h1 class="text-white text-xl leading-8 mt-4">We are here to serve you! Kindly Contact us for any
+                    Queries you may have regarding V3Cube' KINGX
+                    2022. It could be anything from the Procedure of App's Launch and Setup, Marketing, Technologies
+                    Used, Launch Time, After Sales Support, Payment Milestones, Customizations, Warranty, Free
+                    Upgrades
+                    to License Terms.</h1>
+                <div class="mt-12 need-margin md:pl-20">
+                    <a href="#" class="btn-hover md:text-4xl text-xl">Contact Us Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end go live -->
+
+    <!-- start our -->
+    <div class=" md:pt-16 md:pb-10 lg:">
+        <!-- head -->
+        <h1 class="text-center text-4xl text-ajebah-light-blue font-bold">OUR CUSTOMIZED WHITE-LABELED GOJEK CLONE APP
+            INCLUDES</h1>
+        <div class="relative flex flex-col md:flex-row justify-between gap-4 mt-8">
+            <div class="absolute top-14 left-16 -z-10 md:w-11/12  items-center md:h-1 bg-dark"></div>
+            <div class="flex flex-col gap-2 justify-start items-center text-center md:w-36">
+                <h1 class="text-new-gray">Taxi Booking</h1>
+                <div class="bg-new-green w-14 h-14 p-3 rounded-black border-2 text-center rounded-full text-xl">1</div>
+                <div>
+                    <img src="./imgs/gojek-sec-6-1.png" alt="">
+                </div>
+                <h1 class="text-new-gray font-bold">Uber like Taxi, Rental & Car Pool</h1>
+                <h1 class="text-new-gray">Lets user Book Taxi Rides like they do in Uber Taxi App. Also has Pool &
+                    Rental Option.</h1>
+                <h1 class="text-new-gray">Taxi's can also be booked by Users through iOS Apps, Android Apps, Website and
+                    iWatch.</h1>
+            </div>
+            <div class="flex flex-col gap-2 justify-start items-center text-center md:w-36">
+                <h1 class="text-new-gray">Taxi Booking</h1>
+                <div class="bg-new-green w-14 h-14 p-3 rounded-black border-2 text-center rounded-full text-xl">2</div>
+                <div>
+                    <img src="./imgs/gojek-sec-6-2.png" alt="">
+                </div>
+                <h1 class="text-new-gray font-bold">Book Video Call with Doctors, Tutor, Lawyer, etc</h1>
+                <h1 class="text-new-gray">Lets user Book Taxi Rides like they do in Uber Taxi App. Also has Pool &
+                    Rental Option.</h1>
+                <h1 class="text-new-gray">Taxi's can also be booked by Users through iOS Apps, Android Apps, Website and
+                    iWatch.</h1>
+            </div>
+            <div class="flex flex-col gap-2 justify-start items-center text-center md:w-36">
+                <h1 class="text-new-gray">Taxi Booking</h1>
+                <div class="bg-new-green w-14 h-14 p-3 rounded-black border-2 text-center rounded-full text-xl">3</div>
+                <div>
+                    <img src="./imgs/gojek-sec-6-3.png" alt="">
+                </div>
+                <h1 class="text-new-gray font-bold">Get Bids from Carpenter, Plumber, Electrician, etc</h1>
+                <h1 class="text-new-gray">Lets user Book Taxi Rides like they do in Uber Taxi App. Also has Pool &
+                    Rental Option.</h1>
+                <h1 class="text-new-gray">Taxi's can also be booked by Users through iOS Apps, Android Apps, Website and
+                    iWatch.</h1>
+            </div>
+            <div class="flex flex-col gap-2 justify-start items-center text-center md:w-36">
+                <h1 class="text-new-gray">Taxi Booking</h1>
+                <div class="bg-new-green w-14 h-14 p-3 rounded-black border-2 text-center rounded-full text-xl">4</div>
+                <div>
+                    <img src="./imgs/gojek-sec-6-4.png" alt="">
+                </div>
+                <h1 class="text-new-gray font-bold">Book Services like Beautician, Tow Truck, Car Wash, etc</h1>
+                <h1 class="text-new-gray">Lets user Book Taxi Rides like they do in Uber Taxi App. Also has Pool &
+                    Rental Option.</h1>
+                <h1 class="text-new-gray">Taxi's can also be booked by Users through iOS Apps, Android Apps, Website and
+                    iWatch.</h1>
+            </div>
+            <div class="flex flex-col gap-2 justify-start items-center text-center md:w-36">
+                <h1 class="text-new-gray">Taxi Booking</h1>
+                <div class="bg-new-green w-14 h-14 p-3 rounded-black border-2 text-center rounded-full text-xl">5</div>
+                <div>
+                    <img src="./imgs/gojek-sec-6-5.png" alt="">
+                </div>
+                <h1 class="text-new-gray font-bold">Deliver Anything, Anywhere - X to Y</h1>
+                <h1 class="text-new-gray">Lets user Book Taxi Rides like they do in Uber Taxi App. Also has Pool &
+                    Rental Option.</h1>
+                <h1 class="text-new-gray">Taxi's can also be booked by Users through iOS Apps, Android Apps, Website and
+                    iWatch.</h1>
+            </div>
+            <div class="flex flex-col gap-2 justify-start items-center text-center md:w-36">
+                <h1 class="text-new-gray">Taxi Booking</h1>
+                <div class="bg-new-green w-14 h-14 p-3 rounded-black border-2 text-center rounded-full text-xl">6</div>
+                <div>
+                    <img src="./imgs/gojek-sec-6-6.png" alt="">
+                </div>
+                <h1 class="text-new-gray font-bold">Food, Grocery, Pharmacy Delivery, etc
+                </h1>
+                <h1 class="text-new-gray">Lets user Book Taxi Rides like they do in Uber Taxi App. Also has Pool &
+                    Rental Option.</h1>
+                <h1 class="text-new-gray">Taxi's can also be booked by Users through iOS Apps, Android Apps, Website and
+                    iWatch.</h1>
+            </div>
+            <div class="flex flex-col gap-2 justify-start items-center text-center md:w-36">
+                <h1 class="text-new-gray">Taxi Booking</h1>
+                <div class="bg-new-green w-14 h-14 p-3 rounded-black border-2 text-center rounded-full text-xl">7</div>
+                <div>
+                    <img src="./imgs/gojek-sec-6-7.png" alt="">
+                </div>
+                <h1 class="text-new-gray font-bold">Hire Personal Shopper or get Errand Jobs done
+                </h1>
+                <h1 class="text-new-gray">Lets user Book Taxi Rides like they do in Uber Taxi App. Also has Pool &
+                    Rental Option.</h1>
+                <h1 class="text-new-gray">Taxi's can also be booked by Users through iOS Apps, Android Apps, Website and
+                    iWatch.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- end our -->
+
+    <!-- start hear -->
+    <div class="container py-8">
+        <!-- head -->
+        <div>
+            <h1 class="md:text-4xl text-3xl text-ajebah-light-blue font-bold leading-10">HEAR OUT FOR YOURSELF HOW OUR
+                CLIENTS ARE
+                EXTREMELY SATISFIED WITH OUR SHEER PROFESSIONALISM AND QUICK
+                DELIVERY OF FULLY- <br> FUNCTIONAL MARKET-TESTED APPS!</h1>
+        </div>
+        <div class="flex flex-col md:flex-row mt-4">
+            <div class="md:w-1/2">
+                <img src="./imgs/gojek-sec-7-1.png" alt="">
+            </div>
+            <div class="md:w-1/2">
+                <h1 class="leading-8 text-opacity-black">Actions speak louder than words! Why don’t you browse through
+                    our 100+ Video Testimonials of our Global Clientele to see for yourself that we strive for
+                    Perfection and that we take immense pride in Delivering Mature, Market-Tested and Fully-Functional
+                    Apps in record 7 days!
+                </h1>
+                <h1 class="mt-4 leading-8 text-opacity-black">We are grateful to each of them for showering us with
+                    their Love and Soulful Compliments! V3Cube delivers what it promises and that too without violating
+                    the Deadline! They’ll be seen speaking highly of our Technical Project Managers for their Remarkable
+                    Work-Ethic and Competent Professionalism!</h1>
+                <h1 class="mt-4 leading-8 text-opacity-black">Did you know that most of them have already started their
+                    Second or Third Projects with us!! We are indebted to our Clients for believing in us and giving us
+                    an opportunity to serve them!
+                </h1>
+                <div class="mt-8">
+                    <a href="#" class=" py-1 px-2 btn-primary">OUR HEALTHY CLIENTS!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end hear -->
+
+    <!-- start ajebah -->
+    <div class="bg-white">
+        <div class="container ">
+            <div class="flex flex-col  md:flex-row">
+                <div class="flex flex-col py-10 gap-5 md:w-1/2 md:mr-3">
+                    <h1 class="text-4xl text-ajebah-light-blue font-bold leading-9">
+                        AJEBAH’S ANGOLAN PARTNERS HAVE WON THE 1ST PRIZE
+                    </h1>
+                    <h1 class="font-xl font-bold">IN DIGITAL STARTUP COMPETITION</h1>
+                    <h1 class="text-opacity-black leading-9">The South-African Nation of Angola is where we found our
+                        client a while back. These
+                        self-motivated and hard-working Angolan Entrepreneurs were ideating and trying to finalise
+                        what service to offer and build their business on.</h1>
+                    <h1 class="text-opacity-black leading-9">
+                        This is where V3Cube makes a classic entrance and woo them with their Apps to the extent that
+                        they are swept off of their feet. They bought a fully-functional and market-tested app from us
+                        and started running their business in their hometown in Angola. They allowed their App Users to
+                        pay in their official currency Kwanza and browse content in Portuguese. Their App became a
+                        household name in a matter of weeks’ time and they were doing well from the App Launch date
+                        itself. This is when they participated in their country’s biggest start-up competition and they
+                        undisputedly won the first prize.
+                    </h1>
+                    <h1 class="text-opacity-black leading-9">
+                        We had rebranded our base app with their company’s name and logo and even changed their entire
+                        app’s colour theme to match with the colour of the company’s logo. We are so proud of our
+                        Angolan Clients for their success and achievements and feel grateful that we could be a part of
+                        it. This again is a living proof that we are the industry stalwarts and are the pioneers of
+                        futuristic clone app development business.
+                    </h1>
+                    <a href="#" class="btn-primary px-2 py-1 w-fit">VIEW HUNDREDS OF MORE CLIENT REVIEWS</a>
+                </div>
+                <div class="flex justify-between md:w-1/2">
+                    <div class="flex img-start items-end">
+                        <img src="./imgs/12-sec-2.png" alt="">
+                    </div>
+                    <div class="flex img-start items-start">
+                        <img src="./imgs/12-sec-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end ajebah -->
+
+    <!-- start our -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <div>
+                <h1 class='head-light-blue'>OUR GOJEK CLONE SCRIPT PACKAGE</h1>
+                <h1 class=" mt-4 text-opacity-black">When most people think about an app, they'd just notice a single
+                    working string of codes. But, for a fully functional business solution, there's more to it than
+                    meets the eye. An app such as the Gojek Clone app is a complex network of multiple apps and websites
+                    meant to facilitate the seamless flow of business. Below is the list of Mobile Apps, Web Panels and
+                    Kiosk Apps that gets Delivered to you when you purchase a white label KingX 2022 Apps from us.
+                </h1>
+            </div>
+            <!-- flex -->
+            <div class="flex md:flex-row flex-col justify-between gap-9 mt-8">
+                <div class="bg-white py-4 rounded-xl shadow-md flex flex-col gap-3 md:w-1/5 px-2">
+                    <div class="flex justify-center">
+                        <img class="" src="./imgs/gojek-sec-8-1.png" alt="">
+                    </div>
+                    <h1 class="text-center">User Apps</h1>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iOS
+                        App for User</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Android App for User</span>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Web
+                        Panel for User</span>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iOS
+                        Kiosk App for Taxi Booking</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Android App for User</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iWatch App for Taxi
+                        Booking</span>
+                </div>
+                <div class="bg-white py-4 rounded-xl shadow-md flex flex-col gap-3 md:w-1/5 px-2">
+                    <div class="flex justify-center">
+                        <img class="" src="./imgs/gojek-sec-8-2.png" alt="">
+                    </div>
+                    <h1 class="text-center">User Apps</h1>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iOS
+                        App for User</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Android App for User</span>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Web
+                        Panel for User</span>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iOS
+                        Kiosk App for Taxi Booking</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Android App for User</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iWatch App for Taxi
+                        Booking</span>
+                </div>
+                <div class="bg-white py-4 rounded-xl shadow-md flex flex-col gap-3 md:w-1/5 px-2">
+                    <div class="flex justify-center">
+                        <img class="" src="./imgs/gojek-sec-8-3.png" alt="">
+                    </div>
+                    <h1 class="text-center">User Apps</h1>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iOS
+                        App for User</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Android App for User</span>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Web
+                        Panel for User</span>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iOS
+                        Kiosk App for Taxi Booking</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Android App for User</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iWatch App for Taxi
+                        Booking</span>
+                </div>
+                <div class="bg-white py-4 rounded-xl shadow-md flex flex-col gap-3 md:w-1/5 px-2">
+                    <div class="flex justify-center">
+                        <img class="" src="./imgs/gojek-sec-8-4.png" alt="">
+                    </div>
+                    <h1 class="text-center">User Apps</h1>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iOS
+                        App for User</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Android App for User</span>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Web
+                        Panel for User</span>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iOS
+                        Kiosk App for Taxi Booking</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Android App for User</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iWatch App for Taxi
+                        Booking</span>
+                </div>
+                <div class="bg-white py-4 rounded-xl shadow-md flex flex-col gap-3 md:w-1/5 px-2">
+                    <div class="flex justify-center">
+                        <img class="" src="./imgs/gojek-sec-8-5.png" alt="">
+                    </div>
+                    <h1 class="text-center">User Apps</h1>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iOS
+                        App for User</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Android App for User</span>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Web
+                        Panel for User</span>
+                    <span class="text-opacity-black"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iOS
+                        Kiosk App for Taxi Booking</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Android App for User</span>
+                    <span class="text-opacity-black"><i
+                            class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>iWatch App for Taxi
+                        Booking</span>
+                </div>
+            </div>
+            <div class="flex justify-center mt-8">
+                <a href="#" class="btn-primary py-2 px-4">REQUEST A DEMO</a>
+            </div>
+        </div>
+    </div>
+    <!-- end our -->
+
+    <!-- INSIGHTFUL start -->
+    <div class="container py-8">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-3/5">
+                <h1 class="font-bold text-4xl md:mt-0 mt-8 text-ajebah-light-blue">
+                    INSIGHTFUL LIVE GOJEK CLONE DEMO VIDEO
+                </h1>
+                <h1 class="text-opacity-black mt-8 leading-8">Watch the LIVE DEMO Video to get an idea about the Major
+                    Flow and
+                    Features of the KingX 2022 Apps.
+                    Simply watch the Video to understand the working of System in Detail without installing all the Apps
+                    in your Phones. We are sure you will love the Futures displayed in Video. Feel free to contact us to
+                    know more about the Apps.</h1>
+                <div class="mt-8">
+                    <a href="#" class="btn-primary py-1 px-2">REQUEST A DEMO</a>
+                </div>
+            </div>
+            <div class="md:w-8/12 mt-5">
+                <img src="./imgs/gojek-sec-9-1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- INSIGHTFUL end -->
+
+
+    <!-- start new mobile sec -->
+    <div id="midd-part">
+
+        <section class="app-store-screen">
+            <div class="app-store-screen-inner">
+                <div class="heading-area center">
+                    <h2 class="head-light-blue">HOW OUR GOJEK CLONE APP WORKS?</h2>
+                    <p class="text-opacity-black mt-4">The significance of using digital platforms to avail services has
+                        grown predominantly owing to the pandemic. The kind of convenience that the Gojek clone app has
+                        offered to its consumers has made all the difference in the on demand
+                        service business. While enabling app owners to garner more profits, this app has single handedly
+                        ensured that local service providers and businesses too can grow their income by using the
+                        potential of the digital platform.<br>Today,
+                        Gojek clone app has truly become the King of the industry by offering over 82 different kinds of
+                        services within a single mobile application. All the users need to do is download one app and
+                        log in to it once to be able to access
+                        any of the services. From on demand transportation to product purchase and delivery, hiring
+                        service providers, or availing services like car wash, this App Like Gojek has got it all.
+                        <strong class="text-center-1">Dive in deeper for more information!</strong>
+                    </p>
+                </div>
+                <div class="app-screen-flow">
+                    <img class="outer-cover-mobile"
+                        src="https://www.v3cube.com/images/gojek-clone-overview-2022/app-screens/i-phone-xs.png"
+                        alt="iphone app">
+                    <div class="slider slider-nav">
+                        <div><img
+                                src="./imgs/gojek-slider-1.png"
+                                alt="Landing Screen"></div>
+                        <div><img
+                            src="./imgs/gojek-slider-2.png"
+                            alt="Taxi Booking"></div>
+                        <div><img
+                            src="./imgs/gojek-slider-3.png"
+                            alt="Parcel Delivery"></div>
+                        <div><img
+                            src="./imgs/gojek-slider-4.png"
+                            alt="Food Delivery"></div>
+                        <div><img
+                            src="./imgs/gojek-slider-5.png"
+                            alt="Grocery Delivery"></div>
+                        <div><img
+                            src="./imgs/gojek-slider-2.png"
+                            alt="Video Consultation"></div>
+                        <div><img
+                            src="./imgs/gojek-slider-4.png"
+                            alt="Service Bid"></div>
+                        <div><img
+                            src="./imgs/gojek-slider-1.png"
+                            alt="Car Wash"></div>
+
+
+                    </div>
+                    <div class="action">
+                        <a href="#" class="active" data-slide="1" data-name="Landing Screen"><img class="lazyload"
+                            src="./imgs/gojek-mob-1.png"                                   alt="home"></a>
+                        <a href="#" data-slide="2" data-name="Taxi Booking"><img class="lazyload"
+                            src="./imgs/gojek-mob-2.png"    alt="taxi"></a>
+                        <a href="#" data-slide="3" data-name="Parcel Delivery"><img class="lazyload"
+                            src="./imgs/gojek-mob-3.png"                                   alt="delivery"></a>
+                        <a href="#" data-slide="4" data-name="Food Delivery"><img class="lazyload"
+                            src="./imgs/gojek-mob-4.png"                                   alt="food delivery app"></a>
+                        <a href="#" data-slide="5" data-name="Grocery Delivery "><img class="lazyload"
+                            src="./imgs/gojek-mob-5.png"                                   alt="grocery"></a>
+                        <a href="#" data-slide="6" data-name="Video Consultation"><img class="lazyload"
+                            src="./imgs/gojek-mob-6.png"                                   alt="video call"></a>
+                        <a href="#" data-slide="7" data-name="Service Bid"><img class="lazyload"
+                            src="./imgs/gojek-mob-7.png"    alt="services"></a>
+                        <a href="#" data-slide="8" data-name="Car Wash"><img class="lazyload"
+                            src="./imgs/gojek-mob-8.png"                                   alt="car wash services"></a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <!-- end new mobile sec -->
+
+    <!-- start online -->
+    <div class="container py-8">
+        <div class="bg-ajebah-light-blue rounded-lg  ">
+            <div class="flex flex-col text-center md:text-left md:flex-row justify-between">
+                <div class="flex flex-col py-4 md:pl-4">
+                    <h1 class="text-white text-2xl font-bold">Online Video Consultation With Field Specialists</h1>
+                    <h1 class="text-white leading-4 mt-2">Now the App Users can book Instant Video Consultation Sessions
+                        with
+                        Doctors, Personal Academic Tutors, Yoga Instructors, Lawyers and even Psychiatrists <br> with
+                        KINGX
+                        2022.
+                        This Super App is very similar to the Original Indonesian Gojek App but it is Bigger and Better!
+                    </h1>
+                    <div class="mt-8 flex items-center space-x-3  md:px-0 px-4">
+                        <a href="#"
+                            class="md:py-2 md:px-4 bg-white rounded-md text-ajebah-light-blue text-center transition duration-300 hover:text-white hover:bg-ajebah-light-blue hover:shadow">Want
+                            to own such business, Contact Us Now</a>
+                    </div>
+                </div>
+                <div class=" self-end">
+                    <img src="./imgs/gojek-sec-10-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end online -->
+
+    <!-- start why -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <h1 class="head-light-blue">WHY INVEST IN GOJEK CLONE KINGX 2022?</h1>
+            <h1 class="mt-4 text-opacity-black">This Multi Service Apps lets you start making money from the day one you
+                go live. This KingX 2022 App covers all major and latest trending Services that a customer would expect
+                from a commercial Mobile App. This App Covers the Categories on which a Customer happily spends money to
+                get Services that would make his life easier.
+            </h1>
+            <div class="flex flex-col gap-4 py-5">
+                <div class="bg-white rounded-lg shadow-md flex md:flex-row flex-col py-5">
+                    <div class="flex md:justify-start justify-center md:w-48 md:h-20 px-2">
+                        <img class="" src="./imgs/gojek-sec-11-1.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4 md:justify-start justify-center">
+                        <h1 class="font-bold text-2xl text-ajebah-light-blue md:mt-0 mt-4 md:text-left text-center">Most
+                            Trending Services</h1>
+                        <h1 class="text-opacity-black text-xl md:text-left text-center">World’s Most trending Services
+                            are available on App on which an average Customer spends
+                            money without thinking much. Like Hiring a Taxi, Booking Video Appointment with Doctor,
+                            Getting Car Washed, Ordering Food & Grocery, etc. If you have services that are regularly
+                            used by Common Men in day to day life, you make more profits frequently
+                            from each Customer.
+                        </h1>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md flex md:flex-row flex-col py-5">
+                    <div class="flex md:justify-start justify-center md:w-36 md:h-20 px-2">
+                        <img class="" src="./imgs/gojek-sec-11-2.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4 md:justify-start justify-center">
+                        <h1 class="font-bold text-2xl text-ajebah-light-blue md:mt-0 mt-4 md:text-left text-center">More
+                            Spending by Users</h1>
+                        <h1 class="text-opacity-black text-xl md:text-left text-center">82 Plus Services are available
+                            for which your Customers can Pay in simplest way via one of many options which can be Credit
+                            Card, In-App Wallet, Mobile Money and Cash. If a Customer spends easily on your Gojek Clone
+                            App, you make more commissions.
+
+                        </h1>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md flex md:flex-row flex-col py-5">
+                    <div class="flex md:justify-start justify-center md:w-40 md:h-20 px-2">
+                        <img class="" src="./imgs/gojek-sec-11-3.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4 md:justify-start justify-center">
+                        <h1 class="font-bold text-2xl text-ajebah-light-blue md:mt-0 mt-4 md:text-left text-center">Easy
+                            Flow of Money</h1>
+                        <h1 class="text-opacity-black text-xl md:text-left text-center">The money from Customers of the
+                            App goes to App Owner’s Account in simplest way in form of Commission and Subscription Fees.
+                            Stores and Service Providers get their part in the most systematic and smoothest way. Easy
+                            flow of the funds ensures less complexities in running the business.
+
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end why -->
+
+    <!-- start what -->
+    <div class="container py-8">
+        <div class="flex justify-around relative">
+            <div class="-z-10 ">
+                <img class="md:block hidden h-full what-img w-4/12 absolute left-3" src="./imgs/gojek-sec-12-1.png"
+                    alt="">
+            </div>
+            <div class="rounded-xl bg-white shadow-md  what-margin  md:ml-96 p-2 z-10 md:w-3/5">
+                <h1 class="text-4xl font-bold text-ajebah-light-blue md:mt-8">WHAT IS KINGX 2022 APP - <br> DETAILED
+                    OVERVIEW</h1>
+                <h1 class="leading-8 text-opacity-black mt-8 ">We present to you the World's most Perfect App that we
+                    have
+                    named KINGX 2022! It is very similar to the Original Indonesian Gojek App but it is bigger! How?
+                    Because KINGX 2022 is much more Advanced, Better and User Friendly compared to Gojek! We have
+                    successfully coded this Spectacular gojek clone App from scratch over the course of Four Years with
+                    the help of 16 App Developers and 4 Project Managers. They had worked round the clock tirelessly and
+                    had put in their heart, soul and sweat
+                    <br>
+                    into
+                    crafting this Flawless
+                    Masterpiece which is now the World's Biggest App - <span class="font-bold text-dark">KINGX
+                        2022!</span>
+                    Watch the Video to know what is <span class="font-bold text-dark">KINGX 2022!</span>
+                </h1>
+                <div class="my-8 md:text-left text-center">
+                    <a href="#" class="mt-8 btn-primary py-2 px-4">GET IN TOUCH</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end what -->
+
+    <!-- start take -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <h1 class="head-light-blue">TAKE A FREE LIVE DEMO OF THE APP</h1>
+            <h1 class="text-opacity-black mt-4 leading-8">We believe in utter and total transparency for the sake of our
+                clients. We understand that spending anything
+                right at the beginning of a new business proposition can be intimidating. Over the past decade, we have
+                worked with more than thousand of clients from all over the world and understood that it is always
+                better to
+                share exactly what you are going to provide your clients with before they make a payment towards it.
+                This is
+                why, we offer our clients a completely FREE downloadable demo of all our Apps. If you are interested in
+                understanding the Gojek Clone App better, contact us and we’ll arrange a Downloadable Demo of the App
+                from
+                the Google Play Store and the iOS App Store. And then you can test the Apps. You can test the User Apps,
+                Service Provider Apps, Website, Kiosks and the Admin Panel of the App before you spend anything on it.
+                What’s more, unlike any other company in the market, we offer a demo of the on demand multi services app
+                for
+                an unlimited duration, so that you can test the App till you are absolutely satisfied.
+            </h1>
+            <div class="text-center mt-5">
+                <a href="#" class="btn-primary py-1 px-4">REQUEST A DEMO</a>
+            </div>
+        </div>
+    </div>
+    <!-- end take -->
+
+    <!-- start pricing -->
+    <div class="container py-8">
+        <h1 class="head-light-blue">PRICING AND FEATURES</h1>
+        <h1 class="text-opacity-black leading-8 mt-4">The success of the App lies entirely on the quality and multitude
+            of features that are integrated with the
+            app. For details on exactly what you get for the money that you put into the app, take a look at this
+            comprehensive list of every feature right here. Don’t find something that you are looking for? Well, worry
+            not! If there are some features that you’d like to include in the app but don’t see in our list just reach
+            out to us and speak to us about them. And we will get your custom additional requirements analyzed.
+        </h1>
+        <div>
+            <img src="./imgs/gojek-sec-13-1.png" alt="">
+        </div>
+    </div>
+    <!-- end pricing -->
+
+    <!-- start treding -->
+    <div class="bg-gradient-to-r from-from-grad to-to-grad">
+        <div class=" py-8">
+            <h1 class="text-white font-bold text-center text-4xl">TRENDING & MUST TO HAVE FEATURES IN GOJEK CLONE OF
+                2022</h1>
+            <h1 class="text-white mt-4 leading-8 container">The Software industry has defined a list of features that
+                current
+                Users “Want &
+                Demand” in the year 2022. If these Features are not available in your Apps, there is 99% chance that
+                your Apps will fail.
+                We being pioneers in Mobile App Development, welcomed all such recommendations of the Software Industry
+                and Coded these features in our New Apps. These features are “must” in any App and are required by Users
+                for top experience. If you provide such Trending Features, your customers will love your Apps and prefer
+                to use your Gojek Clone App repeatedly. Thus you make high profits from your Loyal Customers.
+            </h1>
+            <div class="flex flex-col md:flex-row flex-wrap justify-center gap-2 mt-4">
+                <div class="box-Home-Page  ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="w-16" src="./imgs/gojek-sec-14-1.png" alt="">
+                        <h1 class="font-bold">Easy Login</h1>
+                        <h1>Login via Face and Thumb Scan</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">There are Hundreds of such Features available in our Apps.
+                                Please check the Demo or ask us for Details.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="w-16" src="./imgs/gojek-sec-14-2.png" alt="">
+                        <h1 class="font-bold">Video Consulting</h1>
+                        <h1>Consult Online with Experts</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">There are Hundreds of such Features available in our Apps.
+                                Please check the Demo or ask us for Details.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="w-16" src="./imgs/gojek-sec-14-3.png" alt="">
+                        <h1 class="font-bold">Mobile Money</h1>
+                        <h1>Pay via Mobile Money Payment along with Card
+                        </h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">There are Hundreds of such Features available in our Apps.
+                                Please check the Demo or ask us for Details.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="w-16" src="./imgs/gojek-sec-14-4.png" alt="">
+                        <h1 class="font-bold">Real Time Bidding</h1>
+                        <h1>Post Tasks and get Bids</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">There are Hundreds of such Features available in our Apps.
+                                Please check the Demo or ask us for Details.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="w-16" src="./imgs/gojek-sec-14-5.png" alt="">
+                        <h1 class="font-bold">Secure Payments</h1>
+                        <h1>All Payment Transactions on
+                            App be 100% Safe
+                        </h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">There are Hundreds of such Features available in our Apps.
+                                Please check the Demo or ask us for Details.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- flex -->
+
+
+            <div class="flex flex-col md:flex-row mt-4 justify-center gap-4 ">
+                <div class="box-Home-Page   ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="w-16" src="./imgs/gojek-sec-14-6.png" alt="">
+                        <h1 class="font-bold">Discuss on Video Calls</h1>
+                        <h1>Video Call Service Providers, give
+                            Instructions or discuss Tasks</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">There are Hundreds of such Features available in our Apps.
+                                Please check the Demo or ask us for Details.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page  ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="w-16" src="./imgs/gojek-sec-14-7.png" alt="">
+                        <h1 class="font-bold">User Friendly Apps</h1>
+                        <h1>Easy to use Apps with Top Design</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">There are Hundreds of such Features available in our Apps.
+                                Please check the Demo or ask us for Details.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="w-16" src="./imgs/gojek-sec-14-4.png" alt="">
+                        <h1 class="font-bold">Real Time Bidding</h1>
+                        <h1>Post Tasks and get Bids</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">There are Hundreds of such Features available in our Apps.
+                                Please check the Demo or ask us for Details.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end treding -->
+
+    <!-- start prelaunch  -->
+    <div class="container py-8">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2">
+                <img src="./imgs/gojek-sec-15-1.png" alt="">
+            </div>
+            <div class="md:ml-4 md:w-1/2 mt-4">
+                <h1 class="text-4xl text-ajebah-light-blue font-bold">PRELAUNCH EVENT OF GOJEK CLONE - TEAM AJEBAH
+                    INVITED TO
+                    <br>
+                    SOUTH ASIA
+                </h1>
+                <h1 class="text-opacity-black leading-8 mt-4 text-xl">Our App Development Work is a grandstand of how
+                    committed we are with regards to satisfying our
+                    clients. We are appraised 4.8 stars with 96% fulfillment for Gojek Clone App Development Services by
+                    1000+ worldwide clients. Having been a part of this industry for over a decade, we have built a
+                    reputation for ourselves for being one of the most reliable app development companies with the most
+                    transparent sale and post sale policies.
+                </h1>
+                <h1 class="text-opacity-black leading-8 mt-4 text-xl">Keeping in line with our vision for all our
+                    clients, our team did a stellar job with a quick
+                    delivery of the on-demand multi-service app like Gojek for our clients in Bangkok. After a quick
+                    meet and discuss opportunity, we delivered a final gojek like app for our clients in 10 days.
+                    Appreciating our efforts and felicitating our fervour, we were invited by our clients for a hugely
+                    successful pre launch celebration.</h1>
+                <h1 class="text-opacity-black leading-8 mt-4 text-xl">We have always focussed on delivering better and
+                    faster solutions to our clients so that they can
+                    make it easier for their customers. Their appreciation and acknowledgement of our efforts hones our
+                    skills even further and fills us with renewed motivation.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- end prelaunch  -->
+
+    <!-- start know -->
+    <div class="container py-8">
+        <!-- head -->
+        <div>
+            <h1 class="head-light-blue">KNOW MORE ABOUT THE GOJEK CLONE KINGX 2022 APP</h1>
+            <h1 class="text-opacity-black text-center mt-4">Have a look at below detail to understand the Apps Flow, Web
+                Features, Working, Pricing, Features, Add-On’s and Customizations, etc related to the KingX 2022 Apps.
+            </h1>
+        </div>
+        <!-- content -->
+        <div class="flex flex-col md:flex-row mt-8">
+            <div class="md:w-1/3 md:mt-0 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">01</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">VIEW GRAPHICAL FLOW</h1>
+                        <h1 class="text-opacity-black">Tired of someone telling how this Uber clone app works? Well, see
+                            for yourself. With
+                            this unique graphical flow of the app, you will have a clear understanding of exactly
+                            how it works page by page.</h1>
+                        <a class="btn-primary py-1 px-4 w-fit" href="#">VIEW APP SCREENS & FLOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 md:mt-0 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">02</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">WEB PANEL VISUALS</h1>
+                        <h1 class="text-opacity-black">What's with the suspense of how the final product will look like?
+                            Don’t worry! We present to you the exact visuals of how the Driver, Rider and Web panel <br>
+                            look
+                            like!</h1>
+                        <div class="flex gap-4">
+                            <a class="btn-primary py-1 px-4" href="#">FRONT VISUALS</a>
+                            <a class="btn-primary py-1 px-4" href="#">ADMIN VISUALS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 md:mt-0 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">03</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">FEATURES</h1>
+                        <h1 class="text-opacity-black">If there was an app with superior and advanced features, it's
+                            ours! We have the most sophisticated Uber clone script in the whole market. You name the
+                            feature, and <br> we've got it!</h1>
+                        <a class="btn-primary py-1 px-4 w-fit" href="#">VIEW ALL FEATURES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-5/12 md:mt-8 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">04</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">VIEW GRAPHICAL FLOW</h1>
+                        <h1 class="text-opacity-black">Tired of someone telling how this Uber clone app works? Well, see
+                            for yourself. With
+                            this unique graphical flow of the app, you will have a clear understanding of exactly
+                            how it works page by page.</h1>
+                        <a class="btn-primary py-1 px-4 w-fit" href="#">VIEW DETAIL</a>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-7/12 md:mt-8 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">05</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">PRICING & PURCHASE OPTIONS</h1>
+                        <h1 class="text-opacity-black">No two business ideas are same. That is why we have customized
+                            our business packages to suit your budgetary needs. Whether you want to start small and pick
+                            up the pace later or you wish to go all-in with your first step, let us know. We assure you
+                            that we will have a particular package to suit your needs.</h1>
+                        <a class="btn-primary py-1 px-4 w-fit" href="#">VIEW DETAIL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end know -->
+
+    <!-- start each -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="head-light-blue">EACH COMPONENT EXPLAINED IN DETAIL</h1>
+            <h1 class="text-opacity-black mt-4 text-center">Check below Video's to understand the major features of the
+                Gojek Clone KingX 22 Apps. The Video in center is summary while each Video on left and right explains
+                high level flow of all major 7 components. The Video's also have Subtitles so you can understand them in
+                easy way.
+            </h1>
+            <!-- content -->
+            <div class="flex flex-col md:flex-row items-center justify-between mt-8">
+                <div class="flex flex-col md:w-1/3 gap-12 md:mt-20">
+                    <div class="flex gap-2">
+                        <img src="./imgs/gojek-sec-16-9.png" alt="">
+                        <h1 class="w-6/12"><span class="text-ajebah-light-blue">Taxi</span> - Uber like Taxi, Rental &
+                            Car Pool</h1>
+                        <img src="./imgs/gojek-sec-16-1.png" alt="">
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./imgs/gojek-sec-16-9.png" alt="">
+                        <h1 class="w-6/12">Online Video Consultation for <span class="text-ajebah-light-blue">10+
+                                Services</span></h1>
+                        <img src="./imgs/gojek-sec-16-2.png" alt="">
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./imgs/gojek-sec-16-9.png" alt="">
+                        <h1 class="w-6/12">Bid for 10+ Services <span class="text-ajebah-light-blue">in Real Time</span>
+                        </h1>
+                        <img src="./imgs/gojek-sec-16-3.png" alt="">
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./imgs/gojek-sec-16-9.png" alt="">
+                        <h1 class="w-6/12"><span class="text-ajebah-light-blue">On-Demand 50+</span> Services</h1>
+                        <img src="./imgs/gojek-sec-16-4.png" alt="">
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <img src="./imgs/gojek-sec-16-10.png" alt="">
+                </div>
+
+                <div class="flex flex-col md:w-1/3 gap-12 md:mt-20 mt-8">
+                    <div class="flex gap-2">
+                        <img src="./imgs/gojek-sec-16-5.png" alt="">
+                        <h1 class="w-6/12">Parcel Delivery - <span class="text-ajebah-light-blue">Deliver Anything,
+                                Anywhere</span></h1>
+                        <img src="./imgs/gojek-sec-16-9.png" alt="">
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./imgs/gojek-sec-16-6.png" alt="">
+                        <h1 class="w-6/12"><span class="text-ajebah-light-blue">Store Deliveries - </span> Food,
+                            Grocery, Pharmacy Delivery, etc</h1>
+                        <img src="./imgs/gojek-sec-16-9.png" alt="">
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./imgs/gojek-sec-16-7.png" alt="">
+                        <h1 class="w-6/12"><span class="text-ajebah-light-blue">Delivery Genie &</span> Runner -
+                            Personal Shopper
+                        </h1>
+                        <img src="./imgs/gojek-sec-16-9.png" alt="">
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./imgs/gojek-sec-16-8.png" alt="">
+                        <h1 class="w-6/12">Covid Related Features as per <span class="text-ajebah-light-blue">
+                                WHO</span></h1>
+                        <img src="./imgs/gojek-sec-16-9.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end each -->
+
+    <!-- start we -->
+    <div class="container py-8">
+        <!-- head -->
+        <h1 class="head-light-blue">WE DELIVER WHAT WE COMMIT</h1>
+        <h1 class="text-opacity-black mt-4">See this video to know about the commitment we hold to what we say. We stand
+            true to what we promise and hold firm belief as well as confidence in our services that makes us unique in
+            comparison to others.
+        </h1>
+        <div class="mt-4">
+            <img src="./imgs/gojek-sec-17-1.png" alt="">
+        </div>
+    </div>
+    <!-- end we -->
+
+    <!-- start a real -->
+    <div class="bg-new-blue">
+        <div class="container py-8">
+            <div>
+                <h1 class="font-bold text-4xl text-center text-white">A REAL COMPANY WITH REAL CLIENTS</h1>
+                <h1 class="text-white text-center mt-4">We Sell Real Products That Makes Real Money For Our Clients.
+                    When we visit our clients, they extend the same courtesy to us.
+                </h1>
+                <div class="mt-4">
+                    <img src="./imgs/taxi-sec-10-1.png" alt="">
+                </div>
+                <div class="flex items-center justify-center mt-4">
+                    <a href="#" class="btn-primary py-1 px-2">View More Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end a real -->
+
+    <!-- start real clients -->
+	<div class="container py-8">
+		<!-- content -->
+		<div class="text-center">
+			<h1 class="text-ajebah-light-blue text-4xl font-bold">TESTIMONIALS FROM CLIENTS ALL OVER THE WORLD</h1>
+			<h1 class="mt-6 text-opacity-black">The best part about working with clients from across the whole world is the ability to communicate with them and to grow your knowledge about market behaviours and trends spanning across geographies. Since we've been in this foray for over 8 years, we are proud to say that we have caught on with the pulse of the market and out our best effort to product flawless and seamless apps. Take a look at what our clients have to say about their experience in working with us, the quality of our apps and, of course the strengths and experience of our team.
+            </h1>
+		</div>
+		<!-- imgs -->
+		<div class="flex flex-col md:flex-row mt-4 gap-4 justify-between">
+			<div class="">
+				<img src="./imgs/19-sec-1.png" alt="">
+			</div>
+			<div class="flex flex-col justify-between  mt-5 md:mt-0">
+				<div class="flex md:flex-row flex-col md:gap-10 gap-5 items-center justify-between">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+				<div class="flex md:flex-row flex-col md:mt-0 mt-5 items-center md:gap-10 gap-5 ">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- end real clients -->
+
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="foot-All">
+                <div class="logo-foot">
+                    <a href="./index.html">
+                        <img src="./imgs/logo.png" alt="" />
+                    </a>
+                </div>
+                <div class="Contact-Us-Foot">
+                    <h4>CONTACT US</h4>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i> 182 Gada Street ,Saudi
+                        Arabia
+                    </p>
+                    <a href="tel:+01154258770">
+                        <p>
+                            <i class="fa-solid fa-phone"></i> Phone: +20 120 009 71 27
+                        </p>
+                    </a>
+                    <a href="mailto:name@email.com">
+                        <p><i class="fa-solid fa-envelope"></i> Email: info@3X1.IO</p>
+                    </a>
+                </div>
+                <div class="About-Foot">
+                    <h4>ABOUT</h4>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Policy</a>
+                    <a href="#">Blogs</a>
+                    <a href="./contact-us.html">Contact Us</a>
+                </div>
+                <div class="Follow-Us-Foot">
+                    <h4>FOLLOW US</h4>
+                    <div class="LOGO-FOOT">
+                        <a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+				<div class="English">
+					<select id="countries"
+                    onchange="location = this.value;"
+						class="bg-white-gray   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value=""></option>
+						<option value="./gojek-arabic.html">العربية</option>
+
+					</select>
+				</div>
+            </div>
+        </div>
+        <div class="khat-foot"></div>
+        <div class="txt-under-foot">
+            <p>copyrights <i class="fa-regular fa-copyright"></i> 2022</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/1.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

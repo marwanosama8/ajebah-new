@@ -1,0 +1,147 @@
+<div>
+
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700,800" rel="stylesheet">
+    <script src="./jquery.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+
+
+    <div id="midd-part">
+
+        <section class="app-store-screen">
+            <div class="app-store-screen-inner">
+                <div class="heading-area center">
+                    <h2 class="head-style">HOW OUR GOJEK CLONE APP WORKS?</h2>
+                    <p>The significance of using digital platforms to avail services has grown predominantly owing to the pandemic. The kind of convenience that the Gojek clone app has offered to its consumers has made all the difference in the on demand
+                        service business. While enabling app owners to garner more profits, this app has single handedly ensured that local service providers and businesses too can grow their income by using the potential of the digital platform.<br>Today,
+                        Gojek clone app has truly become the King of the industry by offering over 82 different kinds of services within a single mobile application. All the users need to do is download one app and log in to it once to be able to access
+                        any of the services. From on demand transportation to product purchase and delivery, hiring service providers, or availing services like car wash, this App Like Gojek has got it all.
+                        <strong class="text-center">Dive in deeper for more information!</strong>
+                    </p>
+                </div>
+                <div class="app-screen-flow">
+                    <img class="outer-cover-mobile" src="https://www.v3cube.com/images/gojek-clone-overview-2022/app-screens/i-phone-xs.png" alt="iphone app">
+                    <div class="slider slider-nav">
+                        <div><img src="https://www.v3cube.com/images/gojek-clone-overview-2022/app-screens/landing-screen.jpg" alt="Landing Screen"></div>
+                        <div><img src="https://www.v3cube.com/images/gojek-clone-overview-2022/app-screens/taxi-rental.jpg" alt="Taxi Booking"></div>
+                        <div><img src="https://www.v3cube.com/images/gojek-clone-overview-2022/app-screens/parcel-deliveries.jpg" alt="Parcel Delivery"></div>
+                        <div><img src="https://www.v3cube.com/images/gojek-clone-overview-2022/app-screens/food-delivery.jpg" alt="Food Delivery"></div>
+                        <div><img src="https://www.v3cube.com/images/gojek-clone-overview-2022/app-screens/grocery-delivery.jpg" alt="Grocery Delivery"></div>
+                        <div><img src="https://www.v3cube.com/images/gojek-clone-overview-2022/app-screens/video-consult.jpg" alt="Video Consultation"></div>
+                        <div><img src="https://www.v3cube.com/images/gojek-clone-overview-2022/app-screens/service-bid.jpg" alt="Service Bid"></div>
+                        <div><img src="https://www.v3cube.com/images/gojek-clone-overview-2022/app-screens/single-service.jpg" alt="Car Wash"></div>
+                        <div><img src="https://www.v3cube.com/images/gojek-clone-overview-2022/app-screens/other-services.jpg" alt="Other Services"></div>
+
+                    </div>
+                    <div class="action">
+                        <a href="#" class="active" data-slide="1" data-name="Landing Screen"><img class="lazyload" data-src="images/gojek-clone-overview-2022/app-screens/icon/landing-screen.png" alt="home"></a>
+                        <a href="#" data-slide="2" data-name="Taxi Booking"><img class="lazyload" data-src="images/gojek-clone-overview-2022/app-screens/icon/taxi.png" alt="taxi"></a>
+                        <a href="#" data-slide="3" data-name="Parcel Delivery"><img class="lazyload" data-src="images/gojek-clone-overview-2022/app-screens/icon/package.png" alt="delivery"></a>
+                        <a href="#" data-slide="4" data-name="Food Delivery"><img class="lazyload" data-src="images/gojek-clone-overview-2022/app-screens/icon/food-delivery.png" alt="food delivery app"></a>
+                        <a href="#" data-slide="5" data-name="Grocery Delivery "><img class="lazyload" data-src="images/gojek-clone-overview-2022/app-screens/icon/grocery.png" alt="grocery"></a>
+                        <a href="#" data-slide="6" data-name="Video Consultation"><img class="lazyload" data-src="images/gojek-clone-overview-2022/app-screens/icon/video-consultation.svg" alt="video call"></a>
+                        <a href="#" data-slide="7" data-name="Service Bid"><img class="lazyload" data-src="images/gojek-clone-overview-2022/app-screens/icon/law.png" alt="services"></a>
+                        <a href="#" data-slide="8" data-name="Car Wash"><img class="lazyload" data-src="images/gojek-clone-overview-2022/app-screens/icon/car-wash.png" alt="car wash services"></a>
+                        <a href="#" data-slide="9" data-name="Other Services"><img class="lazyload" data-src="images/gojek-clone-overview-2022/app-screens/icon/more.png" alt="handy services"></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+
+    <script type="text/javascript" src="./slick.min.js"></script>
+    <script src="./lazyload.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            let lazy = lazyload();
+            $('.scrollTo').click(function() {
+                var getElem = $(this).attr('href');
+                var targetDistance = 30;
+                if ($(getElem).length) {
+                    var getOffset = $(getElem).offset().top;
+                    $('html,body').animate({
+                        scrollTop: getOffset - targetDistance
+                    }, 500);
+                }
+                return false;
+            });
+
+            $('.other-services').slick({
+                //autoplay: true,
+                autoplaySpeed: 5000,
+                dots: false,
+                infinite: false,
+                speed: 1000,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                adaptiveHeight: true,
+                arrows: true,
+                prevArrow: "<img class='a-left control-c prev slick-prev' src='images/gojek-clone-overview-2022/left.png' alt=''>",
+                nextArrow: "<img class='a-right control-c next slick-next' src='images/gojek-clone-overview-2022/right.png' alt=''>",
+                responsive: [{
+                        breakpoint: 1281,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    }, {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+
+        })
+    </script>
+    <script type="text/javascript" src="./1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            $('.slider-nav').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                dots: false,
+                focusOnSelect: true,
+                centerMode: true,
+                arrows: false,
+                centerPadding: '0px',
+            });
+            $('a[data-slide]').click(function(e) {
+                e.preventDefault();
+                var slideno = $(this).data('slide');
+                $('.slider-nav').slick('slickGoTo', slideno - 1);
+                $('a[data-slide]').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            $('.faq-accordian ul li > a').click(function(e) {
+                e.preventDefault();
+                $('.faq-accordian ul li > p').slideUp();
+                if ($(this).next('.faq-accordian ul li > p').is(':visible')) {
+                    $(this).removeClass('active');
+                    $(this).next('.faq-accordian ul li > p').slideUp();
+                } else {
+                    $('.faq-accordian ul li > a').removeClass('active');
+                    $(this).addClass('active');
+                    $('.faq-accordian ul li > a').next('.faq-accordian ul li > p').slideUp();
+                    $(this).next('.faq-accordian ul li > p').slideToggle();
+                }
+            });
+
+            $('.slick-initialized .slick-slide').click(function(e) {
+                var slidenum = parseInt($(this).attr('data-slick-index')) + 1;
+                $(".app-screen-flow .action a").removeClass('active');
+                $(document).find(".app-screen-flow .action a[data-slide=" + slidenum + "]").addClass('active');
+            })
+
+        });
+    </script>
+</div>

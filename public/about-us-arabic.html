@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajebah - About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/taxi.css">
+</head>
+
+<body class="font-Cairo" dir="rtl">
+
+	<!-- start nav -->
+	<nav class="bg-gray">
+		<div class=" container mx-auto px-4">
+			<div class="flex justify-between">
+				<div class="flex space-x-7 ">
+					<div>
+						<!-- Website Logo -->
+						<a href="#" class="flex items-center py-4 px-2">
+							<img src="./imgs/logo.png" alt="Logo" class="h-12 w-auto">
+						</a>
+					</div>
+					<!-- Primary Navbar items -->
+					<div class="hidden md:flex items-center space-x-1">
+						<a href="./index-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">الصفحة الرئيسية</a>
+						<a href="./taxi-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">تطبيق الاجرة</a>
+						<a href="./gojek-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">جوجك كلون</a>
+						<a href="./super-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300 ">تطبيق الخدمات الخارقة</a>
+						<a href="./grap-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">تطبيق الجراب</a>
+						<a href="./delivery-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">تطبيق التوصيلات</a>
+						<a href="./u-for-x-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">يو فور اكس</a>
+						<a href="./our-clients-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">عملائونا</a>
+						<a href="./about-us-arabic.html"
+							class="py-1 px-4 text-ajebah-blue border-b-4 border-ajebah-blue font-semibold">عنا</a>
+					</div>
+				</div>
+				<!-- Secondary Navbar items -->
+				<div class="hidden md:flex items-center ">
+					<a href="" class="py-2 px-2 btn-primary ">استفسر الان</a>
+				</div>
+				<div class="hidden md:flex  md: md:w-auto md:flex-col md:justify-between md:items-center md:ml-4">
+					<div class="pt-3">
+						<a href="./about-us-arabic.html" class="text-ajebah-light-blue pl-1">العربية</a>
+						<a href="./about-us.html" class="pl-1">English</a>
+					</div>
+					<div class="relative mb-4 rounded-2xl w-28 h-4 bg-white">
+						<span class="text-ajebah-blue relative float-right bottom-1">
+							<i style="background-color: blue ;" class="fa-solid fa-circle fa-sm"></i>
+						</span>
+					</div>
+				</div>
+				<!-- Mobile menu button -->
+				<div class="md:hidden flex items-center justify-between">
+					<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+							stroke="currentColor">
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- mobile menu -->
+		<div class="hidden mobile-menu">
+			<ul class="">
+				<li class="active"><a href="./index-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">الصفحة الرئيسية</a></li>
+				<li><a href="./taxi-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">تطبيق الاجرة</a></li>
+				<li><a href="./gojek-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">جوجك كلون</a></li>
+				<li><a href="./super-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">تطبيق الخدمات الخارقة</a></li>
+				<li><a href="./grap-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">تطبيق الجراب</a></li>
+				<li><a href="./delivery-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">تطبيق التوصيلات</a>
+				</li>
+				<li><a href="./u-for-x-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">يو فور اكس</a></li>
+				<li><a href="./our-clients-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">عملائونا</a></li>
+				<li><a href="./about-us-arabic.html"
+						class="block text-sm px-2 py-4 text-ajebah-blue bg-green-500 font-semibold">عنا</a></li>
+			</ul>
+			<div class="text-center pb-5">
+				<a href="" class="py-2 px-2 btn-primary ">استفسر الان</a>
+			</div>
+		</div>
+	</nav>
+	<!-- end nav -->
+
+    <!-- start our clients -->
+    <div class="container mt-8">
+        <div class="flex flex-1 md:flex-row justify-center md:gap-12 gap-2 flex-col">
+            <div class="flex flex-col justify-b gap-5 md:w-6/12 py-4">
+                <h1 class="text-ajebah-light-blue text-2xl text-center md:text-right md:text-4xl font-bold">معلومات عنا</h1>
+                <h1 class="text-dark leading-7 font-bold text-xl">في مسابقة بدء التشغيل الرقمي</h1>
+                <h1 class="text-opacity-black leading-7">Isoiushens هي شركة قابضة تؤسس التجارة الإلكترونية
+                    مشاريع في عدة مجالات من بينها: Janagate ، e-stors ، Consldo ، سوق سياحي
+                    مكاتب ، Seha2all ، سوق لمنتجات التجميل ومستحضرات التجميل ، مكاتب افتراضية لـ Nakty
+                    الجمل والعديد من المشاريع الأخرى. تقديم مستوى عالي من الخدمات المناسبة للأفراد الباحثين
+                    الاسترخاء والراحة وتجارب لا تنسى في
+                    صناعة الضيافة والسياحة.</h1>
+            </div>
+            <div class="md:w-5/12">
+                <img src="./imgs/u-sec-2-1.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <!-- end our clients -->
+
+    <!-- start our objective -->
+    <div class="container py-8">
+        <!-- head -->
+        <div class="head-div">
+            <h1 class="head-light-blue">هدفنا</h1>
+            <h1 class="text-opacity-black text-xl">تقديم مستوى عالي من الخدمات المناسبة للأفراد الباحثين
+                الاسترخاء والراحة ولا تنسى
+                الخبرات في صناعة الضيافة والسياحة. تقديم مستوى عالي من الخدمات المناسبة ل
+                الأفراد الذين يبحثون عن تجارب <br> مريحة ومريحة ولا تنسى في الضيافة والسياحة
+                صناعة.</h1>
+        </div>
+    </div>
+
+    <!-- end our objective -->
+    <div class="bg-white-gray py-8">
+        <!-- start our mission -->
+        <div class="container mt-8">
+            <div class="flex flex-1 md:flex-row-reverse  justify-center md:gap-12 gap-3 flex-col">
+                <div class="flex flex-col justify-b gap-2  md:items-start items-center md:w-6/12 md:py-4">
+                    <h1 class="text-ajebah-light-blue text-2xl text-center md:text-right md:text-4xl font-bold">ملكنا
+                        بعثة</h1>
+                    <h1 class="text-dark leading-7 font-bold">أثناء وباء فيروس كورونا</h1>
+                    <h1 class="text-opacity-black leading-7">نربط الأشخاص بالتجارب الإيجابية التي تمكنهم من ذلك
+                        نرى
+                        العالم يخدم عملائنا بشكل مختلف ، والبحث عن رضاهم الكامل وتقديمه
+                        خدمات سياحية ذات جودة تلتزم بالواقع الاجتماعي والثقافي والبيئي.</h1>
+                </div>
+                <div class="md:w-6/12">
+                    <img src="./imgs/about-sec-1-1.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <!-- end our mission -->
+
+        <!-- start what -->
+        <div class="container mt-12">
+            <div class="flex flex-1 md:flex-row justify-center  md:gap-12 gap-3 flex-col">
+                <div class="flex flex-col justify-b gap-2 md:items-start items-center md:w-6/12 md:py-4">
+                    <h1 class="text-ajebah-light-blue text-2xl text-center md:text-right md:text-4xl font-bold">ما كنا
+                        عرض</h1>
+                    <h1 class="text-dark leading-7 font-bold">أثناء وباء فيروس كورونا</h1>
+                    <h1 class="text-opacity-black leading-7">نربط الأشخاص بالتجارب الإيجابية التي تمكنهم من ذلك
+                        نرى
+                        العالم يخدم عملائنا بشكل مختلف ، والبحث عن رضاهم الكامل وتقديمه
+                        خدمات سياحية ذات جودة تلتزم بالواقع الاجتماعي والثقافي والبيئي.</h1>
+                </div>
+                <div class="md:w-6/12">
+                    <img src="./imgs/about-sec-2-1.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <!-- end what -->
+
+        <!-- start our mission -->
+        <div class="container mt-8">
+            <div class="flex flex-1 md:flex-row-reverse justify-center md:gap-12 gap-3 flex-col">
+                <div class="flex flex-col justify-b gap-2 md:items-start items-center md:w-6/12 md:py-4">
+                    <h1 class="text-ajebah-light-blue text-2xl text-center md:text-right md:text-4xl font-bold">أهدافنا
+                        &
+                        رؤية</h1>
+                    <h1 class="text-dark leading-7 font-bold">أثناء وباء فيروس كورونا</h1>
+                    <h1 class="text-opacity-black leading-7">تقديم مستوى عالي من الخدمات المناسبة ل
+                        فرادى
+                        البحث عن تجارب مريحة ومريحة لا تنسى في صناعة الضيافة والسياحة.</h1>
+                </div>
+                <div class="md:w-6/12">
+                    <img src="./imgs/about-sec-3-1.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end our mission -->
+
+
+    <!-- start honest -->
+    <div class="container py-8">
+        <!-- content -->
+        <!-- head -->
+        <div class="flex flex-col gap-4 items-center">
+            <h1 class="head-light-blue">عجبه صادقة</h1>
+            <h1 class="font-bold">المراجعات والشهادات</h1>
+            <h1 class="text-opacity-black">ألق نظرة عميقة على ما يعتقد عملاؤنا أنه بإمكاناتنا واستمع إليها
+                قصة ارتباط معنا.</h1>
+        </div>
+        <!-- imgs -->
+        <div class="flex flex-col md:flex-row mt-4 gap-4 justify-between">
+			<div class="">
+				<img src="./imgs/19-sec-1.png" alt="">
+			</div>
+			<div class="flex flex-col justify-between  mt-5 md:mt-0">
+				<div class="flex md:flex-row flex-col md:gap-10 gap-5 items-center justify-between">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+				<div class="flex md:flex-row flex-col md:mt-0 mt-5 items-center md:gap-10 gap-5 ">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <!-- end honest -->
+
+	<!-- Start Footer -->
+	<footer class="">
+		<div class="container">
+			<div class="foot-All">
+				<div class="logo-foot">
+					<a href="./index.html">
+						<img src="./imgs/logo.png" alt="" />
+					</a>
+				</div>
+				<div class="Contact-Us-Foot">
+					<h4>اتصل بنا</h4>
+					<p>
+						<i class="fa-solid fa-location-dot"></i> 182 شارع جدة ، السعودية
+						شبه الجزيرة العربية					</p>
+					<a href="tel:+01154258770">
+						<p>
+							<i class="fa-solid fa-phone"></i> Phone: +20 120 009 71 27
+						</p>
+					</a>
+					<a href="mailto:name@email.com">
+						<p><i class="fa-solid fa-envelope"></i>  info@3X1.IO الايميل:</p>
+					</a>
+				</div>
+				<div class="About-Foot">
+					<h4>حول</h4>
+					<a href="#">البنود و الظروف</a>
+					<a href="#">سياسة</a>
+					<a href="#">المدونات</a>
+					<a href="./contact-us.html">اتصل بنا</a>
+				</div>
+				<div class="Follow-Us-Foot">
+					<h4>تابعنا</h4>
+					<div class="LOGO-FOOT">
+						<a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+						<a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+						<a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+					</div>
+				</div>
+				<div class="English">
+					<select id="countries"
+                    onchange="location = this.value;"
+						class="bg-white-gray   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value=""></option>
+						<option value="./about-us.html">English</option>
+
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="khat-foot"></div>
+		<div class="txt-under-foot">
+			<p>حقوق النشر <i class="fa-regular fa-copyright"></i> 2022</p>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

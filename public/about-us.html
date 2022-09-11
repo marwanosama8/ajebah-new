@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajebah - About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/taxi.css">
+</head>
+
+<body class="font-Cairo" >
+
+    <!-- start nav -->
+    <nav class="bg-gray">
+        <div class=" container mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7 ">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <img src="./imgs/logo.png" alt="Logo" class="h-12 w-auto">
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="./index.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Home</a>
+                        <a href="./taxi.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Taxi
+                            Apps</a>
+                        <a href="./gojek.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Gojak
+                            Clone</a>
+                        <a href="./super.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300 ">Super
+                            Services App</a>
+                        <a href="./grap.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Grap
+                            Clone</a>
+                        <a href="./delivery.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Delivery
+                            Apps</a>
+                        <a href="./u-for-x.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">U
+                            For X</a>
+                        <a href="./our-clients.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Our
+                            CLients</a>
+                        <a href="./about-us.html"
+                            class="py-1 px-4 text-ajebah-blue border-b-4 border-ajebah-blue font-semibold">About
+                            Us</a>
+                    </div>
+                </div>
+                <!-- Secondary Navbar items -->
+                <div class="hidden md:flex items-center ">
+                    <a href="" class="py-2 px-2 btn-primary ">Enquire
+                        Now</a>
+                </div>
+                <div class="hidden md:flex  md: md:w-auto md:flex-col md:justify-between md:items-center md:ml-4">
+                    <div class="pt-3">
+                        <a href="./about-us-arabic.html" class=" pr-1">العربية</a>
+                        <a href="./about-us.html" class="text-ajebah-light-blue pl-1">English</a>
+                    </div>
+                    <div class="relative mb-4 rounded-2xl w-28 h-4 bg-white">
+                        <span class="text-ajebah-blue relative float-right bottom-1">
+                            <i style="background-color: blue ;" class="fa-solid fa-circle fa-sm"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center justify-between">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a href="./index.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Home</a></li>
+                <li><a href="./taxi.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Taxi
+                        Apps</a></li>
+                <li><a href="./gojek.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Gojak
+                        Clone</a></li>
+                <li><a href="./super.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Super
+                        Services App</a></li>
+                <li><a href="./grap.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Grap
+                        Clone</a></li>
+                <li><a href="./delivery.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Delivery Apps</a>
+                </li>
+                <li><a href="./u-for-x.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">U For
+                        X</a></li>
+                <li><a href="./our-clients.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Our
+                        Clients</a></li>
+                <li><a href="./about-us.html"
+                        class="block text-sm px-2 py-4 text-ajebah-blue bg-green-500 font-semibold">About
+                        Us</a></li>
+            </ul>
+            <div class="text-center pb-5">
+                <a href="" class="py-2 px-2 btn-primary ">Enquire
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start our clients -->
+    <div class="container mt-8">
+        <div class="flex flex-1 md:flex-row justify-center md:gap-12 gap-2 flex-col">
+            <div class="flex flex-col justify-b gap-5 md:w-6/12 py-4">
+                <h1 class="text-ajebah-light-blue text-2xl text-center md:text-left md:text-4xl font-bold">About Us</h1>
+                <h1 class="text-dark leading-7 font-bold text-xl">IN DIGITAL STARTUP COMPETITION</h1>
+                <h1 class="text-opacity-black leading-7">Isoiushens is a holding company that establishes e-commerce
+                    projects in several fields, among its projects: Janagate, e-stors, Consldo, a market for tourist
+                    offices, Seha2all, a market for beauty and cosmetics products, Nakty virtual offices for
+                    camelsand many other projects. Provide a high standard of services suitable for individuals seeking
+                    relaxing, comfortable and memorable experiences in the
+                    hospitality and tourism industry. </h1>
+            </div>
+            <div class="md:w-5/12">
+                <img src="./imgs/u-sec-2-1.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <!-- end our clients -->
+
+    <!-- start our objective -->
+    <div class="container py-8">
+        <!-- head -->
+        <div class="head-div">
+            <h1 class="head-light-blue">Our Objective</h1>
+            <h1 class="text-opacity-black text-xl">Provide a high standard of services suitable for individuals seeking
+                relaxing, comfortable and memorable
+                experiences in the hospitality and tourism industry. Provide a high standard of services suitable for
+                individuals seeking relaxing, comfortable and memorable <br> experiences in the hospitality and tourism
+                industry. </h1>
+        </div>
+    </div>
+
+    <!-- end our objective -->
+    <div class="bg-white-gray py-8">
+        <!-- start our mission -->
+        <div class="container mt-8">
+            <div class="flex flex-1 md:flex-row-reverse  justify-center md:gap-12 gap-3 flex-col">
+                <div class="flex flex-col justify-b gap-2  md:items-start items-center md:w-6/12 md:py-4">
+                    <h1 class="text-ajebah-light-blue text-2xl text-center md:text-left md:text-4xl font-bold">Our
+                        Mission
+                    </h1>
+                    <h1 class="text-dark leading-7 font-bold">DURING CORONA VIRUS PANDEMIC</h1>
+                    <h1 class="text-opacity-black leading-7">we connect people to positive experiences enabling them to
+                        see
+                        the world differently Serving our customer, searching their entire satisfaction and providing
+                        touristic services of quality, committing to the social, cultural and environmental reality.
+                    </h1>
+                </div>
+                <div class="md:w-6/12">
+                    <img src="./imgs/about-sec-1-1.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <!-- end our mission -->
+
+        <!-- start what -->
+        <div class="container mt-12">
+            <div class="flex flex-1 md:flex-row justify-center  md:gap-12 gap-3 flex-col">
+                <div class="flex flex-col justify-b gap-2 md:items-start items-center md:w-6/12 md:py-4">
+                    <h1 class="text-ajebah-light-blue text-2xl text-center md:text-left md:text-4xl font-bold">What We
+                        Offer
+                    </h1>
+                    <h1 class="text-dark leading-7 font-bold">DURING CORONA VIRUS PANDEMIC</h1>
+                    <h1 class="text-opacity-black leading-7">we connect people to positive experiences enabling them to
+                        see
+                        the world differently Serving our customer, searching their entire satisfaction and providing
+                        touristic services of quality, committing to the social, cultural and environmental reality.
+                    </h1>
+                </div>
+                <div class="md:w-6/12">
+                    <img src="./imgs/about-sec-2-1.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <!-- end what -->
+
+        <!-- start our mission -->
+        <div class="container mt-8">
+            <div class="flex flex-1 md:flex-row-reverse justify-center md:gap-12 gap-3 flex-col">
+                <div class="flex flex-col justify-b gap-2 md:items-start items-center md:w-6/12 md:py-4">
+                    <h1 class="text-ajebah-light-blue text-2xl text-center md:text-left md:text-4xl font-bold">Our Goals
+                        &
+                        Vision</h1>
+                    <h1 class="text-dark leading-7 font-bold">DURING CORONA VIRUS PANDEMIC</h1>
+                    <h1 class="text-opacity-black leading-7">Provide a high standard of services suitable for
+                        individuals
+                        seeking relaxing, comfortable and memorable experiences in the hospitality and tourism industry.
+                    </h1>
+                </div>
+                <div class="md:w-6/12">
+                    <img src="./imgs/about-sec-3-1.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end our mission -->
+
+
+    <!-- start honest -->
+    <div class="container py-8">
+        <!-- content -->
+        <!-- head -->
+        <div class="flex flex-col gap-4 items-center">
+            <h1 class="head-light-blue">Honest Ajebah</h1>
+            <h1 class="font-bold">REVIEWS AND TESTIMONIALS</h1>
+            <h1 class="text-opacity-black">Take a deep look at what our clients believe our potential is and hear their
+                story of association with us.</h1>
+        </div>
+        <!-- imgs -->
+        <div class="flex flex-col md:flex-row mt-4 gap-4 justify-between">
+			<div class="">
+				<img src="./imgs/19-sec-1.png" alt="">
+			</div>
+			<div class="flex flex-col justify-between  mt-5 md:mt-0">
+				<div class="flex md:flex-row flex-col md:gap-10 gap-5 items-center justify-between">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+				<div class="flex md:flex-row flex-col md:mt-0 mt-5 items-center md:gap-10 gap-5 ">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <!-- end honest -->
+
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="foot-All">
+                <div class="logo-foot">
+                    <a href="./index.html">
+                        <img src="./imgs/logo.png" alt="" />
+                    </a>
+                </div>
+                <div class="Contact-Us-Foot">
+                    <h4>CONTACT US</h4>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i> 182 Gada Street ,Saudi
+                        Arabia
+                    </p>
+                    <a href="tel:+01154258770">
+                        <p>
+                            <i class="fa-solid fa-phone"></i> Phone: +20 120 009 71 27
+                        </p>
+                    </a>
+                    <a href="mailto:name@email.com">
+                        <p><i class="fa-solid fa-envelope"></i> Email: info@3X1.IO</p>
+                    </a>
+                </div>
+                <div class="About-Foot">
+                    <h4>ABOUT</h4>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Policy</a>
+                    <a href="#">Blogs</a>
+                    <a href="./contact-us.html">Contact Us</a>
+                </div>
+                <div class="Follow-Us-Foot">
+                    <h4>FOLLOW US</h4>
+                    <div class="LOGO-FOOT">
+                        <a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+				<div class="English">
+					<select id="countries"
+                    onchange="location = this.value;"
+						class="bg-white-gray   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value=""></option>
+						<option value="./about-us-arabic.html">العربية</option>
+
+					</select>
+				</div>
+            </div>
+        </div>
+        <div class="khat-foot"></div>
+        <div class="txt-under-foot">
+            <p>copyrights <i class="fa-regular fa-copyright"></i> 2022</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

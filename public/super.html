@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajebah - Super Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper @8/swiper-bundle.min.css" /> -->
+    <script src="./js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/taxi.css">
+</head>
+
+<body class="font-Cairo">
+    <!-- start nav -->
+    <nav class="bg-gray">
+        <div class=" container mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7 ">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <img src="./imgs/logo.png" alt="Logo" class="h-12 w-auto">
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href=""
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Home</a>
+                        <a href=""
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Taxi
+                            Apps</a>
+                        <a href=""
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Gojak
+                            Clone</a>
+                        <a href="" class="py-1 px-4 text-ajebah-blue border-b-4 border-ajebah-blue font-semibold ">Super
+                            Services App</a>
+                        <a href=""
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Grap
+                            Clone</a>
+                        <a href=""
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Delivery
+                            Apps</a>
+                        <a href=""
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">U
+                            For X</a>
+                        <a href=""
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Our
+                            CLients</a>
+                        <a href=""
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">About
+                            Us</a>
+                    </div>
+                </div>
+                <!-- Secondary Navbar items -->
+                <div class="hidden md:flex items-center ">
+                    <a href=""
+                        class="py-2 px-2 btn-primary ">Enquire
+                        Now</a>
+                </div>
+                <div class="hidden md:flex  md: md:w-auto md:flex-col md:justify-between md:items-center md:ml-4">
+                    <div class="pt-3">
+                        <a href="./super-arabic.html" class=" pr-1">العربية</a>
+                        <a href="./super.html" class="text-ajebah-light-blue pl-1">English</a>
+                    </div>
+                    <div class="relative mb-4 rounded-2xl w-28 h-4 bg-white">
+                        <span class="text-ajebah-blue relative float-right bottom-1">
+                            <i style="background-color: blue ;" class="fa-solid fa-circle fa-sm"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center justify-between">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a href="./index.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Home</a></li>
+                <li><a href="./taxi.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Taxi
+                        Apps</a></li>
+                <li><a href="./gojek.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Gojak
+                        Clone</a></li>
+                <li><a href="./super.html" class="block text-sm px-2 py-4 text-ajebah-blue bg-green-500 font-semibold">Super
+                        Services App</a></li>
+                <li><a href="./grap.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Grap
+                        Clone</a></li>
+                <li><a href="./delivery.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Delivery Apps</a>
+                </li>
+                <li><a href="./u-for-x.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">U For
+                        X</a></li>
+                <li><a href="./our-clients.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Our
+                        Clients</a></li>
+                <li><a href="./about-us.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About
+                        Us</a></li>
+            </ul>
+            <div class="text-center pb-5">
+                <a href=""
+                class="py-2 px-2 btn-primary ">Enquire
+                Now</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start new century -->
+    <div class="container">
+        <div class="flex flex-col-reverse md:flex-row justify-between w-full py-12">
+            <!-- content -->
+            <div class="flex flex-col md:text-left text-center md:w-3/5">
+                <h1 class="font-bold text-ajebah-light-blue text-4xl w-auto md:pr-48 leading-relaxed">ON DEMAND
+                    SERVICE APPS</h1>
+                </h1>
+                <p class="pt-4 text-opacity-black leading-10">Forget single service apps and jump on the bandwagon
+                    of this powerful multi service app that equips you to gain control of over 72 different services
+                    just with a single app! One admin panel to manage and overlook the entire business is a dream
+                    come true! Our app has been crammed with some of the latest features by our dedicated and
+                    experienced developers Like Bidding for the Services, Video Consultation, Covid Safety Features
+                    etc..
+                <p class="pt-4 text-opacity-black leading-10">This market ready solution can be launched with your
+                    logo and brand name in totality in just 5 to 7 business days! Not one, not two but a gamut of
+                    services all collected in a bouquet to help your customers enjoy whatever they want whenever
+                    they want it just with a single download and a single log in! If you have dreamt of ruling a
+                    business in your region, this could be your chance to make it big. Check out everything that
+                    this on demand service app offers right here!</p>
+                <div class="flex  items-center gap-2 text-center">
+                    <a href="#" class="mt-4 btn-primary  px-5 py-2 ">Live Video</a>
+                    <a href="#" class="mt-4 btn-primary text-center px-5 py-2 ">Pricing</a>
+                    <a href="#" class="mt-4 btn-primary  px-5 py-2 ">Buy Now</a>
+                </div>
+            </div>
+            <!-- img -->
+            <div class="pb-8 md:pb-0">
+                <img src="./imgs/super-sec-1-1.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <!-- end new century -->
+
+    <!-- start why skype -->
+    <div class="container mt-8">
+        <div class="flex flex-1 md:flex-row flex-col-reverse">
+            <div class="flex flex-col gap-5 md:w-3/5 py-4">
+                <h1 class="text-opacity-black text-4xl">ONE APP ALL</h1>
+                <h1 class="text-ajebah-light-blue text-2xl text-center md:text-left md:text-4xl font-bold">ON DEMAND
+                    SERVICES
+                </h1>
+                <h1 class="text-opacity-black leading-7">On Demand services has become the need of the hour. With our
+                    service on demand app in the market, you will be able to offer your customers the ability to hire
+                    any kind of service provider like On Demand Doctor, On Demand Beautician, On Demand Electrician, On
+                    Demand Plumber and over 50 such different services from the convenience of their smart phones.</h1>
+                <h1 class="text-opacity-black leading-7">Customers and service providers can enjoy guaranteed
+                    transparency on pricing, timing, and quality of work. The on demand service provider app has been
+                    specifically designed to ensure that your customer just have to log in to it once and forget about
+                    it! Whenever the need arises, they simply need to whip out their smart phones, make a few clicks and
+                    it is done! Their selected service provider will come to the mentioned destination to offer their
+                    services each time!
+
+                </h1>
+                <h1 class="text-opacity-black leading-7 ">Our All in One Service Provider app has been designed after
+                    careful analysis of the market trends to ensure that when you go live with the app, you can start
+                    earning right from the first day! Our process is simple and transparent to promote a healthy and
+                    continued relationship between our clients and us.</h1>
+                <h1 class="text-opacity-black leading-7 ">And if you thought that was all, well, here’s some more! We
+                    offer complete non disclosure with a structured NDA to protect all our client’s identity and
+                    privacy.</h1>
+            </div>
+            <div class="ali">
+                <img src="./imgs/super-sec-2-1.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <!-- end why skype -->
+
+    <!-- start premier -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <div class="text-center">
+                <h1 class="font-bold text-4xl text-ajebah-light-blue">Advanced Free Features Of Our On Demand Services
+                    Apps
+                </h1>
+                <h1 class="font-bold mt-4">THAT OTHERS CHARGE FOR</h1>
+            </div>
+            <!-- cards -->
+            <div class="flex flex-col justify-center items-center ">
+                <!-- first row -->
+                <div class="mt-6 w-auto">
+                    <div
+                        class="flex md:flex-row md:gap-3 gap-4 items-center justify-center md:items-center flex-wrap md:justify-center flex-col">
+                        <div class="flex flex-col justify-start items-center  md:w-[24%] gap-4">
+                            <img src="./imgs/super-sec-3-1.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Licensed Source Code</p>
+                            <p class="text-opacity-black text-center ">You get Licensed Source Code for
+                                Free. So
+                                your team can make the enhancements they want.</p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                            <img src="./imgs/super-sec-3-2.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">1 Year - Free Support</p>
+                            <p class="text-opacity-black text-center ">You are covered under our support of
+                                1
+                                year for any Issues or Bugs.</p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                            <img src="./imgs/super-sec-3-3.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Updates</p>
+                            <p class="text-opacity-black text-center ">Get an upgrade for free in 1st year.
+                                Let
+                                us know when you want it and we'll send updated code to you.
+                            </p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  md:w-[24%] gap-4">
+                            <img src="./imgs/super-sec-3-5.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">NDA & Privacy Policy</p>
+                            <p class="text-opacity-black text-center">We will never claim your Apps to be
+                                our
+                                work in market, nor show case your Apps in our Portfolio either.</p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                            <img src="./imgs/super-sec-3-6.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Language of your choice- FREE</p>
+                            <p class="text-opacity-black text-center">Every region has a specific
+                                requirement.
+                                We will integrate 25 languages options of your choice in the app. What’s more, we do
+                                this
+                                absolutely FREE of cost. All you need to do is inform us of your required language and
+                                we
+                                will take care of it.
+                            </p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                            <img src="./imgs/super-sec-3-7.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Currency of your choice- FREE</p>
+                            <p class="text-opacity-black text-center">We understand that only the USD
+                                setting
+                                in the app might not be enough for you. So, we customize it as per your requirement and
+                                add
+                                25 currencies options of your choice into the Thumbtack clone app. Be it GBP, SAR, EUR,
+                                AUSD, RIYAL or anything else, we will do it at no additional cost.
+                            </p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                            <img src="./imgs/super-sec-3-8.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Localization feature ADD-ON FREE</p>
+                            <p class="text-opacity-black text-center">This tremendously functional add-on
+                                will
+                                permit you to run your business in an assortment of different regions just from your
+                                admin
+                                panel. It enables you to alter, modify and adjust the Service, their rates, surcharges
+                                and
+                                much more based on where the app is used.
+
+
+                            </p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  md:w-[24%] gap-4">
+                            <img src="./imgs/super-sec-3-9.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Website Installation and
+                                launch - FREE</p>
+                            <p class="text-opacity-black text-center">Complete configuration post QA will
+                                be
+                                done by us. We will also assume the responsibility of launching Website, Rider's Web
+                                panel,
+                                Driver's Web Panel, Company Web Panel, Billing Administrator Panel, Manual Dispatcher
+                                Panel
+                                and Administrator Panel on your Hosting Server. All this will be done at no additional
+                                cost.
+                            </p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                            <img src="./imgs/super-sec-3-10.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">iOS App Installation On App Store - Free</p>
+                            <p class="text-opacity-black text-center">After thorough Q and A, we will also
+                                launch the iOS app on the iTunes App store. We provide full support in case of
+                                rejection.
+                                Get more details on our rejection assistance for iOS Apps here.</p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                            <img src="./imgs/super-sec-3-11.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Android App Submission To Google
+                                Play Store - Free</p>
+                            <p class="text-opacity-black text-center">On approval, we will upload, install
+                                and
+                                do a thorough QA of the app. We will then launch the Thumbtack clone app on the Google
+                                Play
+                                store for you as well. In case of rejection our app rejection assistance team will
+                                provide
+                                full support. You can go through our details on rejection assistance for Android Apps.
+                            </p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                            <img src="./imgs/super-sec-3-12.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Manual Booking from Admin
+                                Panel- FREE</p>
+                            <p class="text-opacity-black text-center">This is a very useful feature for
+                                users
+                                without access to smartphones or the internet. They can simply place a call to the admin
+                                and
+                                the Service can be booked manually through here. This feature will help in increasing
+                                users.
+                                This too is an added freebie.
+
+                            </p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                            <img src="./imgs/super-sec-3-13.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Accounts Web panel - FREE</p>
+                            <p class="text-opacity-black text-center">Enjoy the ability to give selected
+                                and
+                                restricted access to Accounts related Pages, Reports and downloadable CSV/Excel Files to
+                                only people concerned with such work without having to expose personal client
+                                information to
+                                anyone. Again, our team gives this as a FREE add on.</p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                            <img src="./imgs/super-sec-3-14.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">App Rejection Support</p>
+                            <p class="text-opacity-black  text-center">We have been working on apps for the
+                                iOS
+                                and Android for a very long time and have a very fruitful experience in the same. This
+                                allows us to ensure that your app gets launched on the App Store without any hassles at
+                                all
+                                due to any technical reason. In case the app is rejected due to any other reason, we
+                                will
+                                stand by you as your ethical guides.</p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                            <img src="./imgs/super-sec-3-15.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Wallet, Credit Card & Cash</p>
+                            <p class="text-opacity-black text-center">We offer you the ability to provide
+                                your
+                                clients with three options of payment. Our advanced Thumbtack clone app comes
+                                pre-integrated
+                                with the Stripe Payment Gateway for debit card and credit card type payments. Apart from
+                                this the user has the option of making a direct cash payment as well as payment through
+                                an
+                                in app wallet.</p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                            <img src="./imgs/super-sec-3-6.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Language of your choice- FREE</p>
+                            <p class="text-opacity-black text-center">Every region has a specific
+                                requirement.
+                                We will integrate 25 languages options of your choice in the app. What’s more, we do
+                                this
+                                absolutely FREE of cost. All you need to do is inform us of your required language and
+                                we
+                                will take care of it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- second row -->
+                <!-- <div class="mt-6 w-auto">
+                    <div
+                        class="flex md:flex-row md:gap-3 gap-4 items-center justify-between md:items-start md:justify-start flex-col">
+                        <div class="flex flex-col justify-start items-center  w-1/3 gap-4">
+                            <img src="./imgs/super-sec-3-5.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">NDA & Privacy Policy</p>
+                            <p class="text-opacity-black text-center w-36 md:w-96">We will never claim your Apps to be
+                                our
+                                work in market, nor show case your Apps in our Portfolio either.</p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 w-1/3">
+                            <img src="./imgs/super-sec-3-6.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Language of your choice- FREE</p>
+                            <p class="text-opacity-black text-center w-36 md:w-96">Every region has a specific
+                                requirement.
+                                We will integrate 25 languages options of your choice in the app. What’s more, we do
+                                this
+                                absolutely FREE of cost. All you need to do is inform us of your required language and
+                                we
+                                will take care of it.
+                            </p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 w-1/3">
+                            <img src="./imgs/super-sec-3-7.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Currency of your choice- FREE</p>
+                            <p class="text-opacity-black text-center w-36 md:w-96">We understand that only the USD
+                                setting
+                                in the app might not be enough for you. So, we customize it as per your requirement and
+                                add
+                                25 currencies options of your choice into the Thumbtack clone app. Be it GBP, SAR, EUR,
+                                AUSD, RIYAL or anything else, we will do it at no additional cost.
+                            </p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 w-1/3">
+                            <img src="./imgs/super-sec-3-8.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Localization feature ADD-ON FREE</p>
+                            <p class="text-opacity-black text-center w-36 md:w-96">This tremendously functional add-on
+                                will
+                                permit you to run your business in an assortment of different regions just from your
+                                admin
+                                panel. It enables you to alter, modify and adjust the Service, their rates, surcharges
+                                and
+                                much more based on where the app is used.
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- third row -->
+                <!-- <div class="mt-6 w-auto">
+                    <div
+                        class="flex md:flex-row md:gap-3 gap-4 items-center justify-between md:items-start md:justify-start flex-col">
+                        <div class="flex flex-col justify-start items-center  w-1/3 gap-4">
+                            <img src="./imgs/super-sec-3-9.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Website Installation and
+                                launch - FREE</p>
+                            <p class="text-opacity-black text-center w-36 md:w-96">Complete configuration post QA will
+                                be
+                                done by us. We will also assume the responsibility of launching Website, Rider's Web
+                                panel,
+                                Driver's Web Panel, Company Web Panel, Billing Administrator Panel, Manual Dispatcher
+                                Panel
+                                and Administrator Panel on your Hosting Server. All this will be done at no additional
+                                cost.
+                            </p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 w-1/3">
+                            <img src="./imgs/super-sec-3-10.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">iOS App Installation On App Store - Free</p>
+                            <p class="text-opacity-black text-center w-36 md:w-96">After thorough Q and A, we will also
+                                launch the iOS app on the iTunes App store. We provide full support in case of
+                                rejection.
+                                Get more details on our rejection assistance for iOS Apps here.</p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 w-1/3">
+                            <img src="./imgs/super-sec-3-11.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Android App Submission To Google
+                                Play Store - Free</p>
+                            <p class="text-opacity-black text-center w-36 md:w-96">On approval, we will upload, install
+                                and
+                                do a thorough QA of the app. We will then launch the Thumbtack clone app on the Google
+                                Play
+                                store for you as well. In case of rejection our app rejection assistance team will
+                                provide
+                                full support. You can go through our details on rejection assistance for Android Apps.
+                            </p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 w-1/3">
+                            <img src="./imgs/super-sec-3-12.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Manual Booking from Admin
+                                Panel- FREE</p>
+                            <p class="text-opacity-black text-center w-36 md:w-96">This is a very useful feature for
+                                users
+                                without access to smartphones or the internet. They can simply place a call to the admin
+                                and
+                                the Service can be booked manually through here. This feature will help in increasing
+                                users.
+                                This too is an added freebie.
+
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- fourth row -->
+                <!-- <div class="mt-6 w-auto">
+                    <div
+                        class="flex md:flex-row md:gap-8 gap-4 items-center justify-between md:items-start md:justify-start flex-col">
+                        <div class="flex flex-col justify-start items-center  gap-4 w-1/3">
+                            <img src="./imgs/super-sec-3-13.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Accounts Web panel - FREE</p>
+                            <p class="text-opacity-black text-center w-36 md:w-96">Enjoy the ability to give selected
+                                and
+                                restricted access to Accounts related Pages, Reports and downloadable CSV/Excel Files to
+                                only people concerned with such work without having to expose personal client
+                                information to
+                                anyone. Again, our team gives this as a FREE add on.</p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 w-1/3">
+                            <img src="./imgs/super-sec-3-14.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">App Rejection Support</p>
+                            <p class="text-opacity-black  text-center w-36 md:w-96">We have been working on apps for the
+                                iOS
+                                and Android for a very long time and have a very fruitful experience in the same. This
+                                allows us to ensure that your app gets launched on the App Store without any hassles at
+                                all
+                                due to any technical reason. In case the app is rejected due to any other reason, we
+                                will
+                                stand by you as your ethical guides.</p>
+                        </div>
+                        <div class="flex flex-col justify-start items-center  gap-4 w-1/3">
+                            <img src="./imgs/super-sec-3-15.png" class="max-w-fit" alt="">
+                            <p class="font-bold text-center">Wallet, Credit Card & Cash</p>
+                            <p class="text-opacity-black text-center w-36 md:w-96">We offer you the ability to provide
+                                your
+                                clients with three options of payment. Our advanced Thumbtack clone app comes
+                                pre-integrated
+                                with the Stripe Payment Gateway for debit card and credit card type payments. Apart from
+                                this the user has the option of making a direct cash payment as well as payment through
+                                an
+                                in app wallet.</p>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+    <!-- end premier -->
+
+    <!-- start new  -->
+    <div class="container py-8">
+
+        <!-- head -->
+        <div>
+            <h1 class="head-light-blue">New & Latest Features</h1>
+            <h1 class="text-center font-bold mt-4">SERVICE PROVIDER ON DEMAND APP</h1>
+        </div>
+
+        <!-- first row -->
+        <div class="flex justify-start md:flex-row flex-col w-full mt-8 md:relative">
+            <div class="md:absolute">
+                <img src="./imgs/super-sec-4-1.png" class="md:w-[328px]" alt="">
+            </div>
+            <div
+                class="bg-white rounded-r-xl md:text-left text-center md:mt-20 md:ml-[327px] shadow-lg md:pr-8 py-8 px-2">
+                <h1 class="text-3xl font-bold text-ajebah-light-blue">
+                    Video Consulting
+                </h1>
+                <h1 class="text-opacity-black md:mt-2">
+                    Book a Video Call with your preferred Doctor, Psychiatrist, Physician, etc and Pay instantly for the
+                    Service.
+
+                </h1>
+            </div>
+        </div>
+        <!-- sec row -->
+        <div class="flex justify-end md:flex-row flex-col-reverse w-full mt-8 md:relative md:mt-32">
+            <div
+                class="bg-white rounded-l-xl md:text-left text-center md:mt-32 md:mr-[204px] shadow-lg md:pl-8 py-8 md:pr-96 ">
+                <h1 class="text-3xl font-bold text-ajebah-light-blue">
+                    Service Bidding
+                </h1>
+                <h1 class="text-opacity-black md:mt-2">
+                    Post the details of your Task /Work and let Handymen of your area Bid for it.
+                    <br>
+                    Hire the best one as per Rates, Review and Budget.
+
+                </h1>
+            </div>
+            <div class="md:absolute">
+                <img src="./imgs/super-sec-4-2.png" class="md:w-[388px]" alt="">
+            </div>
+        </div>
+        <!-- third row -->
+        <div class="flex justify-start md:flex-row flex-col w-full mt-8 md:relative md:mt-32">
+            <div class="md:absolute">
+                <img src="./imgs/super-sec-4-3.png" class="md:w-[370px]" alt="">
+            </div>
+            <div
+                class="bg-white rounded-r-xl md:text-left text-center md:mt-16 md:ml-[345px] shadow-lg md:pr-64 py-8 md:pl-8">
+                <h1 class="text-3xl font-bold text-ajebah-light-blue">
+                    Get Services at Your Place
+                </h1>
+                <h1 class="text-opacity-black md:mt-2">
+                    Book a Service Provider to Serve at your preferred location (Home / Office)
+                </h1>
+            </div>
+        </div>
+        <!-- fourth row -->
+        <div class="flex justify-end md:flex-row flex-col-reverse w-full mt-8 md:relative md:mt-32">
+            <div
+                class="bg-white rounded-l-xl md:text-left text-center md:mt-12 md:mr-[204px] shadow-lg md:pl-8 py-8 md:pr-80 ">
+                <h1 class="text-3xl font-bold text-ajebah-light-blue">
+                    Service Bidding
+                </h1>
+                <h1 class="text-opacity-black md:mt-2">
+                    Post the details of your Task /Work and let Handymen of your area Bid for it.
+                    <br>
+                    Hire the best one as per Rates, Review and Budget.
+
+                </h1>
+            </div>
+            <div class="md:absolute">
+                <img src="./imgs/super-sec-4-4.png" class="md:w-[388px]" alt="">
+            </div>
+        </div>
+        <div class="mt-14 flex justify-center">
+            <a href="#" class="btn-primary px-4 py-2">REQUEST A DEMO</a>
+        </div>
+    </div>
+    <!-- end new  -->
+
+    <!-- start is -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <div class="flex md:flex-row flex-col">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl text-opacity-black">IS THE COVID-19 OUTBREAK BREAKING</h1>
+                    <h1 class="font-bold text-4xl mt-4 text-ajebah-light-blue">YOUR BUSINESS?</h1>
+                    <h1 class="font-bold text-dark mt-4 ">Get Profitable instantly with Service Provider On Demand App
+                    </h1>
+                    <h1 class="text-opacity-black mt-4">If you are one of the many entrepreneurs who have taken the
+                        CoVid-19 Novel Corona Virus Outbreak
+                        Lockdown hit on your business and are looking for a profitable solution, then this is the answer
+                        to all your problems. Get your own on demand service provider app and rise above your
+                        competition. While the outbreak has disturbed global economy, this app could be your chance
+                    </h1>
+                    <h1 class="text-opacity-black mt-4">He thanked the Entire Team of V3Cube for their Sheer
+                        Professionalism and their Exemplary Work Ethic! Then he went on to Compliment us for our
+                        Exceptional Communication Skills! And No, he didn’t Stop with just this Bouquet of Praises! He
+                        was Awestruck with the way we were there for them through the Designing Phase, the Testing Phase
+                        and even the Go-Live Phase of their App! Finally, he expressed his Desire to work with us AGAIN!
+                        We are moved by his Warm-Hearted Tone and Pleasant Remarks! V3Cube send LOVE!
+                    </h1>
+
+                </div>
+                <div class="flex md:w-1/2">
+                    <img src="./imgs/super-sec-5-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end is -->
+
+    <!-- start prelaunch  -->
+    <div class="container py-8">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2">
+                <img class="md:w-[631px] md:ml-10" src="./imgs/gojek-sec-15-1.png" alt="">
+            </div>
+            <div class="md:ml-4 mt-8 md:mt-0 md:w-1/2">
+                <h1 class="text-4xl text-ajebah-light-blue font-bold">AJEBAH’S SERVICE PROVIDERS’ ON DEMAND APP HAS
+                    TAKEN OUR
+                </h1>
+                <h1 class="font-bold mt-4">HAWAIIAN CLIENT’S BREATH AWAY! HE IS DELIGHTED AND JOYFUL!
+                </h1>
+                <h1 class="text-opacity-black leading-8 mt-4 text-xl">Our Hawaiian Client Sends Love and Affection for
+                    Our Service Providers’ On Demand App from the Island of Paradise itself! Look at Him, He is All
+                    Smiles while shooting this Video Testimonial for us! He said it himself that he couldn’t have been
+                    more Thrilled with Our Product. We are so Grateful to his Kind and Soulful Words!
+                </h1>
+                <h1 class="text-opacity-black leading-8 mt-4 text-xl">Keeping in line with our vision for all our
+                    clients, our team did a stellar job with a quick
+                    delivery of the on-demand multi-service app like Gojek for our clients in Bangkok. After a quick
+                    meet and discuss opportunity, we delivered a final gojek like app for our clients in 10 days.
+                    Appreciating our efforts and felicitating our fervour, we were invited by our clients for a hugely
+                    successful pre launch celebration.</h1>
+                <h1 class="text-opacity-black leading-8 mt-4 text-xl">We have always focussed on delivering better and
+                    faster solutions to our clients so that they can
+                    make it easier for their customers. Their appreciation and acknowledgement of our efforts hones our
+                    skills even further and fills us with renewed motivation.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- end prelaunch  -->
+
+    <!-- start commitment -->
+    <div class="bg-white">
+        <div class="container py-8">
+            <h1 class="text-center font-bold text-ajebah-light-blue text-4xl ">Uber For Services App Live Demo Video
+            </h1>
+            <h1 class="font-bold text-center mt-4">SEE YOUR POTENTIAL INVESTMENT WORK IN REAL.
+            </h1>
+            <h1 class="text-center mt-4 text-opacity-black">Play the video and see the detailed interaction of Customer
+                and Service Provider have with each other starting from hiring a Provider till completing the Job and
+                providing reviews to each other.
+
+            </h1>
+            <div class="flex justify-center items-center mt-4">
+                <img class="md:w-2/3" src="./imgs/taxi-sec-8-111.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end commitment -->
+
+    <!-- start explore -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <h1 class="head-light-blue">Explore the Various Aspects Involved</h1>
+            <h1 class="mt-4 font-bold text-center">IN THE SERVICE PROVIDER APP</h1>
+            <div class="flex justify-center gap-5 mt-4">
+                <button id="mobile-btn-1" class="text-xl  button-active">
+                    USER APP
+                </button>
+                <button id="mobile-btn-2" class="text-xl clickble">
+                    SERVICE PROVIDER APP
+                </button>
+            </div>
+        </div>
+        <div class="py-4 flex justify-center " id="mobile-sec">
+            <img id="mobile-sec-1" src="./imgs/super-sec-6-1.png" alt="">
+            <img id="mobile-sec-2" src="./imgs/super-sec-6-1.png" alt="">
+        </div>
+        <div class="py-4 flex justify-center" id="root">
+            <a href="#" class="btn-primary px-2 py-2">View Step by Step Graphical Flow</a>
+        </div>
+
+    </div>
+    <!-- end explore -->
+
+    <!-- start industry -->
+    <div class="container py-8">
+        <!-- head -->
+        <h1 class="head-light-blue">Industry Relevant Features of On-demand Service Apps</h1>
+        <h1 class="font-bold mt-4 text-center">RISING ABOVE THE ORDINARY STUFF AND MAKING YOUR BUSINESS PRACTICAL AND
+            PROFITABLE</h1>
+        <h1 class="text-center text-opacity-black mt-4">An app is as good as the features that it has. This is why; our
+            research team continuously works in harmony with the development team to ensure that you can enjoy the
+            benefits of the most industry relevant advanced features to make your business practical and profitable.
+        </h1>
+        <!-- content -->
+        <div class="flex justify-center gap-16 md:mt-4 mt-8 items-center flex-wrap">
+            <button id="industry-btn-1" class="text-xl  button-active">
+                USER APP
+            </button>
+            <button id="industry-btn-2" class="text-xl clickble">
+                SERVICE PROVIDER APP
+            </button>
+            <button id="industry-btn-3" class="text-xl clickble">
+                WEBSITE
+            </button>
+            <button id="industry-btn-4" class="text-xl clickble">
+                ADMIN PANEL
+            </button>
+        </div>
+        <!-- section -->
+        <div class="" id="industry-section-1">
+            <div class="flex md:flex-row flex-col gap-9 justify-start">
+                <div>
+                    <img src="./imgs/super-sec-7-8.png" alt="">
+                </div>
+                <div
+                    class="flex flex-col md:justify-between justify-center items-center  flex-wrap gap-4 md:mt-16 md:mr-16">
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-1.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl">Social Media Login and Signup</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-2.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Book Services</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-3.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Booking History</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-4.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[241px]">Manual Booking from Company Panel</h1>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col md:justify-start justify-center items-center  flex-wrap gap-4 md:mt-16 md:mr-16">
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-5.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[250px]">Choose nearby Beautician</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-6.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Make Payment using Cash, Card or Wallet
+                        </h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-7.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Manage Profile</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="" id="industry-section-2">
+            <div class="flex md:flex-row flex-col gap-9 justify-start">
+                <div>
+                    <img src="./imgs/super-sec-7-8.png" alt="">
+                </div>
+                <div
+                    class="flex flex-col md:justify-between justify-center items-center  flex-wrap gap-4 md:mt-16 md:mr-16">
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-1.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl">Social Media Login and Signup</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-2.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Book Services</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-3.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Booking History</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-4.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[241px]">Manual Booking from Company Panel</h1>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col md:justify-start justify-center items-center  flex-wrap gap-4 md:mt-16 md:mr-16">
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-5.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[250px]">Choose nearby Beautician</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-6.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Make Payment using Cash, Card or Wallet
+                        </h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-7.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Manage Profile</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="" id="industry-section-3">
+            <div class="flex md:flex-row flex-col gap-9 justify-start">
+                <div>
+                    <img src="./imgs/super-sec-7-8.png" alt="">
+                </div>
+                <div
+                    class="flex flex-col md:justify-between justify-center items-center  flex-wrap gap-4 md:mt-16 md:mr-16">
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-1.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl">Social Media Login and Signup</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-2.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Book Services</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-3.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Booking History</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-4.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[241px]">Manual Booking from Company Panel</h1>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col md:justify-start justify-center items-center  flex-wrap gap-4 md:mt-16 md:mr-16">
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-5.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[250px]">Choose nearby Beautician</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-6.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Make Payment using Cash, Card or Wallet
+                        </h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-7.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Manage Profile</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="" id="industry-section-4">
+            <div class="flex md:flex-row flex-col gap-9 justify-start">
+                <div>
+                    <img src="./imgs/super-sec-7-8.png" alt="">
+                </div>
+                <div
+                    class="flex flex-col md:justify-between justify-center items-center  flex-wrap gap-4 md:mt-16 md:mr-16">
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-1.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl">Social Media Login and Signup</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-2.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Book Services</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-3.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Booking History</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-4.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[241px]">Manual Booking from Company Panel</h1>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col md:justify-start justify-center items-center  flex-wrap gap-4 md:mt-16 md:mr-16">
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-5.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[250px]">Choose nearby Beautician</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-6.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Make Payment using Cash, Card or Wallet
+                        </h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-center md:justify-start">
+                            <img class="" src="./imgs/super-sec-7-7.png" alt="">
+                        </div>
+                        <h1 class="mt-3 text-opacity-black text-xl md:w-[245px]">Manage Profile</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start industry  -->
+
+    <!-- start what -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <div class="flex flex-col-reverse  md:items-start items-center md:flex-row">
+
+                <div class="md:w-3/5">
+                    <h1 class="text-ajebah-light-blue font-bold text-4xl ">What We Offer With Our</h1>
+                    <h1 class="font-bold mt-4">SERVICE PROVIDER ON DEMAND APP</h1>
+                    <h1 class="text-opacity-black leading-7 mt-4">We offer you an all in one Service Provider App that
+                        includes more than 72 Services like Car Wash, Massage, Yoga Trainer, Tow Truck etc. You can Add
+                        /
+                        Modify / Delete these Services from Admin Panel.
+                        The Main Website, Service Provider & Client Web panel's are 100% responsive, which will show up
+                        on
+                        all personal digital assistants such as iPhones, iPads, all types of Smart Phones, tablets and
+                        PC
+                        Browsers.
+                    </h1>
+                    <h1 class="text-opacity-black leading-7 mt-4">The whole package is loaded with the following
+                        incredible
+                        sub systems and apps enabling the site owner to manage the system perfectly.
+                    </h1>
+                    <div class="mt-8 flex flex-col">
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Main
+                            Website</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>User iOS
+                            App</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>User Android
+                            App</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>User Web Panel
+                            to
+                            manage Bookings, Profile, Wallet Money etc</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Service
+                            Provider
+                            iOS App</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Service
+                            Provider
+                            Android App</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Service
+                            Provider
+                            Web Panel to manage Services, Payments, Profile etc.</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Service
+                            Provider
+                            Company Web Panel</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Billing Panel
+                            (Manage Payments and Site Earnings)</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Dispatcher
+                            Panel
+                            (God's View, Manual Service Booking)</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Admin Web Panel
+                            to
+                            manage the overall working of the app i.e. Payments, Commission, Rates, Service Providers,
+                            Users, Reports etc.</span>
+                        <div class="mt-4">
+                            <a href="#" class="btn-primary py-1 px-2">Get A Quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/5">
+                    <img src="./imgs/super-sec-8-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end what -->
+
+    <!-- start on-demand -->
+    <div class="container py-8">
+        <!-- head -->
+        <div class="flex flex-col justify-center items-center gap-4">
+            <h1 class="head-light-blue">On-Demand Services Included</h1>
+            <h1 class="font-bold ">BUT NOT LIMITED TO..</h1>
+            <h1 class="text-opacity-black text-center">Add as many services as you want and cover the whole market to
+                earn commission on every task or job that happens through the service on demand apps or Thumbtack clone
+                app. Add/ Manage your own Categories & Subcategories..
+            </h1>
+        </div>
+        <div class="flex justify-center gap-16 md:mt-4 mt-8 items-center flex-wrap">
+            <button id="demond-btn-1" class="text-xl  button-active">
+                ONLINE VIDEO CONSULTATION
+            </button>
+            <button id="demond-btn-2" class="text-xl clickble">
+                BID FOR SERVICES
+            </button>
+            <button id="demond-btn-3" class="text-xl clickble">
+                ON-DEMAND SERVICES
+            </button>
+        </div>
+
+        <!-- start flex -->
+
+        <div id="demond-section-1">
+            <div class="flex flex-col md:flex-row flex-wrap justify-center gap-2 mt-4 ">
+                <div class="box-Home-Page  ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-1.png" alt="">
+                        <h1 class="text-opacity-black">Consult Doctor on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-2.png" alt="">
+                        <h1 class="text-opacity-black">Consult Nurse on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-3.png" alt="">
+                        <h1 class="text-opacity-black">Hire and Learn from Tutor on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-4.png" alt="">
+                        <h1 class="text-opacity-black">Consult Lawyer on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-5.png" alt="">
+                        <h1 class="text-opacity-black">Consult Astrologer on
+                            Video Call
+                        </h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- flex -->
+
+            <div class="flex flex-col md:flex-row mt-4 justify-center gap-4 ">
+                <div class="box-Home-Page   ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-6.png" alt="">
+                        <h1 class="text-opacity-black">Yoga Training on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page  ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-7.png" alt="">
+                        <h1 class="text-opacity-black">Get Fitness Training on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-2.png" alt="">
+                        <h1 class="text-opacity-black">Post Tasks and get Bids</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="demond-section-2">
+            <div class="flex flex-col md:flex-row justify-between mt-4">
+                <div class="box-Home-Page  ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-1.png" alt="">
+                        <h1 class="text-opacity-black">Consult Doctor on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-2.png" alt="">
+                        <h1 class="text-opacity-black">Consult Nurse on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-3.png" alt="">
+                        <h1 class="text-opacity-black">Hire and Learn from Tutor on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-4.png" alt="">
+                        <h1 class="text-opacity-black">Consult Lawyer on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-5.png" alt="">
+                        <h1 class="text-opacity-black">Consult Astrologer on
+                            Video Call
+                        </h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- flex -->
+
+            <div class="flex flex-col md:flex-row mt-4 justify-center gap-4 ">
+                <div class="box-Home-Page   ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-6.png" alt="">
+                        <h1 class="text-opacity-black">Yoga Training on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page  ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-7.png" alt="">
+                        <h1 class="text-opacity-black">Get Fitness Training on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-2.png" alt="">
+                        <h1 class="text-opacity-black">Post Tasks and get Bids</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="demond-section-3">
+            <div class="flex flex-col md:flex-row justify-between mt-4">
+                <div class="box-Home-Page  ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-1.png" alt="">
+                        <h1 class="text-opacity-black">Consult Doctor on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-2.png" alt="">
+                        <h1 class="text-opacity-black">Consult Nurse on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-3.png" alt="">
+                        <h1 class="text-opacity-black">Hire and Learn from Tutor on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-4.png" alt="">
+                        <h1 class="text-opacity-black">Consult Lawyer on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-5.png" alt="">
+                        <h1 class="text-opacity-black">Consult Astrologer on
+                            Video Call
+                        </h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- flex -->
+
+            <div class="flex flex-col md:flex-row mt-4 justify-center gap-4 ">
+                <div class="box-Home-Page   ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-6.png" alt="">
+                        <h1 class="text-opacity-black">Yoga Training on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page  ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-7.png" alt="">
+                        <h1 class="text-opacity-black">Get Fitness Training on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-2.png" alt="">
+                        <h1 class="text-opacity-black">Post Tasks and get Bids</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end on-demand -->
+
+    <!-- start take -->
+    <div class="bg-new-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="font-bold text-5xl text-center text-white">TAKE A LOOK AT OUR UBER CLONE DEMO</h1>
+            <h1 class="text-white text-xl text-center mt-4">Download Our Free Apps</h1>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 mt-4">
+                <!-- panner 1 -->
+                <div class="flex flex-col gap-4 justify-start items-start">
+                    <h1 class="font-bold text-xl text-white">USER APP: </h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-1.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-2.png" alt="">
+                    </a>
+                </div>
+                <!-- panner 2 -->
+                <div class="flex flex-col gap-4 justify-start items-start">
+                    <h1 class="font-bold text-xl text-white">DRIVER APP: </h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-3.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-4.png" alt="">
+                    </a>
+                </div>
+                <!-- panner 3 -->
+
+                <!-- panner 4 -->
+                <div class="flex flex-col gap-4 justify-start items-start">
+                    <h1 class="font-bold text-xl text-white">WEB PANELS: </h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-8.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-8.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end take -->
+
+    <!-- start flow -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="head-light-blue">Flow of Advance Service Provider On Demand App - SuperX SP 2022</h1>
+            <h1></h1>
+            <!-- content -->
+            <div class="mt-8 flex flex-col">
+                <h1 class="font-bold">Walkthrough the step by step functioning of the Service Provider App to know how
+                    it
+                    works on the app of the user as well as of the Service Provider.</h1>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pt-3"></i>
+                    <span class="">Gone are the days when users would have to download multiple apps for the different
+                        services or deliveries that they would be requiring for themselves. But thanks to the On Demand
+                        Service Provider App, users can book multiple services like Massage, Beautician, Doctor, etc.
+                        for
+                        themselves just with the help of a few taps on their device like their smartphone device
+                        or iPhone device.</span>
+                </div>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pt-7"></i>
+                    <span class="mt-4">The functioning of
+                        the Service Provider App is simple. The user and the service providers need to login or signup
+                        on
+                        the app either through one single tap upon selecting the social media profile of their choice
+                        which
+                        includes Gmail or Facebook or by entering their basic details like name, mobile number, email
+                        address, etc or by Fingerprint or Face ID login.</span>
+                </div>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pt-7"></i>
+                    <span class="mt-4">For the app of the
+                        user as soon as the user completes the login they are shown the application menu which contains
+                        all
+                        the services that are offered to the user on the Service Provider app.</span>
+                </div>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pb-5 pt-7"></i>
+                    <span class="mt-4">Users tap on the
+                        service that they need from the app which includes beauty services, home cleaning, doctor, dog
+                        grooming, etc and upon tapping on the service, they can tap on the subcategories of the
+                        service/services that they require. For example, if the user taps on a beauty service, they are
+                        provided with a list of subcategories (Eg. Haircut, Make up etc)
+                        and the user can thereby select one category or multiple categories that they require from the
+                        beautician
+                        service.</span>
+                </div>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pt-7"></i>
+                    <span class="mt-4">The user now gets
+                        presented with a list of service providers and they can sort their search based on featured,
+                        nearby
+                        or rating and the distance of the service provider.</span>
+                </div>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pt-7"></i>
+                    <span class="mt-4">The user now taps
+                        on the service provider of their choice and gets presented with the services that the service
+                        provider offers thus empowering them to select one service or multiple services that they
+                        require
+                        from the service provider along with their gallery and past reviews.</span>
+                </div>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pt-7"></i>
+                    <span class="mt-4">The user now taps
+                        on the service provider of their choice and gets presented with the services that the service
+                        provider offers thus empowering them to select one service or multiple services that they
+                        require
+                        from the service provider along with their gallery and past reviews.</span>
+                </div>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pt-7"></i>
+                    <span class="mt-4">User selects the
+                        service or services that they require from the service provider and then taps on the checkout
+                        button
+                        which in turn presents them with the booking details containing the details of the
+                        service/services,
+                        the coupon they can apply for a discount, the mode of payment which they can choose, the booking
+                        location and the day when they need the booking, i.e., book now or schedule for later. Users can
+                        choose from the following two options while making payment, Wallet, Cash or Card and can choose
+                        from
+                        two locations, namely, location of user and location of the service provider.</span>
+                </div>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pt-7"></i>
+                    <span class="mt-4">The service
+                        provider receives the request for the service that needs to be provided along with the location
+                        where the user wants service and thereby accept or decline the request.</span>
+                </div>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pt-7"></i>
+                    <span class="mt-4">Upon accepting the
+                        request for the service by the service provider, the user receives a notification on their
+                        device
+                        with ‘Service Provider Accepted Requested’ and can keep track of the service provider and the
+                        both
+                        can remain connected via VOIP based Call Masking or internet calls and the in-app chat
+                        feature.</span>
+                </div>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pt-7"></i>
+                    <span class="mt-4">As soon as service
+                        provider reaches the location of user they tap on ‘Arrived’ in order to enlighten the user about
+                        their arrival which in turn gets notified to the user on their app as ‘Service Provider Arrived’
+                        and
+                        slide on ‘Start’ to start the service and the user gets notified that the services have
+                        started.</span>
+                </div>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pt-7"></i>
+                    <span class="mt-4">In Case of Video
+                        Consultation, Service Provider can Video call User at the Scheduled Time.</span>
+                </div>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pt-7"></i>
+                    <span class="mt-4">In Case of Bidding
+                        the Services, User and Service Provider can bid and make the Counter offer. Once the amount is
+                        finalized, Service provider can reach the Job location and can provide the Service.</span>
+                </div>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pt-7"></i>
+                    <span class="mt-4">As soon as the
+                        service gets completed, the service provider will tap on ‘Completed’ to notify the completion of
+                        the
+                        job which in turn would get sent to the user as ‘Job Completed’.</span>
+                </div>
+                <div class="flex md:flex-row ">
+                    <i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2 pt-7"></i>
+                    <span class="mt-4">Upon the job
+                        completed, the app of the service provider gets an invoice summary auto generated containing the
+                        details of the service/services along with the mode of payment selected by the user which also
+                        gets
+                        shared with the user.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end flow -->
+
+    <!-- start create -->
+    <div class="container py-8">
+        <!-- head -->
+        <div class="flex flex-col gap-4 text-center mb-4">
+            <h1 class="head-light-blue">Create a Profitable Business</h1>
+            <h1 class="font-bold">WITH OUR ON DEMAND SERVICE PROVIDER APP</h1>
+            <h1 class="text-opacity-black">This is your brainchild, so why make it small? Take the plunge into the world
+                of business with our
+                Service Provider App and start making enormous profits right from Day 1!</h1>
+        </div>
+        <!-- content -->
+        <div>
+            <img src="./imgs/super-sec-10-1.png" alt="">
+        </div>
+        <div class="text-center mt-8">
+            <a href="#" class="btn-primary py-1 px-2">CHECK FEATURES AND PRICING</a>
+        </div>
+    </div>
+    <!-- end create -->
+
+    <!-- start web -->
+    <div class="container py-8">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-5/12">
+                <img src="./imgs/super-sec-11-1.png" alt="">
+            </div>
+            <div class="flex flex-col gap-4 md:w-7/12">
+                <h1 class="text-4xl text-ajebah-light-blue font-bold">Web Panel's Included</h1>
+                <h1 class="font-bold leading-8">The Full-Service Package - A User-Friendly Website, A Smart Service
+                    Provider Panel, And The Precise
+                    Client Panel - A Service Package That Will Have Money Pouring Into Your Account br From All
+                    Directions</h1>
+                <h1 class="text-opacity-black leading-8">We have a predesigned these service on demand apps, Thumbtack
+                    Clone. However, if you want to add or
+                    delete any service or even invent a new service, then speak to us and we will make your site just as
+                    you
+                    want it and your app doing exactly what you want it to do for maximum returns.</h1>
+                <h1 class="text-opacity-black leading-8">Lives are incomplete without services. Whether it a restaurant
+                    or a cleaner, we will always have a need
+                    for the service industry. They are interdependent on each other for their normal livelihood so you
+                    can
+                    rest assured that your business will thrive in any part of the world. Be the part of the most
+                    profitable
+                    business by getting all Service Providers of all Categories and Industries at one place, On demand
+                    Service Apps.</h1>
+                <div>
+                    <a href="#" class="btn-primary py-1 px-2">Explore the Flow of the Website and Admin Panel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end web -->
+
+    <!-- start honest -->
+	<div class="container py-8">
+		<!-- content -->
+		<div class="text-center">
+			<h1 class="text-ajebah-light-blue text-4xl font-bold">TESTIMONIALS FROM CLIENTS ALL OVER THE WORLD</h1>
+			<h1 class="mt-6 text-opacity-black">The best part about working with clients from across the whole world is the ability to communicate with them and to grow your knowledge about market behaviours and trends spanning across geographies. Since we've been in this foray for over 8 years, we are proud to say that we have caught on with the pulse of the market and out our best effort to product flawless and seamless apps. Take a look at what our clients have to say about their experience in working with us, the quality of our apps and, of course the strengths and experience of our team.
+            </h1>
+		</div>
+		<!-- imgs -->
+		<div class="flex flex-col md:flex-row mt-4 gap-4 justify-between">
+			<div class="">
+				<img src="./imgs/19-sec-1.png" alt="">
+			</div>
+			<div class="flex flex-col justify-between  mt-5 md:mt-0">
+				<div class="flex md:flex-row flex-col md:gap-10 gap-5 items-center justify-between">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+				<div class="flex md:flex-row flex-col md:mt-0 mt-5 items-center md:gap-10 gap-5 ">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="text-center mt-8">
+            <a href="#" class="btn-primary py-1 px-2">CHECK FEATURES AND PRICING</a>
+        </div>
+	</div>
+    <!-- end honest -->
+
+
+
+    <!-- start on-demand-two -->
+    <div class="container py-8">
+        <!-- head -->
+        <div class="flex flex-col justify-center items-center gap-4">
+            <h1 class="head-light-blue">On-Demand Services Included</h1>
+            <h1 class="font-bold ">BUT NOT LIMITED TO..</h1>
+            <h1 class="text-opacity-black text-center">Add as many services as you want and cover the whole market to
+                earn commission on every task or job that happens through the service on demand apps or Thumbtack clone
+                app. Add/ Manage your own Categories & Subcategories..
+            </h1>
+        </div>
+
+        <!-- start flex -->
+
+        <div id="demond-section-1">
+            <div class="flex flex-col md:flex-row flex-wrap justify-center gap-2 mt-4">
+                <div class="box-Home-Page  ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-1.png" alt="">
+                        <h1 class="text-opacity-black">Consult Doctor on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-2.png" alt="">
+                        <h1 class="text-opacity-black">Consult Nurse on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-3.png" alt="">
+                        <h1 class="text-opacity-black">Hire and Learn from Tutor on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-4.png" alt="">
+                        <h1 class="text-opacity-black">Consult Lawyer on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-5.png" alt="">
+                        <h1 class="text-opacity-black">Consult Astrologer on
+                            Video Call
+                        </h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- flex -->
+
+            <div class="flex flex-col md:flex-row mt-4 justify-center gap-4 ">
+                <div class="box-Home-Page   ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-6.png" alt="">
+                        <h1 class="text-opacity-black">Yoga Training on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page  ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-7.png" alt="">
+                        <h1 class="text-opacity-black">Get Fitness Training on Video Call</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-Home-Page ">
+                    <div class="box-gojek-1 gap-4">
+                        <img class="" src="./imgs/super-sec-9-2.png" alt="">
+                        <h1 class="text-opacity-black">Post Tasks and get Bids</h1>
+                        <div class="div-hover-gojek">
+                            <a class="text-xl " href="#">As App Owner, you can add more Video Consulting Services from
+                                Back End in this section.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end on-demand-two -->
+
+
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="foot-All">
+                <div class="logo-foot">
+                    <a href="./index.html">
+                        <img src="./imgs/logo.png" alt="" />
+                    </a>
+                </div>
+                <div class="Contact-Us-Foot">
+                    <h4>CONTACT US</h4>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i> 182 Gada Street ,Saudi
+                        Arabia
+                    </p>
+                    <a href="tel:+01154258770">
+                        <p>
+                            <i class="fa-solid fa-phone"></i> Phone: +20 120 009 71 27
+                        </p>
+                    </a>
+                    <a href="mailto:name@email.com">
+                        <p><i class="fa-solid fa-envelope"></i> Email: info@3X1.IO</p>
+                    </a>
+                </div>
+                <div class="About-Foot">
+                    <h4>ABOUT</h4>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Policy</a>
+                    <a href="#">Blogs</a>
+                    <a href="./contact-us.html">Contact Us</a>
+                </div>
+                <div class="Follow-Us-Foot">
+                    <h4>FOLLOW US</h4>
+                    <div class="LOGO-FOOT">
+                        <a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+				<div class="English">
+					<select id="countries"
+                    onchange="location = this.value;"
+						class="bg-white-gray   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value=""></option>
+						<option value="./super-arabic.html">العربية</option>
+
+					</select>
+				</div>
+            </div>
+        </div>
+        <div class="khat-foot"></div>
+        <div class="txt-under-foot">
+            <p>copyrights <i class="fa-regular fa-copyright"></i> 2022</p>
+        </div>
+    </footer>
+    <!-- end footer  -->
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/mobile-sec.js"></script>
+</body>
+
+</html>

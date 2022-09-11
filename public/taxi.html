@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajebah - Taxi App</title>
+    <link rel="stylesheet" href="./styles/taxi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="font-Cairo">
+    <!-- start nav -->
+    <nav class="bg-gray">
+        <div class=" container mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7 ">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <img src="./imgs/logo.png" alt="Logo" class="h-12 w-auto">
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="./index.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Home</a>
+                        <a href="./taxi.html"
+                            class="py-1 px-4 text-ajebah-blue border-b-4 border-ajebah-blue font-semibold">Taxi
+                            Apps</a>
+                        <a href="./gojek.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Gojak
+                            Clone</a>
+                        <a href="./super.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300 ">Super
+                            Services App</a>
+                        <a href="./grap.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Grap
+                            Clone</a>
+                        <a href="./delivery.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Delivery
+                            Apps</a>
+                        <a href="./u-for-x.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">U
+                            For X</a>
+                        <a href="./our-clients.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Our
+                            CLients</a>
+                        <a href="./about-us.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">About
+                            Us</a>
+                    </div>
+                </div>
+                <!-- Secondary Navbar items -->
+                <div class="hidden md:flex items-center ">
+                    <a href="" class="py-2 px-2 btn-primary ">Enquire
+                        Now</a>
+                </div>
+                <div class="hidden md:flex  md: md:w-auto md:flex-col md:justify-between md:items-center md:ml-4">
+                    <div class="pt-3">
+                        <a href="./taxi-arabic.html" class=" pr-1">العربية</a>
+                        <a href="./taxi.html" class="text-ajebah-light-blue pl-1">English</a>
+                    </div>
+                    <div class="relative mb-4 rounded-2xl w-28 h-4 bg-white">
+                        <span class="text-ajebah-blue relative float-right bottom-1">
+                            <i style="background-color: blue ;" class="fa-solid fa-circle fa-sm"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center justify-between">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a href="./index.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Home</a></li>
+                <li><a href="./taxi.html"
+                        class="block text-sm px-2 py-4 text-ajebah-blue bg-green-500 font-semibold">Taxi
+                        Apps</a></li>
+                <li><a href="./gojek.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Gojak
+                        Clone</a></li>
+                <li><a href="./super.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Super
+                        Services App</a></li>
+                <li><a href="./grap.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Grap
+                        Clone</a></li>
+                <li><a href="./delivery.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Delivery Apps</a>
+                </li>
+                <li><a href="./u-for-x.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">U For
+                        X</a></li>
+                <li><a href="./our-clients.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Our
+                        Clients</a></li>
+                <li><a href="./about-us.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About
+                        Us</a></li>
+            </ul>
+            <div class="text-center pb-5">
+                <a href="" class="py-2 px-2 btn-primary ">Enquire
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start first panner -->
+    <div class="bg-opacity-black">
+        <h1 class="text-4xl  py-5 text-white text-center">Uber Clone Script - Taxi Booking App Solution</h1>
+    </div>
+    <!-- end first panner -->
+
+    <!-- start new century -->
+    <div class="">
+        <div class="container">
+            <div class="flex flex-col-reverse md:flex-row justify-between w-full py-12">
+                <!-- content -->
+                <div class="flex flex-col md:text-left text-center md:w-3/5">
+                    <h1 class="font-bold text-ajebah-light-blue text-4xl w-auto md:pr-48 leading-relaxed">Become World’s
+                        Quickest Billionaire With
+                        V3Cube’s Uber Clone App - PlusX Taxi App 2022</h1>
+                    </h1>
+                    <p class="pt-4 text-opacity-black leading-10">My Fellow Smart Entrepreneur, Our KINGX 2022 App will
+                        Our Pre-Built, Market-Tested and Fully Functional Uber Clone App has left the world spellbound
+                        with its user-friendly interface and ultra-modern features. We’ll launch your authentic Taxi
+                        Booking App in just under 7 days!
+
+                    <p class="pt-4 text-opacity-black leading-10">V3Cube will customize our base app with your Taxi
+                        brand’s name and logo. We’ll integrate your
+                        preferred Language, Currency and even Payment Gateway for the ease of your customers to use your
+                        app. We’ll even change the color-theme of your app to match with that of the color of your
+                        brand’s logo.</p>
+                    <p class="pt-4 text-opacity-black leading-10">We want to introduce you all to the Most Advanced and
+                        Well-Structured Uber Clone Script 2022!
+                        You Earn Commission on Every Confirmed Ride. What’s New and Unique Here? Drivers are rewarded
+                        for their Excellent Services with Badges and Riders now have the Luxury to Video Call their Cab
+                        Drivers to help them with the Navigation.</p>
+                    <div class="flex md:justify-start justify-center  items-center gap-2 text-center">
+                        <a href="#" class="mt-4 btn-primary  px-5 py-2 ">Live Video</a>
+                        <a href="#" class="mt-4 btn-primary text-center px-5 py-2 md:py-2 ">Pricing</a>
+                        <a href="#" class="mt-4 btn-primary  px-5 py-2 ">Buy Now</a>
+                    </div>
+                </div>
+                <!-- img -->
+                <div class="pb-8 md:pb-0 ">
+                    <img src="./imgs/taxi-1-sec-1.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end new century -->
+
+    <!-- start build -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="font-bold text-4xl text-ajebah-light-blue text-center">BUILD YOUR OWN UBER CLONE APP FOR YOUR
+                TAXI BUSINESS</h1>
+            <div class="flex md:flex-row flex-col justify-around">
+                <div class="md:w-96">
+                    <img src="./imgs/taxi-2-sec-1.png" alt="">
+                </div>
+                <div class="md:w-2/3 flex flex-col justify-start mt-4 md:mt-16">
+                    <h1 class="text-opacity-black leading-8">Ajebah has become one of the industry stalwarts of the
+                        on-demand
+                        Taxi-Booking Business by using its Trump card - Quick Delivery of fully-functional market-tested
+                        apps. V3Cube has a highly-qualified team of App Developers who have crafted innovative and
+                        futuristic features into the On-Demand Taxi Booking Software with successfully launching them in
+                        the countries like Nigeria, Brazil, etc. We take 6-7 days before the App launch that are
+                        exclusively utilized for white-labelling
+                        your Uber Clone App.</h1>
+                    <h1 class="text-opacity-black leading-8">You can call us Cheetahs of the On-demand Uber like Taxi
+                        App Development industry having global
+                        clients from The USA, Mexico, Kenya, and more. We are fast, strong-willed, and charismatic
+                        pioneers just like the fiery Cheetah! This is what makes us stand out and helps us steal the
+                        spotlight every single time, our ability to launch Apps in a record time of 7 days! We are the
+                        Number 1 Sellers of Uber Clone App in the world!</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- new build -->
+
+    <!-- start uber -->
+    <div class="bg-white">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="text-center font-bold text-4xl text-ajebah-light-blue">BUILD YOUR OWN UBER CLONE APP FOR YOUR
+                TAXI BUSINESS</h1>
+            <h1 class="text-opacity-black leading-8 mt-4">We have launched 100+ Uber like Taxi Apps in the past couple
+                of years itself and have dealt with diverse
+                numerous clients by far. We have tested our App on the road for more than a thousand mile to check how
+                strong the core functioning system is, unlike our competitors who may have sit inside their 10 feet by
+                10 feet cubicle to test the App’s potential and capability by having two smartphones in their hands with
+                Riders’ App on one smartphone and Taxi Drivers’ App on the other. Let’s take a real life scenario. The
+                true test of an Uber like Taxi App can be done only on the road via driving. While sitting in your
+                office, how would you know the status of your cab that is undergoing a tunnel that does not have an
+                access to the internet? So unless you test your Uber Clone App in the real world in the practical setup,
+                you won’t be able to know for sure if the app is flawless or not.
+            </h1>
+            <h1 class="text-opacity-black mt-4 leading-8">
+                We have patiently listened to feedback of our successful clients whose Taxi Booking Apps have an average
+                of 10,000 rides a day. And after taking into consideration their practical feedbacks that we made
+                further enhancements to the App. And now it has become our pride! We are selling Fully-Functional Uber
+                Clone Script that are optimized and mature. And it has adapted to the fluid and the uncertain nature of
+                this industry. V3Cube has spearheaded the revolution in the on-demand Taxi Booking industry only because
+                they are a Maestro of developing clone apps and have been doing so for around five years now.
+            </h1>
+        </div>
+    </div>
+    <!-- end uber -->
+
+    <!-- start uber clone -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <!-- content -->
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <div class="md:w-1/3">
+                    <img src="./imgs/taxi-3-sec-1.png" alt="">
+                </div>
+                <div class="flex flex-col gap-4 md:w-2/3">
+                    <h1 class="font-bold text-4xl text-ajebah-light-blue text-center">UBER CLONE SCRIPT PACKAGE</h1>
+                    <h1 class="text-opacity-black ">Approved on Google Play Store and Apple App Store, Our Uber Clone
+                        App Development is 100%
+                        responsive that works flawlessly on all the personal digital assistants like iPhone, iPad,
+                        Android smartphone devices, Android Tablets etc.</h1>
+                    <h1 class="font-bold">The White-Label Uber Clone Script Includes:</h1>
+                    <!-- rows ul -->
+                    <div class="flex md:flex-row flex-col">
+                        <div class="flex flex-col gap-5 md:w-1/2">
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Rider iOS
+                                App</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Rider Web
+                                Panel</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Driver iOS
+                                App</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Driver Web
+                                Panel</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Kiosk iOS App
+                                (Optional)</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Billing
+                                Administrator Panel</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Hotel/Tourist
+                                Office Booking Panel</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Manual Taxi
+                                Dispatcher Panel in Admin Panel
+                            </span>
+                        </div>
+                        <div class="flex md:flex-row flex-col">
+                            <div class="flex flex-col gap-5 ">
+                                <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Rider
+                                    Android App</span>
+                                <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Taxi
+                                    Booking iWatch App (Optional)</span>
+                                <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Driver
+                                    Android App</span>
+                                <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Kiosk
+                                    Android App (Optional)</span>
+                                <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Taxi
+                                    Company Web Panel</span>
+                                <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Dispatcher
+                                    Administrator Panel</span>
+                                <span class=""><i
+                                        class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Organization Web
+                                    Panel (For Corporate Rides)</span>
+                                <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Main
+                                    Website (Marketing Responsive & Booking of Taxi)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Main
+                        Administrator Web Panel to manage all Apps & Web Systems, Payments, Rates, Riders, Drivers,
+                        Reports, Settings, etc
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end uber clone -->
+
+    <!-- start premier -->
+    <!-- end premier -->
+
+    <!-- start taxi -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <div>
+                <!-- head -->
+                <h1 class="font-bold text-4xl text-ajebah-light-blue text-center">TAXI BOOKING APP - NEW FEATURES</h1>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-5 mt-5">
+                <!-- first row -->
+                <div class="flex md:flex-row flex-col gap-4 ">
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-4.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">Login using Fingerprints & Face IDs </h1>
+                        <p class="md:text-left px-1 text-left text-opacity-black leading-8 w-auto">This video from our
+                            Android Users of this Taxi Booking App need their Fingerprints to Login while iPhone Users
+                            are asked for their Face ID’s. Now, Riders No Longer have to remember their Passwords Every
+                            Single Time they want to Book a Cab.</p>
+                    </div>
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-5.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">Facebook Pixel - Analytical Tool</h1>
+                        <p class="md:text-left px-1 text-left text-opacity-black leading-8 w-auto">Facebook Pixel now
+                            starts collecting information as to how many clicks each Facebook Ad has gotten that have
+                            been published on your Android and iOS Apps? And Which Gender Male / Female has shown the
+                            Maximum Interest? Similarly, Which Ad has received the highest attention and From Which
+                            Region. This Third Party Analytical Tool Prepares an Elaborate and Comprehensive Report
+                            based on the Data.
+                        </p>
+                    </div>
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-6.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">Adding multiple Credit Cards</h1>
+                        <p class="md:text-left px-1 text-left text-opacity-black leading-8 w-auto">This Well-Tested Uber
+                            Clone Script has been coded to Enable Real-Time Management of Multiple Credit Cards. This
+                            Feature is not just restricted to Registered Passengers but Cab Drivers too can add more
+                            than one Credit Card to their Service Providers’ Account. They have the liberty to add new
+                            cards or even remove expired ones as per their need and requirement.</p>
+                    </div>
+                </div>
+                <!-- second row -->
+                <div class="flex md:flex-row flex-col gap-4 ">
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-1.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">Login using Fingerprints & Face IDs </h1>
+                        <p class="md:text-left px-1 text-left text-opacity-black leading-8 w-auto">Taxi Drivers can
+                            accept Back-To-Back Rides and don't even have to wait for the Current Trip to End. This
+                            Feature has been designed to enhance the Productivity of the Taxi Drivers. The aim is not to
+                            waste even a single second waiting for ride requests so that more number of trips are
+                            completed in a short span of time.</p>
+                    </div>
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-2.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">Back-to-back Trips</h1>
+                        <p class="md:text-left px-1 text-left text-opacity-black leading-8 w-auto">Admin can Award
+                            Special Badges to those who are Providing High-Grade Services to Passengers and have
+                            successfully completed most number of Rides. The Taxi Drivers get automatically upgraded to
+                            a Higher Level once they have met all the necessary requirements such as having an Average
+                            Rating of 4.8 Stars or above!</p>
+                    </div>
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-3.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">Application Login / Sign-Up</h1>
+                        <p class="md:text-left px-1 text-left text-opacity-black leading-8 w-auto">Both the Riders and
+                            the Taxi Drivers have to register with the Uber App Clone by giving in their Personal Mobile
+                            Numbers. Then, they will receive an OTP on their Smartphones to Successfully Verify their
+                            Identities. Upon Successful Registration, they can now either Send Ride Requests or accept
+                            them. It is a Legit Hassle-Free Login Experience!</p>
+                    </div>
+                </div>
+                <!-- third row -->
+                <div class="flex md:flex-row flex-col gap-4 ">
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-7.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">Login using Fingerprints & Face IDs </h1>
+                        <p class="md:text-left px-1 text-left text-opacity-black leading-8 w-auto">Now your Riders can
+                            Communicate Directly with their Taxi Drivers via Video Calls as Well! Earlier, Riders could
+                            either
+                            Send Texts or Place Internet-based Voice Calls using the In-App Feature. Both the Riders and
+                            the Taxi Drivers have the Authority to use this Feature!</p>
+                    </div>
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-8.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">Facebook Ads integration</h1>
+                        <p class="md:text-left px-1 text-left text-opacity-black leading-8 w-auto">Admin can Award
+                            Special Badges to those who are Providing High-Grade Services to Passengers and have
+                            successfully completed most number of Rides. The Taxi Drivers get automatically upgraded to
+                            a Higher Level once they have met all the necessary requirements such as having an Average
+                            Rating of 4.8 Stars or above!</p>
+                    </div>
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-9.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">Get paid for Google Ads Too </h1>
+                        <p class="md:text-left px-1 text-left text-opacity-black leading-8 w-auto">This Feature allows
+                            you to Post Google Ads on your Apps and Web Panels. In return, you get paid per click.
+                            Earlier, only registered Taxi Drivers were allowed to pay the Admin to promote their
+                            services on the Homepage of Riders’ App.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end taxi -->
+
+    <!-- start your mobile app -->
+    <div class="container">
+        <div class="flex flex-col md:flex-row md:justify-start py-10">
+            <!-- img 1 -->
+            <div class=" hidden md:block w-auto">
+                <img src="./imgs/taxi-6-sec-1.png" alt="" srcset="">
+            </div>
+            <!-- content -->
+            <div class="flex flex-col gap-5 md:min-width text-center md:text-left mx-4">
+                <h1 class="text-ajebah-light-blue text-4xl text-center font-bold">AJEBAH YOUR DEVELOPERS FOR LIFETIME
+                </h1>
+                <h1 class="text-opacity-black leading-10">Our Ajebah family works with the mantra to always make sure to
+                    keep our best foot forward for our clients and also keep perfection as the sole motto behind what we
+                    do.</h1>
+                <h1 class="text-opacity-black leading-10">Take a look at the video to see what clients have to say about
+                    us. Watch the video to get a glimpse into their past experience of working with other companies in
+                    their ten to fifteen year long tenure and how they didn’t manage to deliver the product they
+                    promised and also took away all their money.
+                </h1>
+                <h1 class="text-opacity-black leading-10">Listen to them thereafter go on to share their experience
+                    working with us discussing the timely delivery of the apps as per the promise and ending it
+                    commending the Project Manager for the heartfelt support, awarding us the title “Developers for
+                    Life" and motivating other businesses to work with us.</h1>
+            </div>
+            <!-- img 2 -->
+            <div class="hidden md:block w-auto">
+                <img src="./imgs/taxi-6-sec-2.png" alt="" srcset="">
+
+            </div>
+        </div>
+    </div>
+    <!-- end your mobile app -->
+
+    <!-- start take -->
+    <div class="bg-new-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="font-bold text-4xl text-center text-white">TAKE A LOOK AT OUR UBER CLONE DEMO</h1>
+            <h1 class="text-white text-xl text-center mt-4">Download Our Free Apps</h1>
+            <div
+                class="flex flex-col md:flex-row md:justify-center md:items-center justify-center items-center gap-4 mt-4">
+                <!-- panner 1 -->
+                <div class="flex flex-col gap-4 md:justify-start md:items-start justify-center items-center">
+                    <h1 class="font-bold text-xl text-white">USER APP: </h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-1.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-2.png" alt="">
+                    </a>
+                </div>
+                <!-- panner 2 -->
+                <div class="flex flex-col gap-4 md:justify-start md:items-start justify-center items-center">
+                    <h1 class="font-bold text-xl text-white">DRIVER APP: </h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-3.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-4.png" alt="">
+                    </a>
+                </div>
+                <!-- panner 3 -->
+                <div class="flex flex-col gap-4 md:justify-start md:items-start justify-center items-center">
+                    <h1 class="font-bold text-xl text-white">KIOSK APP: </h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-5.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-6.png" alt="">
+                    </a>
+                </div>
+                <!-- panner 4 -->
+                <div class="flex flex-col gap-4 md:justify-start md:items-start justify-center items-center">
+                    <h1 class="font-bold text-xl text-white">WEB PANELS: </h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-8.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-8.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="mt-4 md:mt-8">
+                <h1 class="font-bold text-xl text-center text-white ">OTHER WEB PANELS:</h1>
+                <div class="flex flex-col md:flex-row md:justify-center md:items-start items-center gap-4 mt-4">
+                    <a href="#"><img src="./imgs/taxi-sec-7-9.png" alt=""></a>
+                    <a href="#"><img src="./imgs/taxi-sec-7-9.png" alt=""></a>
+                    <a href="#"><img src="./imgs/taxi-sec-7-9.png" alt=""></a>
+                    <a href="#"><img src="./imgs/taxi-sec-7-9.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end take -->
+
+    <!-- start commitment -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <h1 class="text-center font-bold text-ajebah-light-blue text-4xl ">COMMITMENT DELIVERED - 100%</h1>
+            <h1 class="text-center mt-4">Take a look at this video to understand the credibility of our company as well
+                as know about how we have
+                won the heart of our amazing clients by standing true to the commitment made by us. Our motto is simple
+                - honesty, transparency and 100% hard+ smart work
+            </h1>
+            <div class="flex justify-center items-center mt-4">
+                <img class="md:w-2/3" src="./imgs/taxi-sec-8-111.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end commitment -->
+
+    <!-- start ajebah -->
+    <div class="bg-white">
+        <div class="container ">
+            <div class="flex flex-col  md:flex-row">
+                <div class="flex flex-col py-10 gap-5 md:w-1/2 md:mr-3">
+                    <h1 class="text-4xl text-ajebah-light-blue font-bold leading-9">
+                        AJEBAH’S ANGOLAN PARTNERS HAVE WON THE 1ST PRIZE
+                    </h1>
+                    <h1 class="font-xl font-bold">IN DIGITAL STARTUP COMPETITION</h1>
+                    <h1 class="text-opacity-black leading-9">The South-African Nation of Angola is where we found our
+                        client a while back. These
+                        self-motivated and hard-working Angolan Entrepreneurs were ideating and trying to finalise
+                        what service to offer and build their business on.</h1>
+                    <h1 class="text-opacity-black leading-9">
+                        This is where V3Cube makes a classic entrance and woo them with their Apps to the extent that
+                        they are swept off of their feet. They bought a fully-functional and market-tested app from us
+                        and started running their business in their hometown in Angola. They allowed their App Users to
+                        pay in their official currency Kwanza and browse content in Portuguese. Their App became a
+                        household name in a matter of weeks’ time and they were doing well from the App Launch date
+                        itself. This is when they participated in their country’s biggest start-up competition and they
+                        undisputedly won the first prize.
+                    </h1>
+                    <h1 class="text-opacity-black leading-9">
+                        We had rebranded our base app with their company’s name and logo and even changed their entire
+                        app’s colour theme to match with the colour of the company’s logo. We are so proud of our
+                        Angolan Clients for their success and achievements and feel grateful that we could be a part of
+                        it. This again is a living proof that we are the industry stalwarts and are the pioneers of
+                        futuristic clone app development business.
+                    </h1>
+                </div>
+                <div class="flex justify-between md:w-1/2">
+                    <div class="flex img-start items-end">
+                        <img src="./imgs/12-sec-2.png" alt="">
+                    </div>
+                    <div class="flex img-start items-start">
+                        <img src="./imgs/12-sec-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end ajebah -->
+
+    <!-- start what -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="font-bold text-4xl text-ajebah-light-blue text-center ">WHAT GIVES US AN EDGE ABOVE THE REST?
+            </h1>
+            <div class="flex md:flex-row flex-col justify-between items-center mt-4">
+                <div class="md:w-2/5">
+                    <img src="./imgs/taxi-sec-8-1.png" alt="">
+                </div>
+                <div class="md:w-3/5 flex mt-4 md:mt-0 flex-col md:gap-8 gap-4 md:pl-9">
+                    <h1 class="text-opacity-black leading-8">
+                        An app is only good if it solves the ultimate purpose of business. The one thing that makes our
+                        app better than the rest is the fact that we constantly endeavor to ensure that each and every
+                        aspect of the app is specifically tailored to ensure that it is moving with the times, giving
+                        your service providers and the customers convenience and a great experience.
+                    </h1>
+                    <h1 class="text-opacity-black leading-8">
+                        Not only is our app easy to use, simple to follow, intuitive, and with a great design, it also
+                        comes with a host of different features that makes booking a ride a breeze. With ride
+                        recommendations, continuous upgradations on demand, and so on and so forth, there is really, no
+                        competition for this one in the market. Priced affordably and crafted by a team of experienced
+                        and trained app developers and designers, this is your keystone to success!
+                    </h1>
+                    <h1 class="text-opacity-black leading-8">
+                        Our app is completely white labeled, which means that when you purchase this app from us, you
+                        get the app with your logo and brand name. As if on cue that your business needs more than just
+                        an app, we also provide you with the source code of the app absolutely free so that you are the
+                        master of your own app in totality.
+                    </h1>
+                    <h1 class="text-opacity-black leading-8">
+                        For more information or any other details you can simply drop us a line and we’ll get back to
+                        you within 48 hours. In the meantime, we welcome you to take a FREE live demo of the app so that
+                        you can see for yourself how the app works.
+                    </h1>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h1 class="text-opacity-black leading-8">We are the company that specializes in developing Uber Clone
+                    Script. We have been in the market for long enough to know what it needs to make an uber app clone
+                    successful. What’s more, we charge you absolutely NOTHING for the source code! Yes! It is FREE We
+                    offer you the entire source code of the Uber Taxi Booking Clone for FREE so that you don’t have to
+                    spend money at all for any kind of changes that you need to make.
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-- end what -->
+
+    <!-- start deal -->
+    <div class="container py-8">
+        <!-- head -->
+        <div class="flex md:flex-row gap-4 flex-col">
+            <div class="md:w-5/12">
+                <img src="./imgs/taxi-sec-9-1.png" alt="">
+            </div>
+            <div class="w-auto">
+                <h1 class=" text-center text-5xl text-ajebah-light-blue font-bold">DEAL WITH OUR TAXI BOOKING APP
+                    <br />
+                    DEMO NOW!
+                </h1>
+                <h1 class="mt-4 text-opacity-black">We let you try our Demo Uber Clone App for free. You can download it
+                    on your smartphone and test it on
+                    a real-time basis. Try it in every possible situation and be impressed by its fluidity.</h1>
+                <div class="mt-4  flex flex-row justify-center items">
+                    <a class="py-1 px-4 btn-primary" href="#">VIEW DEMO</a>
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="flex flex-col md:flex-row mt-8">
+            <div class="md:w-1/3 md:mt-0 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">01</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">VIEW GRAPHICAL FLOW</h1>
+                        <h1 class="text-opacity-black">Tired of someone telling how this Uber clone app works? Well, see
+                            for yourself. With
+                            this unique graphical flow of the app, you will have a clear understanding of exactly
+                            how it works page by page.</h1>
+                        <div>
+                            <a class="btn-primary py-1 px-4" href="#">VIEW APP SCREENS & FLOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 md:mt-0 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">02</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">WEB PANEL VISUALS</h1>
+                        <h1 class="text-opacity-black">What's with the suspense of how the final product will look like?
+                            Don’t worry! We present to you the exact visuals of how the Driver, Rider and Web panel
+                            like!</h1>
+                        <div class="flex gap-4">
+                            <a class="btn-primary py-1 px-4" href="#">FRONT VISUALS</a>
+                            <a class="btn-primary py-1 px-4" href="#">ADMIN VISUALS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 md:mt-0 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">03</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">FEATURES</h1>
+                        <h1 class="text-opacity-black">If there was an app with superior and advanced features, it's
+                            ours! We have the most sophisticated Uber clone script in the whole market. You name the
+                            feature, and we've got it!</h1>
+                        <div>
+                            <a class="btn-primary py-1 px-4" href="#">VIEW ALL FEATURES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-5/12 md:mt-8 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">04</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">VIEW GRAPHICAL FLOW</h1>
+                        <h1 class="text-opacity-black">Tired of someone telling how this Uber clone app works? Well, see
+                            for yourself. With
+                            this unique graphical flow of the app, you will have a clear understanding of exactly
+                            how it works page by page.</h1>
+                        <div>
+                            <a class="btn-primary py-1 px-4" href="#">VIEW DETAIL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-7/12 md:mt-8 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">05</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">PRICING & PURCHASE OPTIONS</h1>
+                        <h1 class="text-opacity-black">No two business ideas are same. That is why we have customized
+                            our business packages to suit your budgetary needs. Whether you want to start small and pick
+                            up the pace later or you wish to go all-in with your first step, let us know. We assure you
+                            that we will have a particular package to suit your needs.</h1>
+                        <div>
+                            <a class="btn-primary py-1 px-4" href="#">VIEW DETAIL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end deal -->
+
+    <!-- start start -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="font-bold text-4xl text-center text-ajebah-light-blue">START YOUR OWN TAXI BUSINESS IN JUST 7
+                STEPS</h1>
+            <div class="flex flex-col gap-5 mt-4 relative">
+                <!-- line -->
+                <div class="w-1 z-0 bg-ajebah-light-blue need-height absolute "></div>
+
+                <!-- numbers -->
+                <div class="flex gap-5 z-10 items-center">
+                    <div class="w-fit">
+                        <div class="w-10 h-10 rounded-full p-1 bg-opacity-black text-white">
+                            <h1 class="text-center text-xl">1</h1>
+                        </div>
+                    </div>
+                    <h1>Reach out to us about your On-Demand Cab Booking App requirement through Email, Chat, or Calls.
+                        We will understand your cab service business requirements, sending you the details of the app
+                        completely. We provide you with the LIVE WORKING DEMO that gives you a better understanding of
+                        the app.</h1>
+                </div>
+                <div class="flex gap-5 z-10 items-center">
+                    <div class="w-fit">
+                        <div class="w-10 h-10 rounded-full p-1 bg-opacity-black text-white">
+                            <h1 class="text-center text-xl">2</h1>
+                        </div>
+                    </div>
+                    <h1>Once you have seen the Demo of the app and are satisfied with it, you can place an order with
+                        us.</h1>
+                </div>
+                <div class="flex gap-5 z-10 items-center">
+                    <div class="w-fit">
+                        <div class="w-10 h-10 rounded-full p-1 bg-opacity-black text-white">
+                            <h1 class="text-center text-xl">3</h1>
+                        </div>
+                    </div>
+                    <h1>We will assign a dedicated project manager to you who takes care of the entire app for you right
+                        from the beginning till the apps are launched.</h1>
+                </div>
+                <div class="flex gap-5 z-10 items-center">
+                    <div class="w-fit">
+                        <div class="w-10 h-10 rounded-full p-1 bg-opacity-black text-white">
+                            <h1 class="text-center text-xl">4</h1>
+                        </div>
+                    </div>
+                    <h1>The team starts working on a white label taxi app with your logo, brand name, choice of
+                        language, and choice of currency.</h1>
+                </div>
+                <div class="flex gap-5 z-10 items-center">
+                    <div class="w-fit">
+                        <div class="w-10 h-10 rounded-full p-1 bg-opacity-black text-white">
+                            <h1 class="text-center text-xl">5</h1>
+                        </div>
+                    </div>
+                    <h1>After this process, the app is pretty much ready. To confirm with you, we provide you with a
+                        working demo of your app with your text, images, content, logo, etc. On your approval, we go
+                        ahead and launch these apps in the Play store and the Apple app store.</h1>
+                </div>
+                <div class="flex gap-5 z-10 items-center">
+                    <div class="w-fit">
+                        <div class="w-10 h-10 rounded-full p-1 bg-opacity-black text-white">
+                            <h1 class="text-center text-xl">6</h1>
+                        </div>
+                    </div>
+                    <h1>Hoorah! Your taxi booking app is live and can start earning money for you instantly!</h1>
+                </div>
+                <div class="flex gap-5 z-10 items-center">
+                    <div class="w-fit">
+                        <div class="w-10 h-10 rounded-full p-1 bg-opacity-black text-white">
+                            <h1 class="text-center text-xl">7</h1>
+                        </div>
+                    </div>
+                    <h1>After we have successfully launched the uber app clone and delivered them to your servers, we
+                        will also hand over the uber clone source code to you.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end start -->
+
+    <!-- start a real -->
+    <div class="bg-new-blue">
+        <div class="container py-8">
+            <div>
+                <h1 class="font-bold text-4xl text-center text-white">A REAL COMPANY WITH REAL CLIENTS</h1>
+                <h1 class="text-white text-center mt-4">We Sell Real Products That Makes Real Money For Our Clients.
+                    When we visit our clients, they extend the same courtesy to us.
+                </h1>
+                <div class="mt-4">
+                    <img src="./imgs/taxi-sec-10-1.png" alt="">
+                </div>
+                <div class="flex items-center justify-center mt-4">
+                    <a href="#" class="btn-primary py-1 px-2">View More Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end a real -->
+
+    <!-- start cards -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- first row -->
+            <div class="mt-6 w-auto">
+                <div
+                    class="flex md:flex-row md:gap-8 gap-4 items-center flex-wrap justify-between md:items-start lg:flex-wrap md:justify-start flex-col">
+                    <div class="flex flex-col justify-start items-center  md:w-[30%] gap-4">
+                        <img src="./imgs/taxi-sec-11-1.png" class="max-w-fit" alt="">
+                        <h1 class="text-opacity-black">Need Assistance?</h1>
+                        <h1 class="text-ajebah-light-blue font-bold text-center text-xl">ASK SHRAY</h1>
+                        <p class="font-bold text-center text-xl">YOU LIKE OUR PRODUCT?</p>
+                        <p class="text-opacity-black text-center  ">We sell Mature, Market-Tested and
+                            Fully-Optimized Apps ONLY! Cherry-Pick any One App or More from our Spectacular
+                            Portfolio of Sophisticated Products! Browse and Test Drive the Demo App for FREE for as
+                            long as you want until you are completely satisfied that it is ‘THE ONE’!</p>
+                        <a href="#" class="py-1 px-2 btn-primary">Ask Now</a>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  md:w-[30%] gap-4">
+                        <img src="./imgs/taxi-sec-11-1.png" class="max-w-fit" alt="">
+                        <h1 class="text-opacity-black">Need Assistance?</h1>
+                        <h1 class="text-ajebah-light-blue font-bold text-center text-xl">ASK SHRAY</h1>
+                        <p class="font-bold text-center text-xl">YOU LIKE OUR PRODUCT?</p>
+                        <p class="text-opacity-black text-center  ">We sell Mature, Market-Tested and
+                            Fully-Optimized Apps ONLY! Cherry-Pick any One App or More from our Spectacular
+                            Portfolio of Sophisticated Products! Browse and Test Drive the Demo App for FREE for as
+                            long as you want until you are completely satisfied that it is ‘THE ONE’!</p>
+                        <a href="#" class="py-1 px-2 btn-primary">Ask Now</a>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  md:w-[30%] gap-4">
+                        <img src="./imgs/taxi-sec-11-1.png" class="max-w-fit" alt="">
+                        <h1 class="text-opacity-black">Need Assistance?</h1>
+                        <h1 class="text-ajebah-light-blue font-bold text-center text-xl">ASK SHRAY</h1>
+                        <p class="font-bold text-center text-xl">YOU LIKE OUR PRODUCT?</p>
+                        <p class="text-opacity-black text-center  ">He is always available for assisting clients
+                            from all over the world. Talk to him and he'll assist you to set up your online business. In
+                            his
+                            18 years professional career, he has assisted more than hundreds of companies to establish
+                            their
+                            online business.</p>
+                        <a href="#" class="py-1 px-2 btn-primary">Ask Now</a>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  md:w-[30%] gap-4">
+                        <img src="./imgs/taxi-sec-11-1.png" class="max-w-fit" alt="">
+                        <h1 class="text-opacity-black">Need Assistance?</h1>
+                        <h1 class="text-ajebah-light-blue font-bold text-center text-xl">ASK SHRAY</h1>
+                        <p class="font-bold text-center text-xl">YOU LIKE OUR PRODUCT?</p>
+                        <p class="text-opacity-black text-center  ">We sell Mature, Market-Tested and
+                            Fully-Optimized Apps ONLY! Cherry-Pick any One App or More from our Spectacular
+                            Portfolio of Sophisticated Products! Browse and Test Drive the Demo App for FREE for as
+                            long as you want until you are completely satisfied that it is ‘THE ONE’!</p>
+                        <a href="#" class="py-1 px-2 btn-primary">Ask Now</a>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  md:w-[30%] gap-4">
+                        <img src="./imgs/taxi-sec-11-1.png" class="max-w-fit" alt="">
+                        <h1 class="text-opacity-black">Need Assistance?</h1>
+                        <h1 class="text-ajebah-light-blue font-bold text-center text-xl">ASK SHRAY</h1>
+                        <p class="font-bold text-center text-xl">YOU LIKE OUR PRODUCT?</p>
+                        <p class="text-opacity-black text-center  ">We sell Mature, Market-Tested and
+                            Fully-Optimized Apps ONLY! Cherry-Pick any One App or More from our Spectacular
+                            Portfolio of Sophisticated Products! Browse and Test Drive the Demo App for FREE for as
+                            long as you want until you are completely satisfied that it is ‘THE ONE’!</p>
+                        <a href="#" class="py-1 px-2 btn-primary">Ask Now</a>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  md:w-[30%] gap-4">
+                        <img src="./imgs/taxi-sec-11-1.png" class="max-w-fit" alt="">
+                        <h1 class="text-opacity-black">Need Assistance?</h1>
+                        <h1 class="text-ajebah-light-blue font-bold text-center text-xl">ASK SHRAY</h1>
+                        <p class="font-bold text-center text-xl">YOU LIKE OUR PRODUCT?</p>
+                        <p class="text-opacity-black text-center  ">He is always available for assisting clients
+                            from all over the world. Talk to him and he'll assist you to set up your online business. In
+                            his
+                            18 years professional career, he has assisted more than hundreds of companies to establish
+                            their
+                            online business.</p>
+                        <a href="#" class="py-1 px-2 btn-primary">Ask Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end cards -->
+
+    <!-- start ajebah portfolio -->
+    <div class="container py-8">
+        <!-- content -->
+        <div class="text-center">
+            <h1 class="text-4xl text-ajebah-light-blue font-bold text-center">AJEBAH PORTFOLIO</h1>
+            <h1 class="text-center text-opacity-black mt-4">We practice NDA policy this means there is complete privacy
+                when
+                we work with our clients. There is no mentioning of the apps they purchased from us, their business
+                names,
+                location, and so on anywhere on our website. Please note, all our clients are either Entrepreneurs or
+                Agencies looking for reselling our product after the creation of the white label Uber clone Script.
+                We are glad to inform you that we launch 2 products every day around the world. Our clients are
+                extremely
+                satisfied and happy with our work and gave us video testimonials and permission to release them. See
+                below
+                to find what our customers have to say about us.
+            </h1>
+        </div>
+    </div>
+<!--  end protfolio -->
+    <!-- start real clients -->
+	<div class="container py-8">
+		<!-- content -->
+		<div class="text-center">
+			<h1 class="text-ajebah-light-blue text-4xl font-bold">WHAT OUR CLIENTS ARE SAYING ABOUT US</h1>
+			<h1 class="mt-6">REAL V3CUBE REVIEWS</h1>
+		</div>
+		<!-- imgs -->
+		<div class="flex flex-col md:flex-row mt-4 gap-4 justify-between">
+			<div class="">
+				<img src="./imgs/19-sec-1.png" alt="">
+			</div>
+			<div class="flex flex-col justify-between  mt-5 md:mt-0">
+				<div class="flex md:flex-row flex-col md:gap-10 gap-5 items-center justify-between">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+				<div class="flex md:flex-row flex-col md:mt-0 mt-5 items-center md:gap-10 gap-5 ">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="text-center mt-8">
+            <a href="" class="btn-primary py-2 px-2">VIEW MORE REVIEWS</a>
+        </div>
+	</div>
+    <!-- end real clients -->    
+
+<!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="foot-All">
+                <div class="logo-foot">
+                    <a href="./index.html">
+                        <img src="./imgs/logo.png" alt="" />
+                    </a>
+                </div>
+                <div class="Contact-Us-Foot">
+                    <h4>CONTACT US</h4>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i> 182 Gada Street ,Saudi
+                        Arabia
+                    </p>
+                    <a href="tel:+01154258770">
+                        <p>
+                            <i class="fa-solid fa-phone"></i> Phone: +20 120 009 71 27
+                        </p>
+                    </a>
+                    <a href="mailto:name@email.com">
+                        <p><i class="fa-solid fa-envelope"></i> Email: info@3X1.IO</p>
+                    </a>
+                </div>
+                <div class="About-Foot">
+                    <h4>ABOUT</h4>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Policy</a>
+                    <a href="#">Blogs</a>
+                    <a href="./contact-us.html">Contact Us</a>
+                </div>
+                <div class="Follow-Us-Foot">
+                    <h4>FOLLOW US</h4>
+                    <div class="LOGO-FOOT">
+                        <a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+				<div class="English">
+					<select id="countries"
+                    onchange="location = this.value;"
+						class="bg-white-gray   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value=""></option>
+						<option value="./taxi-arabic.html">العربية</option>
+
+					</select>
+				</div>
+            </div>
+        </div>
+        <div class="khat-foot"></div>
+        <div class="txt-under-foot">
+            <p>copyrights <i class="fa-regular fa-copyright"></i> 2022</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

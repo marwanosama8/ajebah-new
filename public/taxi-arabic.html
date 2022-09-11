@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajebah - Taxi Apps</title>
+    <link rel="stylesheet" href="./styles/taxi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="font-Cairo" dir="rtl">
+	<!-- start nav -->
+	<nav class="bg-gray">
+		<div class=" container mx-auto px-4">
+			<div class="flex justify-between">
+				<div class="flex space-x-7 ">
+					<div>
+						<!-- Website Logo -->
+						<a href="#" class="flex items-center py-4 px-2">
+							<img src="./imgs/logo.png" alt="Logo" class="h-12 w-auto">
+						</a>
+					</div>
+					<!-- Primary Navbar items -->
+					<div class="hidden md:flex items-center space-x-1">
+						<a href="./index-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">الصفحة الرئيسية</a>
+						<a href="./taxi-arabic.html"
+							class="py-1 px-4 text-ajebah-blue border-b-4 border-ajebah-blue font-semibold">تطبيق الاجرة</a>
+						<a href="./gojek-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">جوجك كلون</a>
+						<a href="./super-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300 ">تطبيق الخدمات الخارقة</a>
+						<a href="./grap-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">تطبيق الجراب</a>
+						<a href="./delivery-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">تطبيق التوصيلات</a>
+						<a href="./u-for-x-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">يو فور اكس</a>
+						<a href="./our-clients-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">عملائونا</a>
+						<a href="./about-us-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">عنا</a>
+					</div>
+				</div>
+				<!-- Secondary Navbar items -->
+				<div class="hidden md:flex items-center ">
+					<a href="" class="py-2 px-2 btn-primary ">استفسر الان</a>
+				</div>
+				<div class="hidden md:flex  md: md:w-auto md:flex-col md:justify-between md:items-center md:ml-4">
+					<div class="pt-3">
+						<a href="./taxi-arabic.html" class="text-ajebah-light-blue pl-1">العربية</a>
+						<a href="./taxi.html" class="pl-1">English</a>
+					</div>
+					<div class="relative mb-4 rounded-2xl w-28 h-4 bg-white">
+						<span class="text-ajebah-blue relative float-right bottom-1">
+							<i style="background-color: blue ;" class="fa-solid fa-circle fa-sm"></i>
+						</span>
+					</div>
+				</div>
+				<!-- Mobile menu button -->
+				<div class="md:hidden flex items-center justify-between">
+					<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+							stroke="currentColor">
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- mobile menu -->
+		<div class="hidden mobile-menu">
+			<ul class="">
+				<li class="active"><a href="./index-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">الصفحة الرئيسية</a></li>
+				<li><a href="./taxi-arabic.html"
+						class="block text-sm px-2 py-4 text-ajebah-blue bg-green-500 font-semibold">تطبيق الاجرة</a></li>
+				<li><a href="./gojek-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">جوجك كلون</a></li>
+				<li><a href="./super-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">تطبيق الخدمات الخارقة</a></li>
+				<li><a href="./grap-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">تطبيق الجراب</a></li>
+				<li><a href="./delivery-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">تطبيق التوصيلات</a>
+				</li>
+				<li><a href="./u-for-x-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">يو فور اكس</a></li>
+				<li><a href="./our-clients-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">عملائونا</a></li>
+				<li><a href="./about-us-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">عنا</a></li>
+			</ul>
+			<div class="text-center pb-5">
+				<a href="" class="py-2 px-2 btn-primary ">استفسر الان</a>
+			</div>
+		</div>
+	</nav>
+	<!-- end nav -->
+
+    <!-- start first panner -->
+    <div class="bg-opacity-black">
+        <h1 class="text-4xl  py-5 text-white text-center">Uber Clone Script - حل تطبيق حجز سيارات الأجرة</h1>
+    </div>
+    <!-- end first panner -->
+
+    <!-- start new century -->
+    <div class="">
+        <div class="container">
+            <div class="flex flex-col-reverse md:flex-row justify-between w-full py-12">
+                <!-- content -->
+                <div class="flex flex-col md:text-right text-center md:w-3/5">
+                    <h1 class="font-bold text-ajebah-light-blue text-4xl w-auto md:pl-48 leading-relaxed">كن الملياردير الأسرع في العالم مع تطبيق V3Cube Uber Clone - تطبيق PlusX Taxi 2022</h1>
+                    </h1>
+                    <p class="pt-4 text-opacity-black leading-10">زميلي رائد الأعمال الذكي ، تطبيق KINGX 2022 الخاص بنا سيفعل ذلك
+                        لقد ترك تطبيق Uber Clone الذي تم إنشاؤه مسبقًا والمختبر في السوق والوظيفي بالكامل العالم مدهشًا
+                        بواجهة سهلة الاستخدام وميزات فائقة الحداثة. سنطلق سيارة الأجرة الأصلية الخاصة بك
+                        تطبيق الحجز في أقل من 7 أيام بقليل!</p>
+                    <p class="pt-4 text-opacity-black leading-10">سيقوم V3Cube بتخصيص تطبيقنا الأساسي باستخدام سيارة الأجرة الخاصة بك
+                        اسم العلامة التجارية وشعارها. سنقوم بدمج الخاص بك
+                        تفضل اللغة والعملة وحتى بوابة الدفع لسهولة استخدام عملائك
+                        تطبيق. سنقوم أيضًا بتغيير مظهر لون تطبيقك ليتوافق مع لون
+                        شعار العلامة التجارية.</p>
+                    <p class="pt-4 text-opacity-black leading-10">نريد أن نقدم لكم جميعًا الأكثر تقدمًا و
+                        برنامج Uber Clone 2022 منظم جيدًا!
+                        تكسب عمولة على كل رحلة مؤكدة. ما الجديد والفريد هنا؟ يتم مكافأة السائقين
+                        لخدماتهم الممتازة مع الشارات ، يتمتع الراكبون الآن برفاهية إجراء مكالمات الفيديو مع الكابينة الخاصة بهم
+                        السائقين لمساعدتهم في الملاحة.</p>
+                    <div class="flex md:justify-start justify-center  items-center gap-2 text-center">
+                        <a href="#" class="mt-4 btn-primary  px-5 py-2 ">فيديو مباشر</a>
+                        <a href="#" class="mt-4 btn-primary text-center px-5 py-2 md:py-2 ">التسعير</a>
+                        <a href="#" class="mt-4 btn-primary  px-5 py-2 ">اشتري الآن</a>
+                    </div>
+                </div>
+                <!-- img -->
+                <div class="pb-8 md:pb-0 ">
+                    <img src="./imgs/taxi-1-sec-1.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end new century -->
+
+    <!-- start build -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="font-bold text-4xl text-ajebah-light-blue text-center">أنشئ تطبيق UBER CLONE الخاص بك من أجلك
+                أعمال سيارات الأجرة</h1>
+            <div class="flex md:flex-row flex-col justify-around">
+                <div class="md:w-96">
+                    <img src="./imgs/taxi-2-sec-1.png" alt="">
+                </div>
+                <div class="md:w-2/3 flex flex-col justify-start mt-4 md:mt-16">
+                    <h1 class="text-opacity-black leading-8">أصبحت Ajebah واحدة من رواد الصناعة في
+                        على الطلب
+                        Taxi-Booking Business باستخدام بطاقة Trump - التسليم السريع للوظائف الكاملة التي تم اختبارها في السوق
+                        تطبيقات. لدى V3Cube فريق مؤهل تأهيلا عاليا من مطوري التطبيقات الذين قاموا بتصميم مبتكر و
+                        ميزات مستقبلية في برنامج حجز سيارات الأجرة عند الطلب مع إطلاقها بنجاح في
+                        بلدان مثل نيجيريا والبرازيل وما إلى ذلك. يستغرق الأمر من 6 إلى 7 أيام قبل إطلاق التطبيق
+                        تستخدم حصريًا في وضع العلامات البيضاء
+                        تطبيق Uber Clone الخاص بك.</h1>
+                    <h1 class="text-opacity-black leading-8">يمكنك الاتصال بنا مثل Cheetahs من Uber عند الطلب مثل سيارة الأجرة
+                        صناعة تطوير التطبيقات عالمية
+                        عملاء من الولايات المتحدة الأمريكية والمكسيك وكينيا والمزيد. نحن سريعون وقويون الإرادة وجذابون
+                        الرواد مثل الفهد الناري! هذا ما يجعلنا متميزين ويساعدنا على سرقة
+                        تسليط الضوء في كل مرة ، على قدرتنا على تشغيل التطبيقات في وقت قياسي يبلغ 7 أيام! نحن
+                        البائعين رقم 1 لتطبيق Uber Clone في العالم!</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- new build -->
+
+    <!-- start uber -->
+    <div class="bg-white">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="text-center font-bold text-4xl text-ajebah-light-blue">أنشئ تطبيق UBER CLONE الخاص بك من أجلك
+                أعمال سيارات الأجرة</h1>
+            <h1 class="text-opacity-black leading-8 mt-4">لقد أطلقنا أكثر من 100 تطبيق Uber مثل Taxi Apps في الزوجين الماضيين
+                سنوات نفسها وتعاملت مع متنوعة
+                العديد من العملاء حتى الآن. لقد اختبرنا تطبيقنا على الطريق لأكثر من ألف ميل للتحقق من كيفية ذلك
+                قوي ، فإن نظام الأداء الأساسي ، على عكس منافسينا الذين قد يكونون قد جلسوا على مسافة 10 أقدام
+                10 أقدام مكعبة لاختبار إمكانات التطبيق وقدرته من خلال امتلاك هاتفين ذكيين في أيديهم
+                تطبيق الركاب على أحد الهواتف الذكية وتطبيق سائقي سيارات الأجرة على الآخر. لنأخذ سيناريو واقعي. ال
+                لا يمكن إجراء الاختبار الحقيقي لتطبيق Uber مثل Taxi إلا على الطريق من خلال القيادة. أثناء الجلوس في
+                مكتب ، كيف تعرف حالة الكابينة الخاصة بك التي تمر بنفق لا يحتوي على ملف
+                الوصول إلى الإنترنت؟ لذلك ما لم تختبر تطبيق Uber Clone الخاص بك في العالم الحقيقي في الإعداد العملي ،
+                لن تكون قادرًا على معرفة ما إذا كان التطبيق لا تشوبه شائبة أم لا.</h1>
+            <h1 class="text-opacity-black mt-4 leading-8">لقد استمعنا بصبر إلى ملاحظات عملائنا الناجحين الذين لديهم تطبيقات حجز سيارات الأجرة في المتوسط
+                10000 رحلة في اليوم. وبعد الأخذ بعين الاعتبار ملاحظاتهم العملية التي قدمناها
+                مزيد من التحسينات على التطبيق. والآن أصبح فخرنا! نحن نبيع خدمة Uber كاملة الوظائف
+                برنامج استنساخ محسّن وناضج. وقد تكيفت مع الطبيعة السائلة وغير المؤكدة لـ
+                هذه الصناعة. قاد V3Cube الثورة في صناعة حجز سيارات الأجرة عند الطلب فقط بسبب
+                هم مايسترو لتطوير تطبيقات استنساخ وهم يفعلون ذلك منذ حوالي خمس سنوات حتى الآن.</h1>
+        </div>
+    </div>
+    <!-- end uber -->
+
+    <!-- start uber clone -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <!-- content -->
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <div class="md:w-1/3">
+                    <img src="./imgs/taxi-3-sec-1.png" alt="">
+                </div>
+                <div class="flex flex-col gap-4 md:w-2/3">
+                    <h1 class="font-bold text-4xl text-ajebah-light-blue text-center">حزمة نسخ أوبر</h1>
+                    <h1 class="text-opacity-black ">تمت الموافقة على متجر Google Play ومتجر Apple App Store ، لدينا استنساخ Uber
+                        تطوير التطبيقات 100٪
+                        متجاوب يعمل بشكل لا تشوبه شائبة على جميع المساعدين الرقميين الشخصيين مثل iPhone و iPad و
+                        أجهزة الهواتف الذكية التي تعمل بنظام Android وأجهزة Android اللوحية وما إلى ذلك.</h1>
+                    <h1 class="font-bold">يتضمن البرنامج النصي لاستنساخ أوبر ذو العلامة البيضاء ما يلي:</h1>
+                    <!-- rows ul -->
+                    <div class="flex md:flex-row flex-col">
+                        <div class="flex flex-col gap-5 md:w-1/2">
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>رايدر iOS
+                                تطبيق</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>رايدر ويب
+                                لوحة</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>سائق iOS
+                                تطبيق</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>سائق ويب
+                                لوحة</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>تطبيق Kiosk iOS
+                                (اختياري)</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>الفواتير
+                                لوحة المسؤول</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>فندق / سائح
+                                لوحة حجز المكتب</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>تاكسي يدوي
+                                لوحة المرسل في لوحة الإدارة
+                            </span>
+                        </div>
+                        <div class="flex md:flex-row flex-col">
+                            <div class="flex flex-col gap-5 ">
+                                <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>رايدر
+                                    الروبوت التطبيق</span>
+                                <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>سيارة اجره
+                                    حجز تطبيق iWatch (اختياري)</span>
+                                <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>سائق
+                                    الروبوت التطبيق</span>
+                                <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>كشك
+                                    تطبيق Android (اختياري)</span>
+                                <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>سيارة اجره
+                                    لوحة ويب الشركة</span>
+                                <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>المرسل
+                                    لوحة المسؤول</span>
+                                <span class=""><i
+                                        class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>منظمة ويب
+                                        لوحة (لركوب الشركات)</span>
+                                <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>رئيسي
+                                    الموقع الإلكتروني (استجابة التسويق وحجز سيارات الأجرة)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs ml-2"></i>رئيسي
+                        لوحة ويب المسؤول لإدارة جميع التطبيقات وأنظمة الويب ، والمدفوعات ، والأسعار ، والركاب ، والسائقين ،
+                        التقارير ، الإعدادات ، إلخ
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end uber clone -->
+
+    <!-- start premier -->
+    <!-- end premier -->
+
+    <!-- start taxi -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <div>
+                <!-- head -->
+                <h1 class="font-bold text-4xl text-ajebah-light-blue text-center">تطبيق حجز سيارات الأجرة - ميزات جديدة</h1>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-5 mt-5">
+                <!-- first row -->
+                <div class="flex md:flex-row flex-col gap-4 ">
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-4.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">تسجيل الدخول باستخدام بصمات الأصابع ومعرفات الوجه</h1>
+                        <p class="md:text-right px-1 text-left text-opacity-black leading-8 w-auto">هذا الفيديو من موقعنا
+                            يحتاج مستخدمو Android لتطبيق حجز سيارات الأجرة هذا إلى بصمات أصابعهم لتسجيل الدخول أثناء مستخدمي iPhone
+                            طلب معرفات الوجه الخاصة بهم. الآن ، لم يعد على الراكبون تذكر كلمات المرور الخاصة بهم كل
+                            مرة واحدة يريدون حجز سيارة أجرة.</p>
+                    </div>
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-5.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">Facebook Pixel - أداة تحليلية</h1>
+                        <p class="md:text-right px-1 text-left text-opacity-black leading-8 w-auto">Facebook Pixel الآن
+                            يبدأ في جمع معلومات حول عدد النقرات التي حصل عليها كل إعلان على Facebook
+                            تم نشرها على تطبيقات Android و iOS الخاصة بك؟ وأي جنس ذكر / أنثى أظهر
+                            أقصى فائدة؟ وبالمثل ، ما هو الإعلان الذي حظي بأكبر قدر من الاهتمام ومن الذي
+                            منطقة. تعد هذه الأداة التحليلية للطرف الثالث تقريرًا مفصلاً وشاملاً
+                            على أساس البيانات.</p>
+                    </div>
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-6.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">إضافة عدة بطاقات ائتمان</h1>
+                        <p class="md:text-right px-1 text-left text-opacity-black leading-8 w-auto">هذا أوبر الذي تم اختباره جيدًا
+                            تم ترميز البرنامج النصي للنسخ لتمكين الإدارة في الوقت الفعلي لبطاقات الائتمان المتعددة. هذه
+                            لا تقتصر الميزة على الركاب المسجلين فقط ولكن يمكن لسائقي الكابينة أيضًا إضافة المزيد
+                            من بطاقة ائتمان واحدة لحساب مزودي الخدمة. لديهم الحرية لإضافة جديد
+                            البطاقات أو حتى إزالة البطاقات منتهية الصلاحية حسب حاجتها ومتطلباتها.</p>
+                    </div>
+                </div>
+                <!-- second row -->
+                <div class="flex md:flex-row flex-col gap-4 ">
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-1.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">تسجيل الدخول باستخدام بصمات الأصابع ومعرفات الوجه</h1>
+                        <p class="md:text-right px-1 text-left text-opacity-black leading-8 w-auto">يمكن لسائقي سيارات الأجرة
+                            اقبل رحلات العودة إلى الوراء ولا تضطر حتى إلى انتظار انتهاء الرحلة الحالية. هذه
+                            تم تصميم الميزة لتعزيز إنتاجية سائقي سيارات الأجرة. الهدف ليس
+                            تضييع حتى ثانية واحدة في انتظار طلبات المشاوير بحيث يزيد عدد الرحلات
+                            اكتمل في فترة زمنية قصيرة.</p>
+                    </div>
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-2.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">رحلات متتالية</h1>
+                        <p class="md:text-right px-1 text-left text-opacity-black leading-8 w-auto">يمكن للمسؤول الجائزة
+                            شارات خاصة لأولئك الذين يقدمون خدمات عالية الجودة للركاب ولديهم
+                            أكملت بنجاح معظم عدد المشاوير. يتم ترقية سائقي سيارات الأجرة تلقائيًا إلى
+                            مستوى أعلى بمجرد استيفائهم لجميع المتطلبات الضرورية مثل وجود متوسط
+                            تقييم 4.8 نجوم أو أعلى!</p>
+                    </div>
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-3.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">تسجيل الدخول / التسجيل للتطبيق</h1>
+                        <p class="md:text-right px-1 text-left text-opacity-black leading-8 w-auto">كلا الفرسان و
+                            يتعين على سائقي سيارات الأجرة التسجيل في تطبيق Uber App Clone عن طريق التبرع بهاتفهم المحمول الشخصي
+                            أعداد. بعد ذلك ، سوف يتلقون OTP على هواتفهم الذكية للتحقق بنجاح من
+                            المتطابقات. عند التسجيل الناجح ، يمكنهم الآن إما إرسال طلبات ركوب أو قبولها
+                            هم. إنها تجربة تسجيل دخول شرعية خالية من المتاعب!</p>
+                    </div>
+                </div>
+                <!-- third row -->
+                <div class="flex md:flex-row flex-col gap-4 ">
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-7.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">تسجيل الدخول باستخدام بصمات الأصابع ومعرفات الوجه</h1>
+                        <p class="md:text-right px-1 text-left text-opacity-black leading-8 w-auto">الآن يمكن لركابك
+                            تواصل مباشرة مع سائقي سيارات الأجرة الخاصة بهم عبر مكالمات الفيديو أيضًا! في وقت سابق ، كان بإمكان الدراجين
+                            أيضاً
+                            إرسال رسائل نصية أو إجراء مكالمات صوتية عبر الإنترنت باستخدام ميزة داخل التطبيق. كلا الفرسان و
+                            يتمتع سائقو سيارات الأجرة بالسلطة لاستخدام هذه الميزة!</p>
+                    </div>
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-8.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">تكامل إعلانات Facebook</h1>
+                        <p class="md:text-right px-1 text-left text-opacity-black leading-8 w-auto">يمكن للمسؤول الجائزة
+                            شارات خاصة لأولئك الذين يقدمون خدمات عالية الجودة للركاب ولديهم
+                            أكملت بنجاح معظم عدد المشاوير. يتم ترقية سائقي سيارات الأجرة تلقائيًا إلى
+                            مستوى أعلى بمجرد استيفائهم لجميع المتطلبات الضرورية مثل وجود متوسط
+                            تقييم 4.8 نجوم أو أعلى!</p>
+                    </div>
+                    <div class="flex flex-col rounded hover:scale-105 duration-300 md:w-1/3 bg-white gap-3">
+                        <img class="border-b-4 border-opacity-black" src="./imgs/taxi-5-sec-9.png" alt="" srcset="">
+                        <h1 class="px-1 font-bold">احصل على أموال مقابل إعلانات Google أيضًا</h1>
+                        <p class="md:text-right px-1 text-left text-opacity-black leading-8 w-auto">تسمح هذه الميزة
+                            عليك أن تنشر إعلانات Google على التطبيقات ولوحات الويب. في المقابل ، تدفع لك مقابل كل نقرة.
+                            في وقت سابق ، سُمح لسائقي سيارات الأجرة المسجلين فقط بالدفع للمسؤول للترويج لهم
+                            الخدمات على الصفحة الرئيسية لتطبيق رايدرز.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end taxi -->
+
+    <!-- start your mobile app -->
+    <div class="container">
+        <div class="flex flex-col md:flex-row md:justify-start py-10">
+            <!-- img 1 -->
+            <div class=" hidden md:block w-auto">
+                <img src="./imgs/taxi-6-sec-1.png" alt="" srcset="">
+            </div>
+            <!-- content -->
+            <div class="flex flex-col gap-5 md:min-width text-center md:text-right mx-4">
+                <h1 class="text-ajebah-light-blue text-4xl text-center font-bold">أجيبه مطوروك مدى الحياة</h1>
+                <h1 class="text-opacity-black leading-10">تعمل عائلة Ajebah الخاصة بنا مع المانترا للتأكد دائمًا من ذلك
+                    نحافظ على تقدمنا الأفضل لعملائنا ونحافظ أيضًا على الكمال باعتباره الشعار الوحيد وراء ما نقدمه
+                    فعل.</h1>
+                <h1 class="text-opacity-black leading-10">ألق نظرة على الفيديو لمعرفة ما يقوله العملاء
+                    نحن. شاهد الفيديو للحصول على لمحة عن تجربتهم السابقة في العمل مع شركات أخرى في
+                    مدتها من عشرة إلى خمسة عشر عامًا وكيف لم يتمكنوا من تقديم المنتج الذي قاموا به
+                    وعدوا وأخذوا أيضًا كل أموالهم.</h1>
+                <h1 class="text-opacity-black leading-10">استمع إليهم بعد ذلك لمشاركة تجربتهم
+                    العمل معنا لمناقشة تسليم التطبيقات في الوقت المناسب وفقًا للوعد وإنهائه
+                    وأشاد بمدير المشروع على دعمه الصادق ، ومنحنا لقب “Developers for
+                    Life "وتحفيز الشركات الأخرى للعمل معنا.</h1>
+            </div>
+            <!-- img 2 -->
+            <div class="hidden md:block w-auto">
+                <img src="./imgs/taxi-6-sec-2.png" alt="" srcset="">
+
+            </div>
+        </div>
+    </div>
+    <!-- end your mobile app -->
+
+    <!-- start take -->
+    <div class="bg-new-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="font-bold text-4xl text-center text-white">ألق نظرة على النسخة التجريبية من UBER</h1>
+            <h1 class="text-white text-xl text-center mt-4">قم بتنزيل تطبيقاتنا المجانية</h1>
+            <div
+                class="flex flex-col md:flex-row md:justify-center md:items-center justify-center items-center gap-4 mt-4">
+                <!-- panner 1 -->
+                <div class="flex flex-col gap-4 md:justify-start md:items-start justify-center items-center">
+                    <h1 class="font-bold text-xl text-white">تطبيق المستخدم: </h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-1.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-2.png" alt="">
+                    </a>
+                </div>
+                <!-- panner 2 -->
+                <div class="flex flex-col gap-4 md:justify-start md:items-start justify-center items-center">
+                    <h1 class="font-bold text-xl text-white">تطبيق السائق: </h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-3.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-4.png" alt="">
+                    </a>
+                </div>
+                <!-- panner 3 -->
+                <div class="flex flex-col gap-4 md:justify-start md:items-start justify-center items-center">
+                    <h1 class="font-bold text-xl text-white">تطبيق KIOSK: </h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-5.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-6.png" alt="">
+                    </a>
+                </div>
+                <!-- panner 4 -->
+                <div class="flex flex-col gap-4 md:justify-start md:items-start justify-center items-center">
+                    <h1 class="font-bold text-xl text-white">لوحات الويب: </h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-8.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-8.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="mt-4 md:mt-8">
+                <h1 class="font-bold text-xl text-center text-white ">لوحات الويب الأخرى:</h1>
+                <div class="flex flex-col md:flex-row md:justify-center md:items-start items-center gap-4 mt-4">
+                    <a href="#"><img src="./imgs/taxi-sec-7-9.png" alt=""></a>
+                    <a href="#"><img src="./imgs/taxi-sec-7-9.png" alt=""></a>
+                    <a href="#"><img src="./imgs/taxi-sec-7-9.png" alt=""></a>
+                    <a href="#"><img src="./imgs/taxi-sec-7-9.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end take -->
+
+    <!-- start commitment -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <h1 class="text-center font-bold text-ajebah-light-blue text-4xl ">الالتزام المنجز - 100٪</h1>
+            <h1 class="text-center mt-4">ألق نظرة على هذا الفيديو لفهم مصداقية شركتنا أيضًا
+                كما تعلم كيف لدينا
+                ربح قلب عملائنا الرائعين من خلال الوقوف وفية للالتزام الذي قطعناه على أنفسنا. شعارنا بسيط
+                - الصدق والشفافية والعمل الجاد 100٪ + العمل الذكي</h1>
+            <div class="flex justify-center items-center mt-4">
+                <img class="md:w-2/3" src="./imgs/taxi-sec-8-111.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end commitment -->
+
+    <!-- start ajebah -->
+    <div class="bg-white">
+        <div class="container ">
+            <div class="flex flex-col  md:flex-row">
+                <div class="flex flex-col py-10 gap-5 md:w-1/2 md:ml-3">
+                    <h1 class="text-4xl text-ajebah-light-blue font-bold leading-9">فاز شركاء أنجولان لعجبة بالجائزة الأولى</h1>
+                    <h1 class="font-xl font-bold">في مسابقة بدء التشغيل الرقمي</h1>
+                    <h1 class="text-opacity-black leading-9">أمة جنوب إفريقيا في أنغولا هي المكان الذي وجدنا فيه
+                        العميل مرة أخرى. هؤلاء
+                        كان رجال الأعمال الأنغوليون الذين لديهم دوافع ذاتية ويعملون بجد يفكرون ويحاولون الانتهاء من ذلك
+                        ما هي الخدمة التي يجب تقديمها وبناء أعمالهم عليها.</h1>
+                    <h1 class="text-opacity-black leading-9">هذا هو المكان الذي تقدم فيه V3Cube مدخلًا كلاسيكيًا وتجذبهم باستخدام تطبيقاتهم إلى الحد الأقصى
+                        انجرفوا من ارجلهم. لقد اشتروا منا تطبيقًا يعمل بكامل طاقته وتم اختباره في السوق
+                        وبدأوا في إدارة أعمالهم في مسقط رأسهم في أنغولا. سمحوا لمستخدمي التطبيقات الخاصة بهم
+                        الدفع بعملتهم الرسمية كوانزا وتصفح المحتوى باللغة البرتغالية. أصبح تطبيقهم a
+                        اسم العائلة في غضون أسابيع ، وكان أداؤهم جيدًا منذ تاريخ إطلاق التطبيق
+                        بحد ذاتها. كان هذا عندما شاركوا في أكبر مسابقة للشركات الناشئة في بلدهم وهم
+                        فاز بلا منازع بالجائزة الأولى.</h1>
+                    <h1 class="text-opacity-black leading-9">لقد أعادنا تسمية تطبيقنا الأساسي باسم وشعار الشركة ، بل وقمنا بتغييرها بالكامل
+                        مظهر لون التطبيق ليتناسب مع لون شعار الشركة. نحن فخورون جدا بنا
+                        العملاء الأنغوليون على نجاحهم وإنجازاتهم ويشعرون بالامتنان لأننا يمكن أن نكون جزءًا منها
+                        هو - هي. هذا مرة أخرى دليل حي على أننا رواد الصناعة وروادها
+                        أعمال تطوير تطبيقات استنساخ مستقبلية.</h1>
+                </div>
+                <div class="flex justify-between md:w-1/2">
+                    <div class="flex img-start items-end">
+                        <img src="./imgs/12-sec-2.png" alt="">
+                    </div>
+                    <div class="flex img-start items-start">
+                        <img src="./imgs/12-sec-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end ajebah -->
+
+    <!-- start what -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="font-bold text-4xl text-ajebah-light-blue text-center ">ما الذي يمنحنا ميزة أعلى من الراحة؟</h1>
+            <div class="flex md:flex-row flex-col justify-between items-center mt-4">
+                <div class="md:w-2/5">
+                    <img src="./imgs/taxi-sec-8-1.png" alt="">
+                </div>
+                <div class="md:w-3/5 flex mt-4 md:mt-0 flex-col md:gap-8 gap-4 md:p-9">
+                    <h1 class="text-opacity-black leading-8">يكون التطبيق جيدًا فقط إذا كان يحل الغرض النهائي من العمل. الشيء الوحيد الذي يجعلنا
+                        التطبيق أفضل من الباقي هو حقيقة أننا نسعى باستمرار لضمان أن كل واحد
+                        تم تصميم جانب من التطبيق خصيصًا للتأكد من أنه يتحرك مع الزمن ، والعطاء
+                        مزودي الخدمة والعملاء راحة وتجربة رائعة.</h1>
+                    <h1 class="text-opacity-black leading-8">لا يقتصر الأمر على أن تطبيقنا سهل الاستخدام ، وسهل المتابعة ، وبديهي ، وبتصميم رائع ، فهو أيضًا
+                        يأتي مع مجموعة من الميزات المختلفة التي تجعل حجز الرحلة أمرًا سهلاً. مع الركوب
+                        التوصيات ، والترقيات المستمرة عند الطلب ، وما إلى ذلك ، هناك حقًا ، لا
+                        المنافسة على هذا في السوق. بأسعار معقولة وصُنع من قبل فريق من ذوي الخبرة
+                        ومطوري ومصممي التطبيقات المدربين ، هذا هو حجر الأساس لتحقيق النجاح!</h1>
+                    <h1 class="text-opacity-black leading-8">تطبيقنا يحمل علامة بيضاء تمامًا ، مما يعني أنه عندما تشتري هذا التطبيق منا ، فأنت
+                        احصل على التطبيق مع شعارك واسم علامتك التجارية. كما لو أن عملك يحتاج إلى أكثر من مجرد إشارة
+                        أحد التطبيقات ، فنحن نوفر لك أيضًا الكود المصدري للتطبيق مجانًا تمامًا حتى تكون أنت
+                        إتقان تطبيقك الخاص في مجمله.</h1>
+                    <h1 class="text-opacity-black leading-8">لمزيد من المعلومات أو أي تفاصيل أخرى ، يمكنك ببساطة مراسلتنا على الخط وسنعاود الاتصال بنا
+                        في غضون 48 ساعة. في غضون ذلك ، نرحب بكم للحصول على عرض توضيحي مباشر مجاني للتطبيق حتى يتسنى لك ذلك
+                        يمكنك أن ترى بنفسك كيف يعمل التطبيق.</h1>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h1 class="text-opacity-black leading-8">نحن شركة متخصصة في تطوير Uber Clone
+                    النصي. لقد ظللنا في السوق لفترة طويلة بما يكفي لمعرفة ما يحتاجه لاستنساخ تطبيق uber
+                    ناجح. علاوة على ذلك ، نحن لا نفرض عليك أي رسوم على الإطلاق مقابل شفرة المصدر! نعم! إنه مجاني نحن
+                    نقدم لك شفرة المصدر الكاملة لـ Uber Taxi Booking Clone مجانًا حتى لا تضطر إلى ذلك
+                    إنفاق الأموال على الإطلاق لأي نوع من التغييرات التي تحتاج إلى إجرائها.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- end what -->
+
+    <!-- start deal -->
+    <div class="container py-8">
+        <!-- head -->
+        <div class="flex md:flex-row gap-4 flex-col">
+            <div class="md:w-5/12">
+                <img src="./imgs/taxi-sec-9-1.png" alt="">
+            </div>
+            <div class="w-auto">
+                <h1 class=" text-center text-5xl text-ajebah-light-blue font-bold">تعامل مع تطبيق حجز سيارات الأجرة
+                    <br />
+                    تجريبي الآن!</h1>
+                <h1 class="mt-4 text-opacity-black">نتيح لك تجربة تطبيق Demo Uber Clone مجانًا. يمكنك تنزيله
+                    على هاتفك الذكي واختبرها على
+                    أساس الوقت الحقيقي. جربه في كل المواقف الممكنة وكن معجبًا بسيولته.</h1>
+                <div class="mt-4  flex flex-row justify-center items">
+                    <a class="py-1 px-4 btn-primary" href="#">VIEW DEMO</a>
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="flex flex-col md:flex-row mt-8">
+            <div class="md:w-1/3 md:mt-0 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">01</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">عرض التدفق الرسومي</h1>
+                        <h1 class="text-opacity-black">هل سئمت من شخص ما يقول كيف يعمل تطبيق Uber clone هذا؟ سوف نرى
+                            لنفسك. مع
+                            هذا التدفق الرسومي الفريد للتطبيق ، سيكون لديك فهم واضح لـ
+                            كيف يعمل صفحة بصفحة.</h1>
+                        <div>
+                            <a class="btn-primary py-1 px-4" href="#">عرض شاشات التطبيق والتدفق</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 md:mt-0 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">02</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">مرئيات لوحة الويب</h1>
+                        <h1 class="text-opacity-black">ما هو التشويق الذي سيبدو عليه المنتج النهائي؟
+                            لا تقلق! نقدم لك المرئيات الدقيقة لكيفية لوحة السائق والراكب والويب
+                            مثل!</h1>
+                        <div class="flex gap-4">
+                            <a class="btn-primary py-1 px-4" href="#">المرئيات الأمامية</a>
+                            <a class="btn-primary py-1 px-4" href="#">مرئيات المشرف</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 md:mt-0 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">03</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">الميزات</h1>
+                        <h1 class="text-opacity-black">إذا كان هناك تطبيق بميزات متفوقة ومتقدمة ، فسيكون كذلك
+                            لنا! لدينا البرنامج النصي الأكثر تطوراً لاستنساخ Uber في السوق بالكامل. سمي لك
+                            ميزة ، وقد حصلنا عليها!</h1>
+                        <div>
+                            <a class="btn-primary py-1 px-4" href="#">عرض جميع الميزات</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-5/12 md:mt-8 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">04</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">عرض التدفق الرسومي</h1>
+                        <h1 class="text-opacity-black">هل سئمت من شخص ما يقول كيف يعمل تطبيق Uber clone هذا؟ سوف نرى
+                            لنفسك. مع
+                            هذا التدفق الرسومي الفريد للتطبيق ، سيكون لديك فهم واضح لـ
+                            كيف يعمل صفحة بصفحة.</h1>
+                        <div>
+                            <a class="btn-primary py-1 px-4" href="#">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-7/12 md:mt-8 mt-4">
+                <div class="flex flex-row">
+                    <div class="pr-2">
+                        <h1 class="text-for-number text-4xl font-bold relative -top-2">05</h1>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <h1 class="text-xl">خيارات التسعير والشراء</h1>
+                        <h1 class="text-opacity-black">لا توجد فكرتان تجاريتان متماثلتان. لهذا السبب قمنا بالتخصيص
+                            حزم أعمالنا تناسب احتياجات ميزانيتك. ما إذا كنت تريد أن تبدأ صغيرًا وتختار
+                            زد من الوتيرة لاحقًا أو إذا كنت ترغب في المضي قدمًا بخطوتك الأولى ، فأخبرنا بذلك. نؤكد لكم
+                            أنه سيكون لدينا حزمة خاصة تناسب احتياجاتك.</h1>
+                        <div>
+                            <a class="btn-primary py-1 px-4" href="#">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end deal -->
+
+    <!-- start start -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="font-bold text-4xl text-center text-ajebah-light-blue">ابدأ أعمال سيارات الأجرة الخاصة بك في غضون 7 أيام فقط
+                خطوات</h1>
+            <div class="flex flex-col gap-5 mt-4 relative">
+                <!-- line -->
+                <div class="w-1 z-0 bg-ajebah-light-blue need-height-arabic absolute "></div>
+
+                <!-- numbers -->
+                <div class="flex gap-5 z-10 items-center">
+                    <div class="w-fit">
+                        <div class="w-10 h-10 rounded-full p-1 bg-opacity-black text-white">
+                            <h1 class="text-center text-xl">1</h1>
+                        </div>
+                    </div>
+                    <h1>تواصل معنا بشأن متطلبات تطبيق حجز الكابينة عند الطلب من خلال البريد الإلكتروني أو الدردشة أو المكالمات.
+                        سوف نفهم متطلبات أعمال خدمة الكابينة الخاصة بك ، ونرسل لك تفاصيل التطبيق
+                        تماما. نحن نقدم لك العرض التوضيحي المباشر للعمل الذي يمنحك فهمًا أفضل لـ
+                        التطبيق.</h1>
+                </div>
+                <div class="flex gap-5 z-10 items-center">
+                    <div class="w-fit">
+                        <div class="w-10 h-10 rounded-full p-1 bg-opacity-black text-white">
+                            <h1 class="text-center text-xl">2</h1>
+                        </div>
+                    </div>
+                    <h1>بمجرد مشاهدة العرض التوضيحي للتطبيق والرضا عنه ، يمكنك تقديم طلب باستخدام
+                        نحن.</h1>
+                </div>
+                <div class="flex gap-5 z-10 items-center">
+                    <div class="w-fit">
+                        <div class="w-10 h-10 rounded-full p-1 bg-opacity-black text-white">
+                            <h1 class="text-center text-xl">3</h1>
+                        </div>
+                    </div>
+                    <h1>سنقوم بتعيين مدير مشروع مخصص لك الذي يعتني بالتطبيق بالكامل نيابة عنك
+                        من البداية حتى إطلاق التطبيقات.</h1>
+                </div>
+                <div class="flex gap-5 z-10 items-center">
+                    <div class="w-fit">
+                        <div class="w-10 h-10 rounded-full p-1 bg-opacity-black text-white">
+                            <h1 class="text-center text-xl">4</h1>
+                        </div>
+                    </div>
+                    <h1>يبدأ الفريق العمل على تطبيق White Lab Taxi مع شعارك واسم علامتك التجارية واختيار
+                        اللغة واختيار العملة.</h1>
+                </div>
+                <div class="flex gap-5 z-10 items-center">
+                    <div class="w-fit">
+                        <div class="w-10 h-10 rounded-full p-1 bg-opacity-black text-white">
+                            <h1 class="text-center text-xl">5</h1>
+                        </div>
+                    </div>
+                    <h1>بعد هذه العملية ، يكون التطبيق جاهزًا تمامًا. للتأكيد معك ، نقدم لك ملف
+                        عرض العمل للتطبيق الخاص بك مع النص ، والصور ، والمحتوى ، والشعار ، وما إلى ذلك. بناء على موافقتك ، نذهب
+                        إلى الأمام وتشغيل هذه التطبيقات في متجر Play ومتجر تطبيقات Apple.</h1>
+                </div>
+                <div class="flex gap-5 z-10 items-center">
+                    <div class="w-fit">
+                        <div class="w-10 h-10 rounded-full p-1 bg-opacity-black text-white">
+                            <h1 class="text-center text-xl">6</h1>
+                        </div>
+                    </div>
+                    <h1>الحورة! تطبيق حجز سيارات الأجرة الخاص بك مباشر ويمكن أن يبدأ في جني الأموال على الفور!</h1>
+                </div>
+                <div class="flex gap-5 z-10 items-center">
+                    <div class="w-fit">
+                        <div class="w-10 h-10 rounded-full p-1 bg-opacity-black text-white">
+                            <h1 class="text-center text-xl">7</h1>
+                        </div>
+                    </div>
+                    <h1>بعد أن نجحنا في تشغيل استنساخ تطبيق uber وتسليمها إلى خوادمك ، قمنا بذلك
+                        سوف يسلمك أيضًا شفرة مصدر استنساخ uber.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end start -->
+
+    <!-- start a real -->
+    <div class="bg-new-blue">
+        <div class="container py-8">
+            <div>
+                <h1 class="font-bold text-4xl text-center text-white">شركة حقيقية مع عملاء حقيقيين</h1>
+                <h1 class="text-white text-center mt-4">نبيع المنتجات الحقيقية التي تدر أموالاً حقيقية لعملائنا.
+                    عندما نزور عملائنا ، فإنهم يقدمون لنا نفس المجاملة.</h1>
+                <div class="mt-4">
+                    <img src="./imgs/taxi-sec-10-1.png" alt="">
+                </div>
+                <div class="flex items-center justify-center mt-4">
+                    <a href="#" class="btn-primary py-1 px-2">عرض المزيد من التفاصيل</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end a real -->
+
+    <!-- start cards -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- first row -->
+            <div class="mt-6 w-auto">
+                <div
+                    class="flex md:flex-row md:gap-8 gap-4 items-center flex-wrap justify-between md:items-start lg:flex-wrap md:justify-start flex-col">
+                    <div class="flex flex-col justify-start items-center  md:w-[30%] gap-4">
+                        <img src="./imgs/taxi-sec-11-1.png" class="max-w-fit" alt="">
+                        <h1 class="text-opacity-black">احتاج مساعدة؟</h1>
+                        <h1 class="text-ajebah-light-blue font-bold text-center text-xl">اسأل شراي</h1>
+                        <p class="font-bold text-center text-xl">هل تحب منتجنا؟</p>
+                        <p class="text-opacity-black text-center  ">نبيع الناضجة ، واختبار السوق و
+                            تطبيقات محسّنة بالكامل فقط! Cherry - اختر أي تطبيق واحد أو أكثر من تطبيق Spectacular الخاص بنا
+                            مجموعة منتجات متطورة! تصفح واختبر التطبيق التجريبي مجانًا مقابل
+                            طالما أردت حتى تشعر بالرضا التام عن أنه "الشخص"!</p>
+                        <a href="#" class="py-1 px-2 btn-primary">اسأل الآن</a>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  md:w-[30%] gap-4">
+                        <img src="./imgs/taxi-sec-11-1.png" class="max-w-fit" alt="">
+                        <h1 class="text-opacity-black">احتاج مساعدة؟</h1>
+                        <h1 class="text-ajebah-light-blue font-bold text-center text-xl">اسأل شراي</h1>
+                        <p class="font-bold text-center text-xl">هل تحب منتجنا؟</p>
+                        <p class="text-opacity-black text-center  ">نبيع الناضجة ، واختبار السوق و
+                            تطبيقات محسّنة بالكامل فقط! Cherry - اختر أي تطبيق واحد أو أكثر من تطبيق Spectacular الخاص بنا
+                            مجموعة منتجات متطورة! تصفح واختبر التطبيق التجريبي مجانًا مقابل
+                            طالما أردت حتى تشعر بالرضا التام عن أنه "الشخص"!</p>
+                        <a href="#" class="py-1 px-2 btn-primary">اسأل الآن</a>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  md:w-[30%] gap-4">
+                        <img src="./imgs/taxi-sec-11-1.png" class="max-w-fit" alt="">
+                        <h1 class="text-opacity-black">احتاج مساعدة؟</h1>
+                        <h1 class="text-ajebah-light-blue font-bold text-center text-xl">اسأل شراي</h1>
+                        <p class="font-bold text-center text-xl">هل تحب منتجنا؟</p>
+                        <p class="text-opacity-black text-center  ">إنه متاح دائمًا لمساعدة العملاء
+                            من جميع انحاء العالم. تحدث إليه وسيساعدك في إنشاء عملك على الإنترنت. في
+                            له
+                            18 عامًا من الخبرة المهنية ، وقد ساعد أكثر من مئات الشركات في التأسيس
+                            هُم
+                            اعمال تجاريه عبر الانترنت.</p>
+                        <a href="#" class="py-1 px-2 btn-primary">اسأل الآن</a>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  md:w-[30%] gap-4">
+                        <img src="./imgs/taxi-sec-11-1.png" class="max-w-fit" alt="">
+                        <h1 class="text-opacity-black">احتاج مساعدة؟</h1>
+                        <h1 class="text-ajebah-light-blue font-bold text-center text-xl">اسأل شراي</h1>
+                        <p class="font-bold text-center text-xl">هل تحب منتجنا؟</p>
+                        <p class="text-opacity-black text-center  ">نبيع الناضجة ، واختبار السوق و
+                            تطبيقات محسّنة بالكامل فقط! Cherry - اختر أي تطبيق واحد أو أكثر من تطبيق Spectacular الخاص بنا
+                            مجموعة منتجات متطورة! تصفح واختبر التطبيق التجريبي مجانًا مقابل
+                            طالما أردت حتى تشعر بالرضا التام عن أنه "الشخص"!</p>
+                        <a href="#" class="py-1 px-2 btn-primary">اسأل الآن</a>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  md:w-[30%] gap-4">
+                        <img src="./imgs/taxi-sec-11-1.png" class="max-w-fit" alt="">
+                        <h1 class="text-opacity-black">احتاج مساعدة؟</h1>
+                        <h1 class="text-ajebah-light-blue font-bold text-center text-xl">اسأل شراي</h1>
+                        <p class="font-bold text-center text-xl">هل تحب منتجنا؟</p>
+                        <p class="text-opacity-black text-center  ">نبيع الناضجة ، واختبار السوق و
+                            تطبيقات محسّنة بالكامل فقط! Cherry - اختر أي تطبيق واحد أو أكثر من تطبيق Spectacular الخاص بنا
+                            مجموعة منتجات متطورة! تصفح واختبر التطبيق التجريبي مجانًا مقابل
+                            طالما أردت حتى تشعر بالرضا التام عن أنه "الشخص"!</p>
+                        <a href="#" class="py-1 px-2 btn-primary">اسأل الآن</a>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  md:w-[30%] gap-4">
+                        <img src="./imgs/taxi-sec-11-1.png" class="max-w-fit" alt="">
+                        <h1 class="text-opacity-black">احتاج مساعدة؟</h1>
+                        <h1 class="text-ajebah-light-blue font-bold text-center text-xl">اسأل شراي</h1>
+                        <p class="font-bold text-center text-xl">هل تحب منتجنا؟</p>
+                        <p class="text-opacity-black text-center  ">إنه متاح دائمًا لمساعدة العملاء
+                            من جميع انحاء العالم. تحدث إليه وسيساعدك في إنشاء عملك على الإنترنت. في
+                            له
+                            18 عامًا من الخبرة المهنية ، وقد ساعد أكثر من مئات الشركات في التأسيس
+                            هُم
+                            اعمال تجاريه عبر الانترنت.</p>
+                        <a href="#" class="py-1 px-2 btn-primary">اسأل الآن</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end cards -->
+
+    <!-- start ajebah portfolio -->
+    <div class="container py-8">
+        <!-- content -->
+        <div class="text-center">
+            <h1 class="text-4xl text-ajebah-light-blue font-bold text-center">حافظة العجيبه</h1>
+            <h1 class="text-center text-opacity-black mt-4">نحن نمارس سياسة NDA وهذا يعني أن هناك خصوصية كاملة
+                متى
+                نحن نعمل مع عملائنا. لا يوجد ذكر للتطبيقات التي اشتروها منا ، أعمالهم
+                أسماء
+                الموقع ، وما إلى ذلك في أي مكان على موقعنا. يرجى ملاحظة أن جميع عملائنا إما رواد أعمال أو
+                الوكالات التي تبحث عن إعادة بيع منتجاتنا بعد إنشاء البرنامج النصي للعلامة البيضاء Uber clone Script.
+                يسعدنا إبلاغك أننا نطلق منتجين كل يوم حول العالم. عملاؤنا هم
+                الى ابعد حد
+                راضون وسعيدون عن عملنا وقدموا لنا شهادات بالفيديو واذن بالافراج عنها. نرى
+                أقل
+                للعثور على ما يقوله عملاؤنا عنا.</h1>
+        </div>
+    </div>
+<!--  end protfolio -->
+    <!-- start real clients -->
+	<div class="container py-8">
+		<!-- content -->
+		<div class="text-center">
+			<h1 class="text-ajebah-light-blue text-4xl font-bold">ماذا يقول عملاؤنا عنا</h1>
+			<h1 class="mt-6">تقييمات حقيقية لـ V3CUBE</h1>
+		</div>
+		<!-- imgs -->
+		<div class="flex flex-col md:flex-row mt-4 gap-4 justify-between">
+			<div class="">
+				<img src="./imgs/19-sec-1.png" alt="">
+			</div>
+			<div class="flex flex-col justify-between  mt-5 md:mt-0">
+				<div class="flex md:flex-row flex-col md:gap-10 gap-5 items-center justify-between">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+				<div class="flex md:flex-row flex-col md:mt-0 mt-5 items-center md:gap-10 gap-5 ">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="text-center mt-8">
+            <a href="" class="btn-primary py-2 px-2">عرض المزيد من المراجعات</a>
+        </div>
+	</div>
+    <!-- end real clients -->    
+
+	<!-- Start Footer -->
+	<footer class="">
+		<div class="container">
+			<div class="foot-All">
+				<div class="logo-foot">
+					<a href="./index-arabic.html">
+						<img src="./imgs/logo.png" alt="" />
+					</a>
+				</div>
+				<div class="Contact-Us-Foot">
+					<h4>اتصل بنا</h4>
+					<p>
+						<i class="fa-solid fa-location-dot"></i> 182 شارع جدة ، السعودية
+						شبه الجزيرة العربية					</p>
+					<a href="tel:+01154258770">
+						<p>
+							<i class="fa-solid fa-phone"></i> Phone: +20 120 009 71 27
+						</p>
+					</a>
+					<a href="mailto:name@email.com">
+						<p><i class="fa-solid fa-envelope"></i>  info@3X1.IO الايميل:</p>
+					</a>
+				</div>
+				<div class="About-Foot">
+					<h4>حول</h4>
+					<a href="#">البنود و الظروف</a>
+					<a href="#">سياسة</a>
+					<a href="#">المدونات</a>
+					<a href="./contact-us-arabic.html">اتصل بنا</a>
+				</div>
+				<div class="Follow-Us-Foot">
+					<h4>تابعنا</h4>
+					<div class="LOGO-FOOT">
+						<a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+						<a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+						<a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+					</div>
+				</div>
+				<div class="English">
+					<select id="countries"
+                    onchange="location = this.value;"
+						class="bg-white-gray   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value=""></option>
+						<option value="./taxi.html">English</option>
+
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="khat-foot"></div>
+		<div class="txt-under-foot">
+			<p>حقوق النشر <i class="fa-regular fa-copyright"></i> 2022</p>
+		</div>
+	</footer>
+	<!-- End Footer -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

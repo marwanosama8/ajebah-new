@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajebah - Delivery Apps</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/taxi.css">
+</head>
+
+<body class="font-Cairo">
+    <!-- start nav -->
+    <nav class="bg-gray">
+        <div class=" container mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7 ">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <img src="./imgs/logo.png" alt="Logo" class="h-12 w-auto">
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="./index.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Home</a>
+                        <a href="./taxi.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Taxi
+                            Apps</a>
+                        <a href="./gojek.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Gojak
+                            Clone</a>
+                        <a href="./super.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300 ">Super
+                            Services App</a>
+                        <a href="./grap.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Grap
+                            Clone</a>
+                        <a href="./delivery.html"
+                            class="py-1 px-4 text-ajebah-blue border-b-4 border-ajebah-blue font-semibold">Delivery
+                            Apps</a>
+                        <a href="./u-for-x.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">U
+                            For X</a>
+                        <a href="./our-clients.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">Our
+                            CLients</a>
+                        <a href="./about-us.html"
+                            class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">About
+                            Us</a>
+                    </div>
+                </div>
+                <!-- Secondary Navbar items -->
+                <div class="hidden md:flex items-center ">
+                    <a href="" class="py-2 px-2 btn-primary ">Enquire
+                        Now</a>
+                </div>
+                <div class="hidden md:flex  md: md:w-auto md:flex-col md:justify-between md:items-center md:ml-4">
+                    <div class="pt-3">
+                        <a href="./delivery-arabic.html" class=" pr-1">العربية</a>
+                        <a href="./delivery.html" class="pl-1 text-ajebah-light-blue">English</a>
+                    </div>
+                    <div class="relative mb-4 rounded-2xl w-28 h-4 bg-white">
+                        <span class="text-ajebah-blue relative float-right bottom-1">
+                            <i style="background-color: blue ;" class="fa-solid fa-circle fa-sm"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center justify-between">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a href="./index.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Home</a></li>
+                <li><a href="./taxi.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Taxi
+                        Apps</a></li>
+                <li><a href="./gojek.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Gojak
+                        Clone</a></li>
+                <li><a href="./super.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Super
+                        Services App</a></li>
+                <li><a href="./grap.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Grap
+                        Clone</a></li>
+                <li><a href="./delivery.html"
+                        class="block text-sm px-2 py-4 text-ajebah-blue bg-green-500 font-semibold">Delivery Apps</a>
+                </li>
+                <li><a href="./u-for-x.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">U For
+                        X</a></li>
+                <li><a href="./our-clients.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Our
+                        Clients</a></li>
+                <li><a href="./about-us.html"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About
+                        Us</a></li>
+            </ul>
+            <div class="text-center pb-5">
+                <a href="" class="py-2 px-2 btn-primary ">Enquire
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start best -->
+    <div class="">
+        <div class="container">
+            <div class="flex flex-col-reverse md:flex-row-reverse justify-between w-full py-12">
+                <!-- content -->
+                <div class="flex flex-col md:text-left text-center md:w-3/5">
+                    <h1 class="font-bold text-ajebah-light-blue text-4xl w-auto md:pr-48 leading-relaxed">BEST FOOD
+                        DELIVERY APP IN THE MARKET </h1>
+                    <p class="pt-4 text-opacity-black leading-10">It’s time to bid farewell to the old and archaic apps
+                        in favour of our latest and most advanced UberEats clone app! This feature rich app comes loaded
+                        with some of the most relevant industry favourite features that is a practical solution for your
+                        food delivery business.
+                        It’s time to bid farewell to the old and archaic apps in favour of our latest and most advanced
+                        UberEats clone app! This feature rich app comes loaded with some of the most relevant industry
+                        favourite features that is a practical solution for your food delivery business.
+                    </p>
+                    <p class="pt-4 text-opacity-black leading-10">With the latest design and smooth interface of this
+                        app give your users an experience like never before. With this new app, you can now go live in
+                        just a week’s time and start generating revenues and making profits like you’ve never done
+                        before!</p>
+                    <p class="pt-4 text-opacity-black leading-10">This is the first of its kind app in the market
+                        designed specifically to be user friendly, light weight and profitable for you. Our team of top
+                        app designers from the world over have rendered the best design for a food delivery app in this
+                        new and latest version of the Uber Eats Clone. Dive in to learn more!</p>
+                    <div class="flex justify-center md:justify-start items-center gap-2 text-center">
+                        <a href="#" class="mt-4 btn-primary  px-5 py-2 ">Pricing</a>
+                        <a href="#" class="mt-4 btn-primary text-center px-5 py-2 md:py-2 ">Buy Now</a>
+                    </div>
+                </div>
+                <!-- img -->
+                <div class="pb-8 md:pb-0">
+                    <img src="./imgs/delivery-sec-1-1.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end best -->
+
+    <!-- start multiple -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <div class="head-div text-center">
+                <h1 class="head-light-blue">MULTIPLE REVENUE STREAMS</h1>
+                <h1 class="font-bold">OF OUR UBER EATS CLONE APP</h1>
+            </div>
+            <!-- content -->
+            <div class="flex flex-col gap-4">
+                <h1 class="text-opacity-black">Are you an Entrepreneur who plans to start his own <span
+                        class="font-bold text-dark">Food Delivery Company</span> where customers will Order
+                    Food from Online Restaurants in a way that it gets Delivered to their home in Real Time then this is
+                    the right App for you. And we have plans and methods via which you will make good money in a short
+                    time.</h1>
+                <h1 class="text-opacity-black">In this App, the <span class="font-bold text-dark">Restaurants
+                        Owners</span> would Register themselves via <span class="text-dark font-bold">Restaurants
+                        App</span> and add their Food
+                    Items and Cuisines with Options, Toppings, Discounts, etc. So that Customers can place orders on
+                    their <span class="font-bold text-center">User Apps</span> and pay Online or in Cash (COD) to get
+                    Order Delivered to their Home. The Drivers
+                    will Register to accept Food packages from Restaurants and Deliver to Customers.</h1>
+                <h1 class="text-opacity-black">In the whole process, Customers get the best food in a timely manner,
+                    Restaurants and Delivery
+                    Drivers make money for their Service. We, being experienced in this field and have successfully
+                    delivered hundreds of such Apps in the past few years, have added many important aspects where you
+                    as an App Owner make good Money from this Business. Below are a few ways in which you as an App
+                    Owner will make money via this Advanced App of ours.</h1>
+            </div>
+            <div class="flex md:flex-row flex-col mt-4 justify-center  gap-4">
+                <div
+                    class="bg-white rounded-xl shadow-lg p-4 flex md:flex-row flex-col md:text-left text-center gap-3 ">
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./imgs/delivery-sec-2-1.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4 justify-start ">
+                        <h1 class="font-bold ">Commission on Food Orders</h1>
+                        <h1 class="text-opacity-black">Charge a commission on every order placed using the app for food
+                            from across <br> any restaurant registered on your app.</h1>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-xl shadow-lg p-4 flex md:flex-row flex-col md:text-left text-center gap-3 ">
+                    <div class=" md:w-14 flex flex-col justify-center items-center">
+                        <img src="./imgs/delivery-sec-2-2.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4 justify-start">
+                        <h1 class="font-bold ">Commission on Food Orders</h1>
+                        <h1 class="text-opacity-black">Regardless of which restaurant your user places an order from
+
+                            within your app, <br> you can make a commission on it, every single <br> time an order goes
+                            through!
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flex md:flex-row flex-col mt-4 justify-center  gap-4">
+                <div
+                    class="bg-white rounded-xl shadow-lg p-4 flex md:flex-row flex-col md:text-left text-center gap-3 ">
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./imgs/delivery-sec-2-3.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4 justify-start ">
+                        <h1 class="font-bold ">Advertisements</h1>
+                        <h1 class="text-opacity-black">Empower vendors and shop/ restaurant owners to place their ads on
+                            specific of <br> landing pages on the banner and select locations to get additional income.
+                        </h1>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-4 flex md:flex-row flex-col md:text-left gap-3 ">
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./imgs/delivery-sec-2-4.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4 justify-start">
+                        <h1 class="font-bold ">Commission on Food Orders</h1>
+                        <h1 class="text-opacity-black">Offer in app advantages such as Gold Membership, Monthly
+                            Subscription and for <br> giving out packages at a fee to get more money. This feature is
+                            <br> available for Delivery Drivers.
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end multiple -->
+
+    <!-- start uber -->
+    <div class="bg-white">
+        <div class="container py-8">
+            <h1 class="text-center font-bold text-ajebah-light-blue text-4xl ">Uber For Services App Live Demo Video
+            </h1>
+            <h1 class="font-bold text-center mt-4">SEE YOUR POTENTIAL INVESTMENT WORK IN REAL.
+            </h1>
+            <h1 class="text-center mt-4 text-opacity-black">Play the video and see the detailed interaction of Customer
+                and Service Provider have with each other starting from hiring a Provider till completing the Job and
+                providing reviews to each other.
+
+            </h1>
+            <div class="flex justify-center items-center mt-4">
+                <img class="md:w-2/3" src="./imgs/taxi-sec-8-111.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end uber -->
+
+    <!-- start flow -->
+    <div class="container py-8">
+        <div class="head-div text-center">
+            <h1 class="head-light-blue">FLOW OF FOOD</h1>
+            <h1 class="font-bold">FOOD RESTAURANT DELIVERY APPS</h1>
+        </div>
+        <div class="mt-4">
+            <img src="./imgs/delivery-sec-3-1.png" alt="">
+        </div>
+    </div>
+    <!-- end flow -->
+
+    <!-- start ajebah's  -->
+    <div class="bg-white-gray">>
+        <div class="container py-8">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2">
+                    <img class="md:w-[631px] md:ml-10" src="./imgs/delivery-sec-4-1.png" alt="">
+                </div>
+                <div class="md:ml-4 mt-8 md:mt-0 md:w-1/2">
+                    <h1 class="text-4xl text-ajebah-light-blue font-bold">OUR CLIENTS SWEAR BY THE SUCCESS OF OUR APP
+                    </h1>
+                    <h1 class="font-bold mt-4">During the Global Pandemic</h1>
+                    <h1 class="text-opacity-black leading-8 mt-4 text-xl">Business has taken a hard hit during the
+                        pandemic,
+                        but our honesty and diligence has helped many clients to stay afloat and even find success
+                        regardless of the situation. Take a look at what our client, Amjad, has to say about his
+                        experience
+                        of working with us and purchasing our on demand food delivery app, the UberEats Clone. He shares
+                        his
+                        story of finding success even during these pandemic struck times . He also goes on to speak
+                        about
+                        the dedication of our team and the hard work put in by each member to ensure our client’s
+                        success.
+                    </h1>
+                    <div class="mt-5"><a href="#" class="btn-primary py-2 px-1 text-xl">OUR HAPPY CLIENTS</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end ajebah's  -->
+
+    <!-- start industry -->
+    <div class="container py-8">
+        <!-- head -->
+        <div class="text-center">
+            <h1 class="font-bold text-4xl text-ajebah-light-blue">INDUSTRY LEADING FEATURES IN OUR</h1>
+            <h1 class="font-bold mt-4">DOORDASH CLONE APP</h1>
+        </div>
+        <!-- cards -->
+        <div class="flex flex-col justify-center items-center ">
+            <!-- first row -->
+            <div class="mt-6 w-auto">
+                <div
+                    class="flex md:flex-row md:gap-3 gap-4 items-center justify-center md:items-start flex-wrap md:justify-center flex-col">
+                    <div class="flex flex-col justify-start items-center  md:w-[24%] gap-4">
+                        <img src="./imgs/super-sec-3-1.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">Licensed Source Code</p>
+                        <p class="text-opacity-black text-center ">You get Licensed Source Code for
+                            Free. So
+                            your team can make the enhancements they want.</p>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                        <img src="./imgs/super-sec-3-2.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">1 Year - Free Support</p>
+                        <p class="text-opacity-black text-center ">You are covered under our support of
+                            1
+                            year for any Issues or Bugs.</p>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                        <img src="./imgs/super-sec-3-3.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">Updates</p>
+                        <p class="text-opacity-black text-center ">Get an upgrade for free in 1st year.
+                            Let
+                            us know when you want it and we'll send updated code to you.
+                        </p>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  md:w-[24%] gap-4">
+                        <img src="./imgs/super-sec-3-5.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">NDA & Privacy Policy</p>
+                        <p class="text-opacity-black text-center">We will never claim your Apps to be
+                            our
+                            work in market, nor show case your Apps in our Portfolio either.</p>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                        <img src="./imgs/super-sec-3-10.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">iOS App Installation On App Store - Free</p>
+                        <p class="text-opacity-black text-center">After thorough Q and A, we will also
+                            launch the iOS app on the iTunes App store. We provide full support in case of
+                            rejection.
+                            Get more details on our rejection assistance for iOS Apps here.</p>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                        <img src="./imgs/super-sec-3-11.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">Android App Submission To Google
+                            Play Store - Free</p>
+                        <p class="text-opacity-black text-center">On approval, we will upload, install
+                            and
+                            do a thorough QA of the app. We will then launch the Thumbtack clone app on the Google
+                            Play
+                            store for you as well. In case of rejection our app rejection assistance team will
+                            provide
+                            full support. You can go through our details on rejection assistance for Android Apps.
+                        </p>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                        <img src="./imgs/super-sec-3-12.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">Manual Booking from Admin
+                            Panel- FREE</p>
+                        <p class="text-opacity-black text-center">This is a very useful feature for
+                            users
+                            without access to smartphones or the internet. They can simply place a call to the admin
+                            and
+                            the Service can be booked manually through here. This feature will help in increasing
+                            users.
+                            This too is an added freebie.
+
+                        </p>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                        <img src="./imgs/super-sec-3-13.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">Accounts Web panel - FREE</p>
+                        <p class="text-opacity-black text-center">Enjoy the ability to give selected
+                            and
+                            restricted access to Accounts related Pages, Reports and downloadable CSV/Excel Files to
+                            only people concerned with such work without having to expose personal client
+                            information to
+                            anyone. Again, our team gives this as a FREE add on.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end industry -->
+
+    <!-- start choose -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <div class="flex flex-col-reverse  md:items-start items-center md:flex-row">
+
+                <div class="md:w-3/5">
+                    <h1 class="text-ajebah-light-blue font-bold text-4xl ">CHOOSE THE BEST PLAN FOR YOUR</h1>
+                    <h1 class="font-bold mt-4">RESTAURANT FOOD DELIVERY APP</h1>
+                    <h1 class="text-opacity-black leading-7 mt-4">The premise of an on demand food delivery application
+                        such as the UberEats clone sits on a very complex structure of codes and schematics. In order to
+                        ensure that your business goes on smoothly, you will need more than just a single app. There is
+                        a bundle that cohesively comes together as a system to ensure on demand delivery takes place
+                        effectively. Take a look at everything you get when you purchase the UberEats Clone from us.
+                    </h1>
+                    <div class="mt-8 flex flex-col">
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Main
+                            Website</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>User iOS
+                            App</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>User Android
+                            App</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>User Web Panel
+                            to
+                            manage Bookings, Profile, Wallet Money etc</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Service
+                            Provider
+                            iOS App</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Service
+                            Provider
+                            Android App</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Service
+                            Provider
+                            Web Panel to manage Services, Payments, Profile etc.</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Service
+                            Provider
+                            Company Web Panel</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Billing Panel
+                            (Manage Payments and Site Earnings)</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Dispatcher
+                            Panel
+                            (God's View, Manual Service Booking)</span>
+                        <span class="mt-4"><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Admin Web Panel
+                            to
+                            manage the overall working of the app i.e. Payments, Rates, Service Providers,
+                            Users, Reports etc.</span>
+                        <div class="mt-4">
+                            <a href="#" class="btn-primary py-1 px-2">Get A Quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/5">
+                    <img src="./imgs/super-sec-8-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end choose -->
+
+    <!-- start make -->
+    <div class="container py-8">
+        <div class="head-div">
+            <h1 class="head-light-blue">MAKE YOUR BUSINESS MORE</h1>
+            <h1 class="font-bold">ACCESSIBLE AND ACCEPT ORDERS ACROSS EVERY MEDIUM!</h1>
+            <h1 class="text-opacity-black text-xl">This on demand food delivery system based on the UberEats clone that
+                we have
+                developed for you will empower you to accept order from Phone, Web, App and the Restaurant directly as
+                well!</h1>
+        </div>
+        <div class="flex md:flex-row flex-col justify-center gap-4 mt-20">
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 md:mt-0 mt-6 relative pt-12 md:min-w-[20%] md:max-w-[20%]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-1.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">Ordering from Application</h1>
+                <h1 class="text-opacity-black text-xl">Allow customer to order Food from Restaurants through Android and
+                    iOS Apps.</h1>
+                <div class="mt-28 pb-4 text-center">
+                    <a href="#" class="btn-primary py-1 px-2 text-xl">View Video</a>
+                </div>
+            </div>
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 relative pt-12 md:mt-0 mt-20 md:min-w-[20%] md:max-w-[20%]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-2.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">Ordering from Website</h1>
+                <h1 class="text-opacity-black text-xl">We provide you a feature that allows users to Order Food from
+                    Restaurants through Website in Real Time.</h1>
+                <div class="mt-20 pb-4 text-center">
+                    <a href="#" class="btn-primary py-1 px-2 text-xl">View Video</a>
+                </div>
+            </div>
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 relative md:mt-0 mt-20 pt-12 md:min-w-[20%] md:max-w-[20%]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-3.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">Call directly to Restaurant
+                    and order</h1>
+                <h1 class="text-opacity-black text-xl">Users can directly call Restaurant and Order Food. Restaurant
+                    will then process order and get food delivered through the Apps.</h1>
+                <div class="mt-8 pb-4 text-center">
+                    <a href="#" class="btn-primary py-1 px-2 text-xl">View Video</a>
+                </div>
+            </div>
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 relative pt-12 md:mt-0 mt-20 md:min-w-[20%] md:max-w-[20%]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-4.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">Call your Company / <br>
+                    Administrator and order</h1>
+                <h1 class="text-opacity-black">Users can directly call your company and Order Food. Your back end Team
+                    will then process order and get food delivered through the Apps.
+                </h1>
+                <div class="mt-20 pb-4 text-center">
+                    <a href="#" class="btn-primary py-1 px-2 text-xl">View Video</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end make -->
+
+    <!-- start explore -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <h1 class="head-light-blue">Explore the Various Aspects Involved</h1>
+            <h1 class="mt-4 font-bold text-center">IN THE SERVICE PROVIDER APP</h1>
+            <div class="flex justify-center gap-5 mt-4 flex-wrap">
+                <button id="mobile-btn-1" class="text-xl  button-active">
+                    USER APP
+                </button>
+                <button id="mobile-btn-2" class="text-xl clickble">
+                    SERVICE PROVIDER APP
+                </button>
+                <button id="mobile-btn-3" class="text-xl clickble">RESTAURANT APP</button>
+                <button id="mobile-btn-4" class="text-xl clickble">WEBSITE</button>
+                <button id="mobile-btn-5" class="text-xl clickble">ADMIN PANEL</button>
+            </div>
+        </div>
+        <div class="py-4 flex justify-center " id="mobile-sec">
+            <img id="mobile-sec-1" src="./imgs/super-sec-6-1.png" alt="">
+            <img id="mobile-sec-2" src="./imgs/super-sec-6-1.png" alt="">
+            <img id="mobile-sec-3" src="./imgs/super-sec-6-1.png" alt="">
+            <img id="mobile-sec-4" src="./imgs/super-sec-6-1.png" alt="">
+            <img id="mobile-sec-5" src="./imgs/super-sec-6-1.png" alt="">
+        </div>
+        <div class="py-4 flex justify-center" id="root">
+            <a href="#" class="btn-primary px-2 py-2">View Step by Step Graphical Flow</a>
+        </div>
+
+    </div>
+    <!-- end explore -->
+
+    <!-- start user -->
+    <div class="container py-8">
+        <div class="head-div">
+            <h1 class="head-light-blue">USER FRIENDLY</h1>
+            <h1 class="font-bold">WEBSITE AND ADMIN PANEL</h1>
+            <h1 class="text-opacity-black">This section showcases the look and feel of the Website Frond End and Admin
+                Panel that you get with your On Demand Food Delivery App.</h1>
+        </div>
+        <!-- imgs -->
+        <div class="w-auto flex gap-8 mt-8">
+            <div class="">
+                <img src="./imgs/delivery-sec-6-1.png" alt="" srcset="">
+            </div>
+            <div class="">
+                <img src="./imgs/delivery-sec-6-2.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="flex justify-center gap-4">
+            <div>
+                <a href="" class="btn-primary py-1 px-2">View Graphical Flow</a>
+            </div>
+            <div>
+                <a href="" class="btn-primary py-1 px-8">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- end user -->
+
+    <!-- start become -->
+    <div class="bg-white-gray">
+        <div class="container ">
+            <div class="flex md:flex-row flex-col gap-8">
+                <div class="w-auto">
+                    <img src="./imgs/delivery-sec-7-1.png" alt="">
+                </div>
+                <div class="w-5/12 flex flex-col gap-6">
+                    <h1 class="text-ajebah-light-blue font-bold text-4xl">BECOME THE KING OF THE</h1>
+                    <h1 class="font-bold text-xl">FOOD DELIVERY BUSINESS</h1>
+                    <h1 class="leading-8 text-opacity-black">With the latest Uber Eats app’s new design and feature rich
+                        unveiling, make sure that you are at
+                        the top of the business pyramid. Whether you wish to base your app on an existing model or
+                        launch a whole new concept, this is the right solution for you. <br> Take a look at all the
+                        various
+                        food delivery apps that our <br> Uber Eats clone not only matches but surpasses!</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start become -->
+
+    <!-- start do  -->
+    <div class="container py-8">
+        <div class="flex flex-col md:flex-row-reverse">
+            <div class="md:w-1/2">
+                <img src="./imgs/delivery-sec-8-1.png" alt="">
+            </div>
+            <div class="md:ml-4 md:w-1/2">
+                <h1 class="text-4xl text-ajebah-light-blue font-bold">DO NOT LET THE <br>CORONA VIRUS COVID 19 PANDEMIC
+                </h1>
+                <h1 class="font-bold mt-4">Affect your business!</h1>
+                <h1 class="text-opacity-black leading-8 mt-4 text-xl">The global fabric of entrepreneurship has changed
+                    during the last two years since the Corona Virus CoVid 19 pandemic hit the world so hard. Smart
+                    entrepreneurs have realized that it is time to up their game and to switch on to more profitable
+                    avenues rather than sticking to conventional business ideas. To meet the market demands, we have
+                    created an app that specifically ensures that nothing in the name of business gets affected or
+                    halted during these precarious times.</h1>
+                <h1 class="text-opacity-black leading-8 mt-4 text-xl">Many have suffered major financial losses during
+                    the pandemic, but your Grubhub clone can now ensure that more and more people can find a way to earn
+                    their living in spite of the pandemic as your customers continue to thrive on by getting access to
+                    their favorite meals.</h1>
+                <h1 class="text-opacity-black leading-8 mt-4 text-xl">We have added new features such as the Safety
+                    badge, contactless deliveries and much more. Continue on to find out more about the Corona Virus
+                    CoVid 19 safety features in our brand new UberEats Clone app.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- end do  -->
+
+    <!-- start top -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <div class="head-div">
+                <h1 class="head-light-blue">TOP FEATURES OF THE</h1>
+                <h1>UBEREATS CLONE APP: 2022 VERSION</h1>
+                <h1 class="text-opacity-black">We understand that change is a part of evolution and every new year
+                    brings with itself a set of opportunities to enhance what we already have. In order to make sure
+                    that the app you purchase from us is absolutely the best in class, we have added some exciting new
+                    features in 2022. Take a look at some of our top noted features in the UberEats clone 2022 version.
+                </h1>
+            </div>
+            <div class="mt-4">
+                <div class="flex md:flex-row flex-col justify-center gap-3">
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">New UI/ UX for Sign in and Sign up Process</h1>
+                        <h1 class="text-opacity-black mt-2">This latest feature includes a much more streamlined and
+                            easy to use log in and sign up
+                            process for users, drivers and restaurants.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">Log In Using Face Id Recognition and Fingerprint Recognition Face Mask
+                            Verification</h1>
+                        <h1 class="text-opacity-black mt-2">Allow your iOS users to log in using their Face IDs and your
+                            Android users to log in using their Fingerprint scan quickly <br> and easily.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">Item Photo with Video and Multiple Images</h1>
+                        <h1 class="text-opacity-black mt-2">Empower your restaurant partners to upload appetising photos
+                            and videos of their menu items.</h1>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col  justify-center gap-3 mt-3 md:h-[144px]">
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">Facebook Ads Integration</h1>
+                        <h1 class="text-opacity-black mt-2">Bring your users directly to the ordering page of your
+                            restaurants in the app from Facebook Ads.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">Google Ads Integration</h1>
+                        <h1 class="text-opacity-black mt-2">Bring in your users directly to the food ordering page of
+                            your restaurants in the app from Google Ads.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">Video Call Your Delivery Driver</h1>
+                        <h1 class="text-opacity-black mt-2">Now, know exactly where your delivery driver is by giving
+                            him or her a video call.</h1>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col  justify-center gap-3 mt-3 md:h-[122px]">
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/2">
+                        <h1 class="font-bold">Multiple Credit Card Management</h1>
+                        <h1 class="text-opacity-black mt-2">Empower your users to be able to use multiple credit cards
+                            for ordering food through your Uber Eats clone in the most secure way.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/2">
+                        <h1 class="font-bold">Location Wise Banners</h1>
+                        <h1 class="text-opacity-black mt-2">The Admin can set the Home Page Banner Location-wise when he
+                            wishes to target a specific location and users.
+                        </h1>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col  justify-center gap-3 mt-3 ">
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/2">
+                        <h1 class="font-bold">Re-Assign Delivery Driver for Store Orders</h1>
+                        <h1 class="text-opacity-black mt-2">Bring your users directly to the ordering page of your
+                            restaurants in the app from Facebook Ads.</h1>
+                        <div class="flex flex-col gap-2 mt-2">
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>Main
+                                Website</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>User iOS
+                                App</span>
+                            <span class=""><i class="text-ajebah-blue fa-solid fa-circle fa-xs mr-2"></i>User
+                                Android
+                                App</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/2">
+                        <h1 class="font-bold">Restaurant menu multiple options/toppings</h1>
+                        <h1 class="text-opacity-black mt-2">Allowing restaurant owners to add multiple toppings/options
+                            to the food items listed in their menu. For instance- A customer is ordering pizza. He gets
+                            to choose from Thin crusts/regular/cheese burst. For the topping, he adds a few of his
+                            favorite. That’s how the cost of the pizza increases.</h1>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col justify-center gap-3 mt-4">
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">Advanced Rating Flow for Food Items and Delivery
+                            Drivers</h1>
+                        <h1 class="text-opacity-black mt-2">The feature allows the users to provide ratings and feedback
+                            on the delivery made and for the items they ordered. This helps the Restaurants to improve
+                            their Services.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">Free Delivery Promo Codes for Specific Stores</h1>
+                        <h1 class="text-opacity-black mt-2">The App owner will set the Promo Code offering “Free
+                            Delivery” from the list of options for specific or all stores. The customers can apply the
+                            same to avail free deliveries on their orders. The feature can be set On/Off accordingly.
+                        </h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">Location Wise Push Notifications throughout the System</h1>
+                        <h1 class="text-opacity-black mt-2">This feature allows the Admin to send mass notifications and
+                            alerts to particular locations so that it makes it easy to win targeted audience attention.
+                        </h1>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col  justify-center gap-3 mt-3 md:h-[144px]">
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">Facebook Ads Integration</h1>
+                        <h1 class="text-opacity-black mt-2">Bring your users directly to the ordering page of your
+                            restaurants in the app from Facebook Ads.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">Google Ads Integration</h1>
+                        <h1 class="text-opacity-black mt-2">Bring in your users directly to the food ordering page of
+                            your restaurants in the app from Google Ads.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">Video Call Your Delivery Driver</h1>
+                        <h1 class="text-opacity-black mt-2">Now, know exactly where your delivery driver is by giving
+                            him or her a video call.</h1>
+                    </div>
+                </div>
+                <div class="mt-6 text-center ">
+                    <a href="" class="btn-primary py-1 px-8 text-xl">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end top -->
+
+    <!-- start make your -->
+    <div class="container py-8">
+        <!-- head -->
+        <div class="head-div">
+            <h1 class="head-light-blue">MAKE YOUR BUSINESS MORE</h1>
+            <h1 class="font-bold">ACCESSIBLE AND ACCEPT ORDERS ACROSS EVERY MEDIUM!</h1>
+            <h1 class="text-opacity-black">This on demand food delivery system based on the UberEats clone that we have
+                developed for you will
+                empower you to accept order from Phone, Web, App and the Restaurant directly as well!</h1>
+        </div>
+        <div class="flex md:flex-row flex-col justify-center gap-4 mt-20">
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 md:mt-0 mt-6 relative pt-12 md:min-w-[20%] md:max-w-[20%] md:min-h-[540px]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-1.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">Single Food Store</h1>
+                <h1 class="text-opacity-black text-xl">In case you run an independent restaurant with no other branches,
+                    this app can work wonders for you too. Run this app to deliver food in your CITY or only your area
+                    and make it your personal app for business. This app will then only be used for your business and
+                    not for any other restaurant at all. You can receive the order and send out your own delivery
+                    drivers to make the deliveries.
+                </h1>
+            </div>
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 relative pt-12 md:mt-0 mt-20 md:min-w-[20%] md:max-w-[20%]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-2.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">Food Delivery Startups</h1>
+                <h1 class="text-opacity-black text-xl">This is the perfect app if you want your customers to be able to
+                    place orders for food from the restaurants closest to them. Any restaurant across the country can
+                    register into your app, but, when a customer logs in; they will only see the restaurants closest to
+                    their physical location. This geographical radius for restaurant selection can be set from the
+                    admin.</h1>
+            </div>
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 relative md:mt-0 mt-20 pt-12 md:min-w-[20%] md:max-w-[20%]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-3.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">Food Chains</h1>
+                <h1 class="text-opacity-black text-xl">In case you own a chain of restaurants and wish to use the app
+                    for food delivery for all of them, you can use this app too. When a customer logs in, they can see
+                    the branch of your restaurant that is closest to your customer’s location. The app has been designed
+                    specifically to make sure that orders can be received from the closest restaurant and assigned to
+                    the delivery driver closest as well.</h1>
+            </div>
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 relative pt-12 md:mt-0 mt-20 md:min-w-[20%] md:max-w-[20%]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-4.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">Cloud Kitchen</h1>
+                <h1 class="text-opacity-black">Our Uber Eats clone empowers you to remunerate the unique Cloud Kitchen
+                    format as well!
+                </h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- end make your -->
+
+    <!-- start food -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <div class="flex flex-col-reverse md:flex-row justify-between ">
+                <div class="md:w-5/12">
+                    <h1 class="font-bold text-4xl md:mt-0 mt-8 text-ajebah-light-blue">FOOD KIOSK SOLUTION</h1>
+                    <h1 class="text-opacity-black mt-8 leading-8">Returning after months of lockdowns to the new reality
+                        of social distancing, and strict hygiene protocols we have rolled out new technology for the
+                        COVID19 era - Food Kiosk Solution. It comes inclusive of our on-demand food delivery app like
+                        uber.</h1>
+                    <h1 class="text-opacity-black mt-8 leading-8">Our intuitive, Android-based self-ordering system can
+                        take more orders in less time, without increasing payroll. The orders automatically get sent to
+                        your “Admin Dashboard” reducing communication errors and can be viewed on a real-time basis.
+                    </h1>
+                    <h1 class="text-opacity-black mt-8 leading-8">A fully customizable visual menu guides diners through
+                        the self-serve experience. The Food Kiosk screens can be used as a marketing tool, letting you
+                        share promotions and display your restaurant’s branding. When guests place orders via
+                        self-service kiosks, the restaurant can generate more sales in less time while reducing labor
+                        costs. You can reassign the staff from taking orders to higher-value tasks.</h1>
+                </div>
+                <div class="md:w-6/12">
+                    <img src="./imgs/delivery-sec-10-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end food -->
+
+    <!-- start take -->
+    <div class="bg-new-gray my-8">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="font-bold text-5xl text-center text-white">TAKE A LOOK AT OUR UBER CLONE DEMO</h1>
+            <h1 class="text-white text-xl text-center mt-4">Download Our Free Apps</h1>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 mt-4">
+                <!-- panner 1 -->
+                <div class="flex flex-col gap-4 justify-start items-start">
+                    <h1 class="font-bold text-xl text-white">USER APP: </h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-1.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-2.png" alt="">
+                    </a>
+                </div>
+                <!-- panner 2 -->
+                <div class="flex flex-col gap-4 justify-start items-start">
+                    <h1 class="font-bold text-xl text-white">DRIVER APP: </h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-3.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-4.png" alt="">
+                    </a>
+                </div>
+                <!-- panner 3 -->
+
+                <!-- panner 4 -->
+                <div class="flex flex-col gap-4 justify-start items-start">
+                    <h1 class="font-bold text-xl text-white">WEB PANELS: </h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-8.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-8.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end take -->
+
+    <!-- start how -->
+    <div class="container py-8">
+        <!-- head -->
+        <div class="flex flex-col justify-center gap-4">
+            <h1 class="head-light-blue">HOW MUCH DOES IT COST TO DEVELOP</h1>
+            <h1 class="font-bold text-center">AN ON-DEMAND FOOD DELIVERY APP?</h1>
+            <h1 class="text-center text-opacity-black">To determine the overall cost of developing an on-demand food
+                delivery Doordash Clone App isn’t an easy task to say the least and when built from the scratch will
+                cost a considerably huge sum of money from your end. Thus, to assist you in the same, we have an
+                attractive package designed specifically for your food delivery startup so as to ensure you make
+                considerable profits right from Day 1!
+            </h1>
+            <div>
+                <img src="./imgs/grap-sec-3-1.png" alt="">
+            </div>
+            <div class="text-center">
+                <a href="#" class="mt-2 py-1 px-2 btn-primary">CHECK FEATURES AND PRICING</a>
+            </div>
+        </div>
+    </div>
+    <!-- end how -->
+
+    <!-- start details -->
+    <div class="container py-8">
+        <!-- head -->
+
+        <div class="">
+            <h1 class="head-light-blue">DETAILED VIDEO</h1>
+            <h1 class="font-bold text-center">INFORMATIONALS</h1>
+            <h1 class="text-center text-opacity-black">Reading lengthy literature can be boring and redundant. We have
+                put together some easy to understand visual aids so that you can truly asses the app for yourself in the
+                easiest way. Take a look at the videos that help explain the app in detail. If you still have doubts,
+                just drop us a line and we will get back to you on it.</h1>
+        </div>
+        <div class="flex flex-col gap-5 mt-4">
+            <div class="flex md:flex-row flex-col items-center justify-center gap-5">
+                <div>
+                    <img src="./imgs/grap-sec-5-1.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Introduction to Food Service</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-2.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Manage Services and Rates</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Referral Code</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Referral Code</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-5 mt-4">
+            <div class="flex md:flex-row flex-col items-center justify-center gap-5">
+                <div>
+                    <img src="./imgs/grap-sec-5-1.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Introduction to Food Service</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-2.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Manage Services and Rates</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Referral Code</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Referral Code</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-5 mt-4">
+            <div class="flex md:flex-row flex-col items-center justify-center gap-5">
+                <div>
+                    <img src="./imgs/grap-sec-5-1.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Introduction to Food Service</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-2.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Manage Services and Rates</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Referral Code</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Referral Code</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-5 mt-4">
+            <div class="flex md:flex-row flex-col items-center justify-center gap-5">
+                <div>
+                    <img src="./imgs/grap-sec-5-1.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Introduction to Food Service</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-2.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Manage Services and Rates</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Referral Code</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">Referral Code</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end details -->
+
+    <!-- start honest -->
+	<div class="container py-8">
+		<!-- content -->
+		<div class="text-center">
+			<h1 class="text-ajebah-light-blue text-4xl font-bold">Honest Ajebah</h1>
+			<h1 class="mt-6">REVIEWS AND TESTIMONIALS</h1>
+            <h1 class="text-opacity-black mt-6">Take a deep look at what our clients believe our potential is and hear their story of association with us.</h1>
+		</div>
+		<!-- imgs -->
+		<div class="flex flex-col md:flex-row mt-4 gap-4 justify-between">
+			<div class="">
+				<img src="./imgs/19-sec-1.png" alt="">
+			</div>
+			<div class="flex flex-col justify-between  mt-5 md:mt-0">
+				<div class="flex md:flex-row flex-col md:gap-10 gap-5 items-center justify-between">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+				<div class="flex md:flex-row flex-col md:mt-0 mt-5 items-center md:gap-10 gap-5 ">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+    <!-- end honest -->
+
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="foot-All">
+                <div class="logo-foot">
+                    <a href="./index.html">
+                        <img src="./imgs/logo.png" alt="" />
+                    </a>
+                </div>
+                <div class="Contact-Us-Foot">
+                    <h4>CONTACT US</h4>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i> 182 Gada Street ,Saudi
+                        Arabia
+                    </p>
+                    <a href="tel:+01154258770">
+                        <p>
+                            <i class="fa-solid fa-phone"></i> Phone: +20 120 009 71 27
+                        </p>
+                    </a>
+                    <a href="mailto:name@email.com">
+                        <p><i class="fa-solid fa-envelope"></i> Email: info@3X1.IO</p>
+                    </a>
+                </div>
+                <div class="About-Foot">
+                    <h4>ABOUT</h4>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Policy</a>
+                    <a href="#">Blogs</a>
+                    <a href="./contact-us.html">Contact us</a>
+                </div>
+                <div class="Follow-Us-Foot">
+                    <h4>FOLLOW US</h4>
+                    <div class="LOGO-FOOT">
+                        <a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+				<div class="English">
+					<select id="countries"
+                    onchange="location = this.value;"
+						class="bg-white-gray   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value=""></option>
+						<option value="./delivery-arabic.html">العربية</option>
+
+					</select>
+				</div>
+            </div>
+        </div>
+        <div class="khat-foot"></div>
+        <div class="txt-under-foot">
+            <p>copyrights <i class="fa-regular fa-copyright"></i> 2022</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/mobile-sec.js"></script>
+</body>
+
+</html>

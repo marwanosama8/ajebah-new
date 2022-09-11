@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajebah - Delivery Apps</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/taxi.css">
+</head>
+
+<body class="font-Cairo" dir="rtl">
+	<!-- start nav -->
+	<nav class="bg-gray">
+		<div class=" container mx-auto px-4">
+			<div class="flex justify-between">
+				<div class="flex space-x-7 ">
+					<div>
+						<!-- Website Logo -->
+						<a href="#" class="flex items-center py-4 px-2">
+							<img src="./imgs/logo.png" alt="Logo" class="h-12 w-auto">
+						</a>
+					</div>
+					<!-- Primary Navbar items -->
+					<div class="hidden md:flex items-center space-x-1">
+						<a href="./index-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">الصفحة الرئيسية</a>
+						<a href="./taxi-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">تطبيق الاجرة</a>
+						<a href="./gojek-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">جوجك كلون</a>
+						<a href="./super-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300 ">تطبيق الخدمات الخارقة</a>
+						<a href="./grap-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">تطبيق الجراب</a>
+						<a href="./delivery-arabic.html"
+							class="py-1 px-4 text-ajebah-blue border-b-4 border-ajebah-blue font-semibold">تطبيق التوصيلات</a>
+						<a href="./u-for-x-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">يو فور اكس</a>
+						<a href="./our-clients-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">عملائونا</a>
+						<a href="./about-us-arabic.html"
+							class="py-4 px-2 text-dark font-semibold hover:text-ajebah-blue transition duration-300">عنا</a>
+					</div>
+				</div>
+				<!-- Secondary Navbar items -->
+				<div class="hidden md:flex items-center ">
+					<a href="" class="py-2 px-2 btn-primary ">استفسر الان</a>
+				</div>
+				<div class="hidden md:flex  md: md:w-auto md:flex-col md:justify-between md:items-center md:ml-4">
+					<div class="pt-3">
+						<a href="./delivery-arabic.html" class="text-ajebah-light-blue pl-1">العربية</a>
+						<a href="./delivery.html" class="pl-1">English</a>
+					</div>
+					<div class="relative mb-4 rounded-2xl w-28 h-4 bg-white">
+						<span class="text-ajebah-blue relative float-right bottom-1">
+							<i style="background-color: blue ;" class="fa-solid fa-circle fa-sm"></i>
+						</span>
+					</div>
+				</div>
+				<!-- Mobile menu button -->
+				<div class="md:hidden flex items-center justify-between">
+					<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+							stroke="currentColor">
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- mobile menu -->
+		<div class="hidden mobile-menu">
+			<ul class="">
+				<li class="active"><a href="./index-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">الصفحة الرئيسية</a></li>
+				<li><a href="./taxi-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">تطبيق الاجرة</a></li>
+				<li><a href="./gojek-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">جوجك كلون</a></li>
+				<li><a href="./super-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">تطبيق الخدمات الخارقة</a></li>
+				<li><a href="./grap-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">تطبيق الجراب</a></li>
+				<li><a href="./delivery-arabic.html"
+						class="block text-sm px-2 py-4 text-ajebah-blue bg-green-500 font-semibold">تطبيق التوصيلات</a>
+				</li>
+				<li><a href="./u-for-x-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">يو فور اكس</a></li>
+				<li><a href="./our-clients-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">عملائونا</a></li>
+				<li><a href="./about-us-arabic.html"
+						class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">عنا</a></li>
+			</ul>
+			<div class="text-center pb-5">
+				<a href="" class="py-2 px-2 btn-primary ">استفسر الان</a>
+			</div>
+		</div>
+	</nav>
+	<!-- end nav -->
+
+    <!-- start best -->
+    <div class="">
+        <div class="container">
+            <div class="flex flex-col-reverse md:flex-row-reverse justify-between w-full py-12">
+                <!-- content -->
+                <div class="flex flex-col md:text-right text-center md:w-3/5">
+                    <h1 class="font-bold text-ajebah-light-blue text-4xl w-auto  leading-relaxed">أفضل طعام
+                        تطبيق التسليم في السوق</h1>
+                    <p class="pt-4 text-opacity-black leading-10">حان الوقت لتوديع التطبيقات القديمة والقديمة
+                        لصالح تطبيق استنساخ UberEats الأحدث والأكثر تقدمًا! يأتي هذا التطبيق الغني بالميزة محملاً
+                        مع بعض الميزات المفضلة في الصناعة الأكثر صلة والتي تُعد حلاً عمليًا لك
+                        أعمال توصيل الطعام.
+                        حان الوقت لتوديع التطبيقات القديمة والقديمة لصالح أحدث تطبيقاتنا وأكثرها تقدمًا
+                        استنساخ تطبيق UberEats! يأتي هذا التطبيق الغني بالميزات محملاً ببعض الصناعات الأكثر صلة
+                        الميزات المفضلة التي تعد حلاً عمليًا لأعمال توصيل الطعام الخاصة بك.</p>
+                    <p class="pt-4 text-opacity-black leading-10">مع أحدث تصميم وواجهة سلسة لهذا
+                        يمنح التطبيق المستخدمين تجربة لم يسبق لها مثيل. مع هذا التطبيق الجديد ، يمكنك الآن بدء البث المباشر
+                        مجرد أسبوع من الوقت وابدأ في جني الأرباح وتحقيق أرباح كما لم تفعلها من قبل
+                        قبل!</p>
+                    <p class="pt-4 text-opacity-black leading-10">هذا هو التطبيق الأول من نوعه في السوق
+                        مصممة خصيصًا لتكون سهلة الاستخدام وخفيفة الوزن ومربحة لك. فريقنا الأفضل
+                        قدم مصممو التطبيقات من جميع أنحاء العالم أفضل تصميم لتطبيق توصيل الطعام في هذا
+                        إصدار جديد وأحدث من Uber Eats Clone. الغوص لمعرفة المزيد!</p>
+                    <div class="flex justify-center md:justify-start items-center gap-2 text-center">
+                        <a href="#" class="mt-4 btn-primary  px-5 py-2 ">التسعير</a>
+                        <a href="#" class="mt-4 btn-primary text-center px-5 py-2 md:py-2 ">اشتري الآن</a>
+                    </div>
+                </div>
+                <!-- img -->
+                <div class="pb-8 md:pb-0">
+                    <img src="./imgs/delivery-sec-1-1.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end best -->
+
+    <!-- start multiple -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <!-- head -->
+            <div class="head-div text-center">
+                <h1 class="head-light-blue">تدفقات متعددة الإيرادات</h1>
+                <h1 class="font-bold">من تطبيق استنساخ UBER EATS</h1>
+            </div>
+            <!-- content -->
+            <div class="flex flex-col gap-4">
+                <h1 class="text-opacity-black">هل أنت رائد أعمال يخطط لبدء <span
+                    class = "font-bold text-dark"> شركة توصيل الطعام </span> حيث سيطلب العملاء
+                الطعام من المطاعم عبر الإنترنت بطريقة يتم توصيلها إلى منازلهم في الوقت الفعلي ، فهذا هو الحال
+                التطبيق المناسب لك. ولدينا خطط وطرق يمكنك من خلالها جني أموال جيدة باختصار
+                زمن.</h1>
+                <h1 class="text-opacity-black">في هذا التطبيق ، <span class = "font-bold text-dark"> المطاعم
+                    يمكن للمالكين </span> تسجيل أنفسهم عبر <span class = "text-dark font-bold"> المطاعم
+                    التطبيق </span> وإضافة طعامهم
+                العناصر والمطابخ مع خيارات ، إضافات ، خصومات ، وما إلى ذلك بحيث يمكن للعملاء تقديم الطلبات
+                <span class = "font-bold text-center"> تطبيقات المستخدم </span> وادفع عبر الإنترنت أو نقدًا (COD) للحصول على
+                تم تسليم الطلب إلى منزلهم. السائقين
+                سوف تسجل لقبول حزم الطعام من المطاعم وتسليمها للعملاء.</h1>
+                <h1 class="text-opacity-black">في العملية برمتها ، يحصل العملاء على أفضل غذاء في الوقت المناسب ،
+                    مطاعم و توصيل
+                    السائقين كسب المال لخدمتهم. نحن ، من ذوي الخبرة في هذا المجال وقد نجحنا
+                    قدمت المئات من هذه التطبيقات في السنوات القليلة الماضية ، وقد أضافت العديد من الجوانب المهمة حيث أنت
+                    بصفتك مالكًا للتطبيق ، يمكنك تحقيق أرباح جيدة من هذا النشاط التجاري. فيما يلي بعض الطرق التي تستخدمها كتطبيق
+                    سيكسب المالك المال عبر هذا التطبيق المتقدم الخاص بنا.</h1>
+            </div>
+            <div class="flex md:flex-row flex-col mt-4 justify-center  gap-4">
+                <div
+                    class="bg-white rounded-xl shadow-lg p-4 flex md:flex-row flex-col md:text-right text-center gap-3 ">
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./imgs/delivery-sec-2-1.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4 justify-start ">
+                        <h1 class="font-bold ">عمولة طلبات الطعام</h1>
+                        <h1 class="text-opacity-black">قم بتحصيل عمولة على كل طلب يتم تقديمه باستخدام التطبيق للطعام
+                            عبر <br> أي مطعم مسجل في تطبيقك.</h1>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-xl shadow-lg p-4 flex md:flex-row flex-col md:text-right text-center gap-3 ">
+                    <div class=" md:w-14 flex flex-col justify-center items-center">
+                        <img src="./imgs/delivery-sec-2-2.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4 justify-start">
+                        <h1 class="font-bold ">عمولة طلبات الطعام</h1>
+                        <h1 class="text-opacity-black">بغض النظر عن المطعم الذي يقدم المستخدم طلبًا منه
+
+                            داخل تطبيقك ، <br> يمكنك إجراء عمولة عليه ، في كل مرة يتم فيها الطلب
+                            عبر!</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flex md:flex-row flex-col mt-4 justify-center  gap-4">
+                <div
+                    class="bg-white rounded-xl shadow-lg p-4 flex md:flex-row flex-col md:text-right text-center gap-3 ">
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./imgs/delivery-sec-2-3.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4 justify-start ">
+                        <h1 class="font-bold ">الإعلانات</h1>
+                        <h1 class="text-opacity-black">تمكين البائعين وأصحاب المتاجر / المطاعم من وضع إعلاناتهم عليها
+                            محددًا <br> الصفحات المقصودة على اللافتة وحدد مواقع للحصول على دخل إضافي.</h1>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-4 flex md:flex-row flex-col md:text-right gap-3 ">
+                    <div class="flex flex-col justify-center items-center">
+                        <img src="./imgs/delivery-sec-2-4.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4 justify-start">
+                        <h1 class="font-bold ">عمولة طلبات الطعام</h1>
+                        <h1 class="text-opacity-black">تقدم في التطبيق مزايا مثل العضوية الذهبية ، الشهرية
+                            الاشتراك و <br> توزيع الحزم مقابل رسوم للحصول على المزيد من المال. هذه الميزة
+                            <br> متاح لسائقي التوصيل.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end multiple -->
+
+    <!-- start uber -->
+    <div class="bg-white">
+        <div class="container py-8">
+            <h1 class="text-center font-bold text-ajebah-light-blue text-4xl ">فيديو عرض مباشر لتطبيق أوبر للخدمات</h1>
+            <h1 class="font-bold text-center mt-4">شاهد عملك الاستثماري المحتمل بشكل حقيقي.</h1>
+            <h1 class="text-center mt-4 text-opacity-black">قم بتشغيل الفيديو وشاهد التفاعل التفصيلي للعميل
+                ومقدم الخدمة مع بعضهما البعض بدءًا من التعاقد مع مقدم الخدمة حتى الانتهاء من الوظيفة و
+                تقديم التعليقات لبعضهم البعض.</h1>
+            <div class="flex justify-center items-center mt-4">
+                <img class="md:w-2/3" src="./imgs/taxi-sec-8-111.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end uber -->
+
+    <!-- start flow -->
+    <div class="container py-8">
+        <div class="head-div text-center">
+            <h1 class="head-light-blue">تدفق الطعام</h1>
+            <h1 class="font-bold">تطبيقات توصيل مطاعم الطعام</h1>
+        </div>
+        <div class="mt-4">
+            <img src="./imgs/delivery-sec-3-1.png" alt="">
+        </div>
+    </div>
+    <!-- end flow -->
+
+    <!-- start ajebah's  -->
+    <div class="bg-white-gray">>
+        <div class="container py-8">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2">
+                    <img class="md:w-[631px] md:ml-10" src="./imgs/delivery-sec-4-1.png" alt="">
+                </div>
+                <div class="md:ml-4 mt-8 md:mt-0 md:w-1/2">
+                    <h1 class="text-4xl text-ajebah-light-blue font-bold">يقسم عملاؤنا على نجاح تطبيقنا</h1>
+                    <h1 class="font-bold mt-4">أثناء الوباء العالمي</h1>
+                    <h1 class="text-opacity-black leading-8 mt-4 text-xl">تعرضت الأعمال لضربة شديدة خلال
+                        جائحة،
+                        لكن صدقنا واجتهادنا ساعد العديد من العملاء على البقاء واقفين وحتى تحقيق النجاح
+                        بغض النظر عن الوضع. ألق نظرة على ما يقوله عميلنا ، أمجد ، بشأنه
+                        خبرة
+                        للعمل معنا وشراء تطبيق توصيل الطعام عند الطلب UberEats Clone. هو يشارك
+                        له
+                        قصة العثور على النجاح حتى خلال هذه الأوقات التي ضربها الوباء. هو أيضا يتكلم
+                        حول
+                        تفاني فريقنا والعمل الجاد الذي يبذله كل عضو لضمان عملائنا
+                        النجاح.</h1>
+                    <div class="mt-5"><a href="#" class="btn-primary py-2 px-1 text-xl">عملائنا السعداء</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end ajebah's  -->
+
+    <!-- start industry -->
+    <div class="container py-8">
+        <!-- head -->
+        <div class="text-center">
+            <h1 class="font-bold text-4xl text-ajebah-light-blue">الميزات الرائدة في الصناعة في موقعنا</h1>
+            <h1 class="font-bold mt-4">تطبيق DOORDASH CLONE</h1>
+        </div>
+        <!-- cards -->
+        <div class="flex flex-col justify-center items-center ">
+            <!-- first row -->
+            <div class="mt-6 w-auto">
+                <div
+                    class="flex md:flex-row md:gap-3 gap-4 items-center justify-center md:items-start flex-wrap md:justify-center flex-col">
+                    <div class="flex flex-col justify-start items-center  md:w-[24%] gap-4">
+                        <img src="./imgs/super-sec-3-1.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">كود المصدر المرخص</p>
+                        <p class="text-opacity-black text-center ">تحصل على رمز مصدر مرخص لـ
+                            حر. لذا
+                            يمكن لفريقك إجراء التحسينات التي يريدونها.</p>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                        <img src="./imgs/super-sec-3-2.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">1 سنة - دعم مجاني</p>
+                        <p class="text-opacity-black text-center ">أنت تحت دعمنا من
+                            1
+                            عام لأي مشاكل أو أخطاء.</p>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                        <img src="./imgs/super-sec-3-3.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">التحديثات</p>
+                        <p class="text-opacity-black text-center ">احصل على ترقية مجانية في السنة الأولى.
+                            يترك
+                            نعرف متى تريد ذلك وسنرسل إليك رمزًا محدثًا.</p>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  md:w-[24%] gap-4">
+                        <img src="./imgs/super-sec-3-5.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">اتفاقية عدم الإفشاء وسياسة الخصوصية</p>
+                        <p class="text-opacity-black text-center">لن ندعي أن تطبيقاتك موجودة أبدًا
+                            ملكنا
+                            تعمل في السوق ، ولا تعرض تطبيقاتك في محفظتنا أيضًا.</p>
+                    </div>
+
+                    <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                        <img src="./imgs/super-sec-3-10.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">تثبيت تطبيق iOS على متجر التطبيقات - مجانًا</p>
+                        <p class="text-opacity-black text-center">بعد سؤال وجواب شامل ، سنقوم أيضًا
+                            قم بتشغيل تطبيق iOS في متجر تطبيقات iTunes. نحن نقدم الدعم الكامل في حالة
+                            الرفض.
+                            احصل على مزيد من التفاصيل حول مساعدة الرفض لتطبيقات iOS هنا.</p>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                        <img src="./imgs/super-sec-3-11.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">تقديم تطبيق Android إلى Google
+                            متجر Play - مجاني</p>
+                        <p class="text-opacity-black text-center">عند الموافقة ، سنقوم بالتحميل والتثبيت
+                            و
+                            إجراء تأكيد الجودة الشامل للتطبيق. سنقوم بعد ذلك بتشغيل تطبيق Thumbtack clone على Google
+                            لعب
+                            مخزن لك أيضا. في حالة الرفض ، سيقوم فريق المساعدة في رفض التطبيق لدينا
+                            تزود
+                            دعم كامل. يمكنك الاطلاع على التفاصيل الخاصة بنا حول مساعدة الرفض لتطبيقات Android.</p>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                        <img src="./imgs/super-sec-3-12.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">الحجز اليدوي من المسؤول
+                            لوحة خالية</p>
+                        <p class="text-opacity-black text-center">هذه ميزة مفيدة للغاية لـ
+                            المستخدمين
+                            دون الوصول إلى الهواتف الذكية أو الإنترنت. يمكنهم ببساطة إجراء مكالمة إلى المسؤول
+                            و
+                            يمكن حجز الخدمة يدويًا من هنا. هذه الميزة ستساعد في الزيادة
+                            المستخدمين.
+                            هذا أيضا هو الهدية الترويجية المضافة.</p>
+                    </div>
+                    <div class="flex flex-col justify-start items-center  gap-4 md:w-[24%]">
+                        <img src="./imgs/super-sec-3-13.png" class="max-w-fit" alt="">
+                        <p class="font-bold text-center">لوحة الويب للحسابات - مجانًا</p>
+                        <p class="text-opacity-black text-center">استمتع بالقدرة على العطاء المختار
+                            و
+                            الوصول المقيد إلى الصفحات والتقارير ذات الصلة بالحسابات وملفات CSV / Excel القابلة للتنزيل إلى
+                            فقط الأشخاص المهتمون بهذا العمل دون الحاجة إلى كشف العميل الشخصي
+                            معلومات ل
+                            أي واحد. مرة أخرى ، يقدم فريقنا هذا كإضافة مجانية.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end industry -->
+
+    <!-- start choose -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <div class="flex flex-col-reverse  md:items-start items-center md:flex-row">
+
+                <div class="md:w-3/5">
+                    <h1 class="text-ajebah-light-blue font-bold text-4xl ">اختر أفضل خطة تناسبك</h1>
+                    <h1 class="font-bold mt-4">تطبيق توصيل الطعام للمطعم</h1>
+                    <h1 class="text-opacity-black leading-7 mt-4">فرضية تطبيق توصيل الطعام عند الطلب
+                        مثل استنساخ UberEats الذي يجلس على بنية معقدة للغاية من الرموز والخطط. بغرض
+                        تأكد من أن عملك يسير بسلاسة ، ستحتاج إلى أكثر من مجرد تطبيق واحد. هنالك
+                        حزمة تتضافر معًا كنظام لضمان التسليم عند الطلب
+                        على نحو فعال. ألق نظرة على كل شيء تحصل عليه عند شراء UberEats Clone منا.</h1>
+                    <div class="mt-8 flex flex-col">
+                        <span class="mt-4"><i class = "text-ajebah-blue fa-solid fa-circle fa-xs ml-2"> </i> الرئيسية
+                            موقع الكتروني</span>
+                        <span class="mt-4"><i class = "text-ajebah-blue fa-solid fa-circle fa-xs ml-2"> </i> مستخدم iOS
+                            تطبيق</span>
+                        <span class="mt-4"><i class = "text-ajebah-blue fa-solid fa-circle fa-xs ml-2"> </i> مستخدم Android
+                            تطبيق</span>
+                        <span class="mt-4"><i class = "text-ajebah-blue fa-solid fa-circle fa-xs ml-2"> </i> لوحة المستخدم على الويب
+                            إلى
+                            إدارة الحجوزات ، الملف الشخصي ، Wallet Money ، إلخ</span>
+                        <span class="mt-4"><i class = "text-ajebah-blue fa-solid fa-circle fa-xs ml-2"> </i> الخدمة
+                            مزود
+                            تطبيق iOS</span>
+                        <span class="mt-4"><i class = "text-ajebah-blue fa-solid fa-circle fa-xs ml-2"> </i> الخدمة
+                            مزود
+                            الروبوت التطبيق</span>
+                        <span class="mt-4"><i class = "text-ajebah-blue fa-solid fa-circle fa-xs ml-2"> </i> الخدمة
+                            مزود
+                            لوحة الويب لإدارة الخدمات والمدفوعات والملف الشخصي وما إلى ذلك.</span>
+                        <span class="mt-4"><i class = "text-ajebah-blue fa-solid fa-circle fa-xs ml-2"> </i> الخدمة
+                            مزود
+                            لوحة ويب الشركة</span>
+                        <span class="mt-4"><i class = "text-ajebah-blue fa-solid fa-circle fa-xs ml-2"> </i> لوحة الفواتير
+                            (إدارة المدفوعات وأرباح الموقع)</span>
+                        <span class="mt-4"><i class = "text-ajebah-blue fa-solid fa-circle fa-xs ml-2"> </i> مرسل
+                            لوحة
+                            (عرض الله ، الحجز اليدوي للخدمة)</span>
+                        <span class="mt-4"><i class = "text-ajebah-blue fa-solid fa-circle fa-xs ml-2"> </i> لوحة إدارة الويب
+                            إلى
+                            إدارة العمل العام للتطبيق ، مثل المدفوعات ، والأسعار ، ومقدمي الخدمات ،
+                            المستخدمون والتقارير وما إلى ذلك.</span>
+                        <div class="mt-4">
+                            <a href="#" class="btn-primary py-1 px-2">إقتبس</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/5">
+                    <img src="./imgs/super-sec-8-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end choose -->
+
+    <!-- start make -->
+    <div class="container py-8">
+        <div class="head-div">
+            <h1 class="head-light-blue">اجعل عملك أكثر</h1>
+            <h1 class="font-bold">أوامر يسهل الوصول إليها وتقبلها عبر كل وسيط!</h1>
+            <h1 class="text-opacity-black text-xl">يقوم نظام توصيل الطعام عند الطلب استنادًا إلى استنساخ UberEats
+                نملك
+                تم تطويره لك سيمكنك من قبول الطلب من الهاتف والويب والتطبيق والمطعم مباشرة
+                نحن سوف!</h1>
+        </div>
+        <div class="flex md:flex-row flex-col justify-center gap-4 mt-20">
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 md:mt-0 mt-6 relative pt-12 md:min-w-[20%] md:max-w-[20%]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-1.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">الطلب من التطبيق</h1>
+                <h1 class="text-opacity-black text-xl">السماح للعميل بطلب الطعام من المطاعم عبر Android و
+                    تطبيقات iOS.</h1>
+                <div class="mt-28 pb-4 text-center">
+                    <a href="#" class="btn-primary py-1 px-2 text-xl">عرض الفيديو</a>
+                </div>
+            </div>
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 relative pt-12 md:mt-0 mt-20 md:min-w-[20%] md:max-w-[20%]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-2.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">الطلب من الموقع</h1>
+                <h1 class="text-opacity-black text-xl">نقدم لك ميزة تسمح للمستخدمين بطلب الطعام من
+                    المطاعم من خلال الموقع في الوقت الحقيقي.</h1>
+                <div class="mt-20 pb-4 text-center">
+                    <a href="#" class="btn-primary py-1 px-2 text-xl">عرض الفيديو</a>
+                </div>
+            </div>
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 relative md:mt-0 mt-20 pt-12 md:min-w-[20%] md:max-w-[20%]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-3.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">اتصل مباشرة بالمطعم
+                    والنظام</h1>
+                <h1 class="text-opacity-black text-xl">يمكن للمستخدمين الاتصال مباشرة بالمطعم وطلب الطعام. مطعم
+                    سيقوم بعد ذلك بمعالجة الطلب والحصول على الطعام من خلال التطبيقات.</h1>
+                <div class="mt-8 pb-4 text-center">
+                    <a href="#" class="btn-primary py-1 px-2 text-xl">عرض الفيديو</a>
+                </div>
+            </div>
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 relative pt-12 md:mt-0 mt-20 md:min-w-[20%] md:max-w-[20%]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-4.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">اتصل بشركتك / <br>
+                    المسؤول والنظام</h1>
+                <h1 class="text-opacity-black">يمكن للمستخدمين الاتصال بشركتك مباشرة وطلب الطعام. فريقك الخلفي
+                    سيقوم بعد ذلك بمعالجة الطلب والحصول على الطعام من خلال التطبيقات.</h1>
+                <div class="mt-20 pb-4 text-center">
+                    <a href="#" class="btn-primary py-1 px-2 text-xl">عرض الفيديو</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end make -->
+
+    <!-- start explore -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <h1 class="head-light-blue">استكشف الجوانب المختلفة ذات الصلة</h1>
+            <h1 class="mt-4 font-bold text-center">في تطبيق مقدم الخدمة</h1>
+            <div class="flex justify-center gap-5 mt-4 flex-wrap">
+                <button id="mobile-btn-1" class="text-xl  button-active">
+                    تطبيق المستخدم                </button>
+                <button id="mobile-btn-2" class="text-xl clickble">
+                    تطبيق مزود الخدمة                </button>
+                <button id="mobile-btn-3" class="text-xl clickble">تطبيق مطعم</button>
+                <button id="mobile-btn-4" class="text-xl clickble">موقع الكتروني</button>
+                <button id="mobile-btn-5" class="text-xl clickble">لوحة الادارة</button>
+            </div>
+        </div>
+        <div class="py-4 flex justify-center " id="mobile-sec">
+            <img id="mobile-sec-1" src="./imgs/super-sec-6-1.png" alt="">
+            <img id="mobile-sec-2" src="./imgs/super-sec-6-1.png" alt="">
+            <img id="mobile-sec-3" src="./imgs/super-sec-6-1.png" alt="">
+            <img id="mobile-sec-4" src="./imgs/super-sec-6-1.png" alt="">
+            <img id="mobile-sec-5" src="./imgs/super-sec-6-1.png" alt="">
+        </div>
+        <div class="py-4 flex justify-center" id="root">
+            <a href="#" class="btn-primary px-2 py-2">عرض التدفق الرسومي خطوة بخطوة</a>
+        </div>
+
+    </div>
+    <!-- end explore -->
+
+    <!-- start user -->
+    <div class="container py-8">
+        <div class="head-div">
+            <h1 class="head-light-blue">سهل الاستخدام</h1>
+            <h1 class="font-bold">الموقع ولوحة المشرفين</h1>
+            <h1 class="text-opacity-black">يعرض هذا القسم الشكل والمظهر للواجهة الأمامية لموقع الويب ولوحة الإدارة التي تحصل عليها من خلال تطبيق توصيل الطعام عند الطلب.</h1>
+        </div>
+        <!-- imgs -->
+        <div class="w-auto flex gap-8 mt-8">
+            <div class="">
+                <img src="./imgs/delivery-sec-6-1.png" alt="" srcset="">
+            </div>
+            <div class="">
+                <img src="./imgs/delivery-sec-6-2.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="flex justify-center gap-4">
+            <div>
+                <a href="" class="btn-primary py-1 px-2">عرض التدفق الرسومي</a>
+            </div>
+            <div>
+                <a href="" class="btn-primary py-1 px-8">اشتري الآن</a>
+            </div>
+        </div>
+    </div>
+    <!-- end user -->
+
+    <!-- start become -->
+    <div class="bg-white-gray">
+        <div class="container ">
+            <div class="flex md:flex-row flex-col gap-8">
+                <div class="w-auto">
+                    <img src="./imgs/delivery-sec-7-1.png" alt="">
+                </div>
+                <div class="w-5/12 flex flex-col gap-6">
+                    <h1 class="text-ajebah-light-blue font-bold text-4xl">كن ملك</h1>
+                    <h1 class="font-bold text-xl">أعمال توصيل الطعام</h1>
+                    <h1 class="leading-8 text-opacity-black">مع التصميم الجديد والميزات الأحدث لتطبيق Uber Eats
+                        إزاحة الستار ، تأكد من أنك في
+                        قمة هرم الأعمال. سواء كنت ترغب في تأسيس تطبيقك على نموذج موجود أو
+                        أطلق مفهومًا جديدًا تمامًا ، هذا هو الحل المناسب لك. <br> ألق نظرة على جميع ملفات
+                        مختلف
+                        تطبيقات توصيل الطعام التي استنساخها <br> Uber Eats لا تتطابق فقط بل تتفوق عليها!</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start become -->
+
+    <!-- start do  -->
+    <div class="container py-8">
+        <div class="flex flex-col md:flex-row-reverse">
+            <div class="md:w-1/2">
+                <img src="./imgs/delivery-sec-8-1.png" alt="">
+            </div>
+            <div class="md:ml-4 md:w-1/2">
+                <h1 class="text-4xl text-ajebah-light-blue font-bold">لا تدع <br> CORONA VIRUS COVID 19 PANDEMIC</h1>
+                <h1 class="font-bold mt-4">تؤثر على عملك!</h1>
+                <h1 class="text-opacity-black leading-8 mt-4 text-xl">لقد تغير النسيج العالمي لريادة الأعمال
+                    خلال العامين الماضيين منذ أن ضرب جائحة فيروس كورونا CoVid 19 العالم بشدة. ذكي
+                    لقد أدرك رواد الأعمال أن الوقت قد حان لرفع مستوى لعبتهم والتحول إلى المزيد من الأرباح
+                    السبل بدلاً من التمسك بأفكار العمل التقليدية. لتلبية متطلبات السوق ، لدينا
+                    إنشاء تطبيق يضمن على وجه التحديد عدم تأثر أي شيء باسم الشركة أو
+                    توقف خلال هذه الأوقات غير المستقرة.</h1>
+                <h1 class="text-opacity-black leading-8 mt-4 text-xl">عانى الكثير من الخسائر المالية الكبيرة خلال
+                    الوباء ، لكن استنساخ Grubhub الخاص بك يمكنه الآن ضمان أن المزيد والمزيد من الناس يمكنهم إيجاد طريقة للكسب
+                    يعيشون على الرغم من الوباء حيث يستمر عملاؤك في الازدهار من خلال الوصول إلى
+                    وجباتهم المفضلة.</h1>
+                <h1 class="text-opacity-black leading-8 mt-4 text-xl">لقد أضفنا ميزات جديدة مثل الأمان
+                    شارة ، توصيلات بدون تلامس وأكثر من ذلك بكثير. تابع لمعرفة المزيد عن فيروس كورونا
+                    ميزات أمان CoVid 19 في تطبيق UberEats Clone الجديد.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- end do  -->
+
+    <!-- start top -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <div class="head-div">
+                <h1 class="head-light-blue">أهم ميزات</h1>
+                <h1>تطبيق استنساخ UBEREATS: إصدار 2022</h1>
+                <h1 class="text-opacity-black">نحن ندرك أن التغيير جزء من التطور وكل عام جديد
+                    يجلب معه مجموعة من الفرص لتعزيز ما لدينا بالفعل. من أجل التأكد
+                    أن التطبيق الذي تشتريه منا هو الأفضل على الإطلاق في فئته ، فقد أضفنا بعض الميزات الجديدة المثيرة
+                    الميزات في عام 2022. ألق نظرة على بعض أهم ميزاتنا المميزة في نسخة UberEats clone 2022.</h1>
+            </div>
+            <div class="mt-4">
+                <div class="flex md:flex-row flex-col justify-center gap-3">
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">UI / UX جديدة لعملية تسجيل الدخول والاشتراك</h1>
+                        <h1 class="text-opacity-black mt-2">تتضمن هذه الميزة الأحدث ميزات أكثر انسيابية و
+                            سهل الاستخدام تسجيل الدخول والاشتراك
+                            عملية للمستخدمين والسائقين والمطاعم.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">قم بتسجيل الدخول باستخدام التعرف على معرف الوجه وقناع الوجه للتعرف على بصمات الأصابع
+                            تَحَقّق</h1>
+                        <h1 class="text-opacity-black mt-2">اسمح لمستخدمي iOS بتسجيل الدخول باستخدام معرفات الوجه ومعرفات
+                            يقوم مستخدمو Android بتسجيل الدخول باستخدام مسح بصمات الأصابع بسرعة <br> وسهولة.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">صورة العنصر مع الفيديو والصور المتعددة</h1>
+                        <h1 class="text-opacity-black mt-2">قم بتمكين شركائك في المطعم من تحميل الصور الشهية
+                            ومقاطع فيديو لعناصر القائمة الخاصة بهم.</h1>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col  justify-center gap-3 mt-3 md:h-[144px]">
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">تكامل إعلانات فيسبوك</h1>
+                        <h1 class="text-opacity-black mt-2">قم بإحضار المستخدمين لديك مباشرةً إلى صفحة الطلب الخاصة بك
+                             المطاعم في التطبيق من Facebook Ads.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">تكامل إعلانات جوجل</h1>
+                        <h1 class="text-opacity-black mt-2">اجلب المستخدمين مباشرةً إلى صفحة طلب الطعام الخاصة بـ</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">اتصل بالفيديو سائق التوصيل الخاص بك</h1>
+                        <h1 class="text-opacity-black mt-2">الآن ، تعرف بالضبط على مكان وجود سائق التوصيل الخاص بك من خلال العطاء</h1>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col  justify-center gap-3 mt-3 md:h-[122px]">
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/2">
+                        <h1 class="font-bold">إدارة بطاقات الائتمان المتعددة</h1>
+                        <h1 class="text-opacity-black mt-2">قم بتمكين المستخدمين لديك ليكونوا قادرين على استخدام بطاقات ائتمان متعددة
+                            لطلب الطعام من خلال استنساخ Uber Eats الخاص بك بالطريقة الأكثر أمانًا.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/2">
+                        <h1 class="font-bold">Location Wise Banners</h1>
+                        <h1 class="text-opacity-black mt-2">يمكن للمسؤول تعيين موقع لافتة الصفحة الرئيسية عندما يكون
+                            يرغب في استهداف موقع ومستخدمين محددين.</h1>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col  justify-center gap-3 mt-3 ">
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/2">
+                        <h1 class="font-bold">إعادة تعيين برنامج تشغيل التوصيل لأوامر المتجر</h1>
+                        <h1 class="text-opacity-black mt-2">قم بإحضار المستخدمين لديك مباشرةً إلى صفحة الطلب الخاصة بك
+                             المطاعم في التطبيق من Facebook Ads.</h1>
+                        <div class="flex flex-col gap-2 mt-2">
+                            <span class=""><i class = "text-ajebah-blue fa-solid fa-circle fa-xs ml-2"> </i> الرئيسية
+                                موقع الكتروني</span>
+                            <span class=""><i class = "text-ajebah-blue fa-solid fa-circle fa-xs ml-2"> </i> مستخدم iOS
+                                تطبيق</span>
+                            <span class=""><i class = "text-ajebah-blue fa-solid fa-circle fa-xs ml-2"> </i> مستخدم
+                                ذكري المظهر
+                                تطبيق</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/2">
+                        <h1 class="font-bold">قائمة المطعم خيارات / إضافات متعددة</h1>
+                        <h1 class="text-opacity-black mt-2">السماح لأصحاب المطاعم بإضافة طبقات / خيارات متعددة
+                            إلى المواد الغذائية المدرجة في قائمتهم. على سبيل المثال - يطلب أحد العملاء بيتزا. يحصل
+                            للاختيار من بينها قشور رقيقة / عادى / جبنة. بالنسبة إلى القمة ، يضيف القليل من منتجاته
+                            المفضل. هذه هي الطريقة التي تزداد بها تكلفة البيتزا.</h1>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col justify-center gap-3 mt-4">
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">تدفق التصنيف المتقدم للمواد الغذائية والتسليم
+                            السائقين</h1>
+                        <h1 class="text-opacity-black mt-2">تتيح الميزة للمستخدمين تقديم التقييمات والتعليقات
+                            على التسليم الذي تم إجراؤه وعلى العناصر التي طلبوها. هذا يساعد المطاعم على التحسن
+                            خدماتهم.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">رموز ترويجية مجانية التوصيل لمتاجر معينة</h1>
+                        <h1 class="text-opacity-black mt-2">سيحدد مالك التطبيق عرض الرمز الترويجي "مجانًا
+                            التسليم "من قائمة الخيارات لمخازن محددة أو جميع المتاجر. يمكن للعملاء تطبيق
+                            نفس الشيء للاستفادة من التوصيل المجاني لطلباتهم. يمكن ضبط الميزة على / إيقاف وفقًا لذلك.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">إخطارات الموقع الحكيمة في جميع أنحاء النظام</h1>
+                        <h1 class="text-opacity-black mt-2">تتيح هذه الميزة للمسؤول إرسال إشعارات جماعية وملفات
+                            تنبيهات لمواقع معينة بحيث يسهل جذب انتباه الجمهور المستهدف.</h1>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col  justify-center gap-3 mt-3 md:h-[144px]">
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">تكامل إعلانات فيسبوك</h1>
+                        <h1 class="text-opacity-black mt-2">قم بإحضار المستخدمين لديك مباشرةً إلى صفحة الطلب الخاصة بك
+                             المطاعم في التطبيق من Facebook Ads.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">تكامل إعلانات جوجل</h1>
+                        <h1 class="text-opacity-black mt-2">                             مطاعمك في التطبيق من إعلانات Google.</h1>
+                    </div>
+                    <div class="bg-white rounded-md shadow-md p-2 md:w-1/3">
+                        <h1 class="font-bold">اتصل بالفيديو سائق التوصيل الخاص بك</h1>
+                        <h1 class="text-opacity-black mt-2">                             له أو لها مكالمة فيديو.</h1>
+                    </div>
+                </div>
+                <div class="mt-6 text-center ">
+                    <a href="" class="btn-primary py-1 px-8 text-xl">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end top -->
+
+    <!-- start make your -->
+    <div class="container py-8">
+        <!-- head -->
+        <div class="head-div">
+            <h1 class="head-light-blue">اجعل عملك أكثر</h1>
+            <h1 class="font-bold">أوامر يسهل الوصول إليها وتقبلها عبر كل وسيط!</h1>
+            <h1 class="text-opacity-black">نظام توصيل الطعام عند الطلب استنادًا إلى استنساخ UberEats الذي لدينا
+                وضعت من أجلك
+                تمكنك من قبول الطلب من الهاتف والويب والتطبيق والمطعم مباشرة أيضًا!</h1>
+        </div>
+        <div class="flex md:flex-row flex-col justify-center gap-4 mt-20">
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 md:mt-0 mt-6 relative pt-12 md:min-w-[20%] md:max-w-[20%] md:min-h-[540px]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-1.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">متجر أغذية واحد</h1>
+                <h1 class="text-opacity-black text-xl">في حال كنت تدير مطعما مستقلا بدون فروع أخرى ،
+                    يمكن لهذا التطبيق أن يصنع المعجزات لك أيضًا. قم بتشغيل هذا التطبيق لتوصيل الطعام في مدينتك أو منطقتك فقط
+                    وجعله تطبيقك الشخصي للأعمال. سيتم استخدام هذا التطبيق بعد ذلك فقط لعملك و
+                    ليس لأي مطعم آخر على الإطلاق. يمكنك استلام الطلب وإرسال التسليم الخاص بك
+                    السائقين للقيام بعمليات التسليم.</h1>
+            </div>
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 relative pt-12 md:mt-0 mt-20 md:min-w-[20%] md:max-w-[20%]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-2.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">بدء تشغيل توصيل الطعام</h1>
+                <h1 class="text-opacity-black text-xl">هذا هو التطبيق المثالي إذا كنت تريد أن يتمكن عملاؤك من ذلك
+                    تقديم طلبات الطعام من المطاعم القريبة منهم. يمكن لأي مطعم في جميع أنحاء البلاد
+                    التسجيل في التطبيق الخاص بك ، ولكن عندما يقوم العميل بتسجيل الدخول ؛ سيرون فقط المطاعم الأقرب إلى
+                    موقعهم المادي. يمكن تعيين هذا الشعاع الجغرافي لاختيار المطاعم من
+                    مشرف.</h1>
+            </div>
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 relative md:mt-0 mt-20 pt-12 md:min-w-[20%] md:max-w-[20%]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-3.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">سلاسل الغذاء</h1>
+                <h1 class="text-opacity-black text-xl">في حالة امتلاكك لسلسلة مطاعم وترغب في استخدام التطبيق
+                    لتوصيل الطعام لهم جميعًا ، يمكنك استخدام هذا التطبيق أيضًا. عندما يقوم العميل بتسجيل الدخول ، يمكنه أن يرى
+                    فرع مطعمك الأقرب إلى موقع عميلك. تم تصميم التطبيق
+                    على وجه التحديد للتأكد من أنه يمكن استلام الطلبات من أقرب مطعم وتخصيصها
+                    سائق التوصيل الأقرب كذلك.</h1>
+            </div>
+            <div
+                class="bg-white rounded-3xl shadow-lg p-3 flex flex-col gap-4 relative pt-12 md:mt-0 mt-20 md:min-w-[20%] md:max-w-[20%]">
+                <div class="">
+                    <img class="absolute -top-[73px] md:left-[83px] left-[65px]" src="./imgs/delivery-sec-5-4.png"
+                        alt="">
+                </div>
+                <h1 class="text-xl font-bold">كلاود كيتشن</h1>
+                <h1 class="text-opacity-black">يُمكّنك استنساخ Uber Eats من تعويض Cloud Kitchen الفريد
+                    الشكل كذلك!</h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- end make your -->
+
+    <!-- start food -->
+    <div class="bg-white-gray">
+        <div class="container py-8">
+            <div class="flex flex-col-reverse md:flex-row justify-between ">
+                <div class="md:w-5/12">
+                    <h1 class="font-bold text-4xl md:mt-0 mt-8 text-ajebah-light-blue">حل كشك الطعام</h1>
+                    <h1 class="text-opacity-black mt-8 leading-8">العودة بعد شهور من الإغلاق إلى الواقع الجديد
+                        للتباعد الاجتماعي ، وبروتوكولات النظافة الصارمة ، لقد طرحنا تقنية جديدة لـ
+                        عصر COVID19 - حل كشك الطعام. يأتي شاملاً تطبيق توصيل الطعام عند الطلب مثل
+                        اوبر.</h1>
+                    <h1 class="text-opacity-black mt-8 leading-8">يمكن لنظامنا للطلب الذاتي القائم على نظام Android
+                        تأخذ المزيد من الطلبات في وقت أقل ، دون زيادة الرواتب. يتم إرسال الطلبات تلقائيًا إلى
+                        تعمل "لوحة تحكم المسؤول" على تقليل أخطاء الاتصال ويمكن عرضها في الوقت الفعلي.</h1>
+                    <h1 class="text-opacity-black mt-8 leading-8">قائمة مرئية قابلة للتخصيص بالكامل ترشد رواد المطعم من خلالها
+                        تجربة الخدمة الذاتية. يمكن استخدام شاشات Food Kiosk كأداة تسويقية تتيح لك ذلك
+                        مشاركة العروض الترويجية وعرض العلامة التجارية لمطعمك. عندما يضع الضيوف الطلبات عبر
+                        أكشاك الخدمة الذاتية ، يمكن للمطعم تحقيق المزيد من المبيعات في وقت أقل مع تقليل العمالة
+                        التكاليف. يمكنك إعادة تعيين الموظفين من تلقي الأوامر إلى مهام ذات قيمة أعلى.</h1>
+                </div>
+                <div class="md:w-6/12">
+                    <img src="./imgs/delivery-sec-10-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end food -->
+
+    <!-- start take -->
+    <div class="bg-new-gray my-8">
+        <div class="container py-8">
+            <!-- head -->
+            <h1 class="font-bold text-5xl text-center text-white">ألق نظرة على النسخة التجريبية من UBER</h1>
+            <h1 class="text-white text-xl text-center mt-4">قم بتنزيل تطبيقاتنا المجانية</h1>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 mt-4">
+                <!-- panner 1 -->
+                <div class="flex flex-col gap-4 justify-start items-start">
+                    <h1 class="font-bold text-xl text-white">تطبيق المستخدم:</h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-1.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-2.png" alt="">
+                    </a>
+                </div>
+                <!-- panner 2 -->
+                <div class="flex flex-col gap-4 justify-start items-start">
+                    <h1 class="font-bold text-xl text-white">تطبيق السائق:</h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-3.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-4.png" alt="">
+                    </a>
+                </div>
+                <!-- panner 3 -->
+
+                <!-- panner 4 -->
+                <div class="flex flex-col gap-4 justify-start items-start">
+                    <h1 class="font-bold text-xl text-white">لوحات الويب:</h1>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-8.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./imgs/taxi-sec-7-8.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end take -->
+
+    <!-- start how -->
+    <div class="container py-8">
+        <!-- head -->
+        <div class="flex flex-col justify-center gap-4">
+            <h1 class="head-light-blue">ما هي تكلفة التطوير</h1>
+            <h1 class="font-bold text-center">تطبيق توصيل الطعام عند الطلب؟</h1>
+            <h1 class="text-center text-opacity-black">لتحديد التكلفة الإجمالية لتطوير غذاء عند الطلب
+                تسليم Doordash Clone App ليس بالمهمة السهلة على أقل تقدير وعندما يتم بناؤه من نقطة الصفر
+                يكلفك مبلغًا ضخمًا من المال من نهايتك. وبالتالي ، لمساعدتك في نفس الأمر ، لدينا ملف
+                حزمة جذابة مصممة خصيصًا لبدء توصيل الطعام الخاص بك لضمان قيامك بذلك
+                أرباح كبيرة من اليوم الأول!</h1>
+            <div>
+                <img src="./imgs/grap-sec-3-1.png" alt="">
+            </div>
+            <div class="text-center">
+                <a href="#" class="mt-2 py-1 px-2 btn-primary">تحقق من الميزات والأسعار</a>
+            </div>
+        </div>
+    </div>
+    <!-- end how -->
+
+    <!-- start details -->
+    <div class="container py-8">
+        <!-- head -->
+
+        <div class="">
+            <h1 class="head-light-blue">فيديو مفصل</h1>
+            <h1 class="font-bold text-center">المعلومات</h1>
+            <h1 class="text-center text-opacity-black">قد تكون قراءة الأدب المطول مملة وزائدة عن الحاجة. نملك
+                قم بتجميع بعض الوسائل المرئية سهلة الفهم بحيث يمكنك تقييم التطبيق بنفسك في ملف
+                أسهل طريقة. ألق نظرة على مقاطع الفيديو التي تساعد في شرح التطبيق بالتفصيل. إذا كان لا يزال لديك شك ،
+                ما عليك سوى مراسلتنا وسنعاود الاتصال بك.</h1>
+        </div>
+        <div class="flex flex-col gap-5 mt-4">
+            <div class="flex md:flex-row flex-col items-center justify-center gap-5">
+                <div>
+                    <img src="./imgs/grap-sec-5-1.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">مقدمة في خدمة الطعام</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-2.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">إدارة الخدمات والأسعار</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">كود الإحالة</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">كود الإحالة</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-5 mt-4">
+            <div class="flex md:flex-row flex-col items-center justify-center gap-5">
+                <div>
+                    <img src="./imgs/grap-sec-5-1.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">مقدمة في خدمة الطعام</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-2.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">إدارة الخدمات والأسعار</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">كود الإحالة</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">كود الإحالة</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-5 mt-4">
+            <div class="flex md:flex-row flex-col items-center justify-center gap-5">
+                <div>
+                    <img src="./imgs/grap-sec-5-1.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">مقدمة في خدمة الطعام</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-2.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">إدارة الخدمات والأسعار</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">كود الإحالة</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">كود الإحالة</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-5 mt-4">
+            <div class="flex md:flex-row flex-col items-center justify-center gap-5">
+                <div>
+                    <img src="./imgs/grap-sec-5-1.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">مقدمة في خدمة الطعام</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-2.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">إدارة الخدمات والأسعار</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">كود الإحالة</h1>
+                </div>
+                <div>
+                    <img src="./imgs/grap-sec-5-3.png" alt="">
+                    <h1 class="text-center text-opacity-black mt-3">كود الإحالة</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end details -->
+
+    <!-- start honest -->
+	<div class="container py-8">
+		<!-- content -->
+		<div class="text-center">
+			<h1 class="text-ajebah-light-blue text-4xl font-bold">عجبه صادقة</h1>
+			<h1 class="mt-6">المراجعات والشهادات</h1>
+            <h1 class="text-opacity-black mt-6">ألق نظرة عميقة على ما يعتقد عملاؤنا أنه إمكاناتنا واستمع إلى قصة ارتباطهم بنا.</h1>
+		</div>
+		<!-- imgs -->
+		<div class="flex flex-col md:flex-row mt-4 gap-4 justify-between">
+			<div class="">
+				<img src="./imgs/19-sec-1.png" alt="">
+			</div>
+			<div class="flex flex-col justify-between  mt-5 md:mt-0">
+				<div class="flex md:flex-row flex-col md:gap-10 gap-5 items-center justify-between">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+				<div class="flex md:flex-row flex-col md:mt-0 mt-5 items-center md:gap-10 gap-5 ">
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+					<div>
+						<img src="./imgs/19-sec-2.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+    <!-- end honest -->
+
+
+	<!-- Start Footer -->
+	<footer class="">
+		<div class="container">
+			<div class="foot-All">
+				<div class="logo-foot">
+					<a href="./index.html">
+						<img src="./imgs/logo.png" alt="" />
+					</a>
+				</div>
+				<div class="Contact-Us-Foot">
+					<h4>اتصل بنا</h4>
+					<p>
+						<i class="fa-solid fa-location-dot"></i> 182 شارع جدة ، السعودية
+						شبه الجزيرة العربية					</p>
+					<a href="tel:+01154258770">
+						<p>
+							<i class="fa-solid fa-phone"></i> Phone: +20 120 009 71 27
+						</p>
+					</a>
+					<a href="mailto:name@email.com">
+						<p><i class="fa-solid fa-envelope"></i>  info@3X1.IO الايميل:</p>
+					</a>
+				</div>
+				<div class="About-Foot">
+					<h4>حول</h4>
+					<a href="#">البنود و الظروف</a>
+					<a href="#">سياسة</a>
+					<a href="#">المدونات</a>
+					<a href="./contact-us-arabic.html">اتصل بنا</a>
+				</div>
+				<div class="Follow-Us-Foot">
+					<h4>تابعنا</h4>
+					<div class="LOGO-FOOT">
+						<a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+						<a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+						<a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+					</div>
+				</div>
+				<div class="English">
+					<select id="countries"
+                    onchange="location = this.value;"
+						class="bg-white-gray   block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value=""></option>
+						<option value="./delivery.html">English</option>
+
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="khat-foot"></div>
+		<div class="txt-under-foot">
+			<p>حقوق النشر <i class="fa-regular fa-copyright"></i> 2022</p>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/mobile-sec.js"></script>
+</body>
+
+</html>
