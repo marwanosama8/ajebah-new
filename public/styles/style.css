@@ -2510,6 +2510,9 @@ video {
 .need-gap-3-arabic {
   gap: 179px;
 }
+.need-gap-3 {
+  gap: 141px;
+}
 
 @media (max-width: 767px) {
   .need-gap-1 {
