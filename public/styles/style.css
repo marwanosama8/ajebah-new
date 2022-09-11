@@ -2599,7 +2599,7 @@ video {
 .box-Home-Page .box-1{
   /* background-color: white; */
   text-align: center;
-  background-image: url('../imgs/eith-sec-1.png');
+  background-image: url('./imgs/eith-sec-1.png');
   /* font-weight: bold; */
   font-size: 19px;
   display: flex;
@@ -2618,7 +2618,7 @@ video {
 .box-Home-Page .box-2 {
   /* background-color: white; */
   text-align: center;
-  background-image: url('../imgs/eith-sec-2.png');
+  background-image: url('./imgs/eith-sec-2.png');
   /* font-weight: bold; */
   font-size: 19px;
   display: flex;
@@ -2637,7 +2637,7 @@ video {
 .box-Home-Page .box-10 {
   /* background-color: white; */
   text-align: center;
-  background-image: url('../imgs/eith-sec-1.png');
+  background-image: url('./imgs/eith-sec-1.png');
   /* font-weight: bold; */
   font-size: 19px;
   display: flex;
@@ -2656,7 +2656,7 @@ video {
 .box-Home-Page .box-3 {
   /* background-color: white; */
   text-align: center;
-  background-image: url('../imgs/eith-sec-3.png');
+  background-image: url('./imgs/eith-sec-3.png');
   /* font-weight: bold; */
   font-size: 19px;
   display: flex;
@@ -2675,7 +2675,7 @@ video {
 .box-Home-Page .box-4 {
   /* background-color: white; */
   text-align: center;
-  background-image: url('../imgs/eith-sec-4.png');
+  background-image: url('./imgs/eith-sec-4.png');
   /* font-weight: bold; */
   font-size: 19px;
   display: flex;
@@ -2694,7 +2694,7 @@ video {
 .box-Home-Page .box-5 {
   /* background-color: white; */
   text-align: center;
-  background-image: url('../imgs/eith-sec-5.png');
+  background-image: url('./imgs/eith-sec-5.png');
   /* font-weight: bold; */
   font-size: 19px;
   display: flex;
@@ -2713,7 +2713,7 @@ video {
 .box-Home-Page .box-6 {
   /* background-color: white; */
   text-align: center;
-  background-image: url('../imgs/eith-sec-3.png');
+  background-image: url('./imgs/eith-sec-3.png');
   /* font-weight: bold; */
   font-size: 19px;
   display: flex;
@@ -2962,7 +2962,7 @@ video {
 .orange-div {
   width: 1585px;
   height: 577px;
-  background-image: url(../imgs/ninth-sec.png);
+  background-image: url(./imgs/ninth-sec.png);
 }
 
 @media (max-width: 767px) {
@@ -2970,7 +2970,7 @@ video {
     width: auto;
     background-size: 4122px;
     height: 1154px;
-    background-image: url(../imgs/ninth-sec.png);
+    background-image: url(./imgs/ninth-sec.png);
   }
 
   .orange-div img {
@@ -2983,7 +2983,7 @@ video {
     width: auto;
     background-size: 4122px;
     height: 1154px;
-    background-image: url(../imgs/ninth-sec.png);
+    background-image: url(./imgs/ninth-sec.png);
   }
 
   .orange-div img {
@@ -2994,7 +2994,7 @@ video {
 .blue-div {
   width: 1585px;
   height: 577px;
-  background-image: url(../imgs/17-sec-1.png);
+  background-image: url(./imgs/17-sec-1.png);
 }
 
 @media (max-width: 767px) {
@@ -3002,7 +3002,7 @@ video {
     width: auto;
     background-size: 4122px;
     height: 1154px;
-    background-image: url(../imgs/17-sec-1.png);
+    background-image: url(./imgs/17-sec-1.png);
   }
 
   .need-width {
@@ -3015,7 +3015,7 @@ video {
     width: auto;
     background-size: 4122px;
     height: 1154px;
-    background-image: url(../imgs/17-sec-1.png);
+    background-image: url(./imgs/17-sec-1.png);
   }
 
   .need-width {
