@@ -413,7 +413,7 @@ video {
 @font-face {
   font-family: 'Cairo';
 
-  src: url('/public/fonts/cairo-v20-latin-regular.woff') format('woff')
+  src: url('./fonts/cairo-v20-latin-regular.woff') format('woff')
 }
 
 *, ::before, ::after {
